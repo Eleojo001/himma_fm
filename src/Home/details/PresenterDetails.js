@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { DataContext } from '../../App';
 import { BsDot } from 'react-icons/bs';
+import Nav from '../Nav';
 function PresenterDetails() {
     const { id } = useParams();
     const [info, setInfo] = useState({});
@@ -21,6 +22,7 @@ function PresenterDetails() {
     };
   return (
     <div>
+      <Nav/>
       <div className='detailsHeader'>
         {data.map((item) => {
           if (item.id == id) {

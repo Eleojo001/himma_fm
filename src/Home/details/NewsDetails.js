@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { DataContext } from '../../App';
 import { BsDot } from 'react-icons/bs';
+import Nav from '../Nav';
 
 function NewsDetails() {
 
@@ -23,6 +24,7 @@ function NewsDetails() {
      };
   return (
     <div>
+      <Nav/>
       <div className='detailsHeader'>
         {data.map((item) => {
           if (item.id == id) {
