@@ -24,7 +24,7 @@ function NewsDetails() {
      };
   return (
     <div>
-      <Nav/>
+      <Nav />
       <div className='detailsHeader'>
         {data.map((item) => {
           if (item.id == id) {

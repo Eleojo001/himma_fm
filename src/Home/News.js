@@ -27,7 +27,7 @@ function News() {
  }, []);
 
  const showMoreItems = () =>{
-  // console.log('hi')
+  
   setVisible((previousValue) => previousValue + 4);
  }
  const headerColor = {

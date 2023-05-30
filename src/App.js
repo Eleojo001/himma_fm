@@ -25,10 +25,11 @@ import tv1 from './Home/images/tv1.jpeg';
 import tv2 from './Home/images/tv2.jpeg';
 import tv3 from './Home/images/tv3.jpeg';
 import tv4 from './Home/images/tv4.jpeg';
-import show1 from './Home/images/show1.jpeg';
-import show2 from './Home/images/show2.jpeg';
-import show3 from './Home/images/show3.jpeg';
-import show4 from './Home/images/show4.jpeg';
+import show1 from './Home/images/commodites.jpeg';
+import show2 from './Home/images/Sirin-Noma.jpeg';
+import show3 from './Home/images/Gona.jpeg';
+import show4 from './Home/images/Gona-Zuwa.jpeg';
+import show5 from './Home/images/Hatsi.jpeg';
 import NewsDetails from './Home/details/NewsDetails';
 import PresenterDetails from './Home/details/PresenterDetails';
 import ShowsDetails from './Home/details/ShowsDetails';
@@ -123,39 +124,39 @@ However, despite these challenges which can be found in many countries throughou
   ]);
   const [Shows, setShows] = useState([
     {
-      id:'1',
-      title:'Sports Talk',
-      time:'2:00pm - 4:00pm',
-      day:'Moday - Saturday',
-      image: show1
+      id: '1',
+      title: 'Commodities Today',
+      time: '2:00pm - 4:00pm',
+      day: 'Moday - Saturday',
+      image: show1,
     },
     {
-      id:'2',
-      title:'Agriculture as a means to an end',
-      time:'8:00am - 1:00pm',
-      day:'Every Saturday',
-      image: show2
+      id: '2',
+      title: 'Sirin Noma',
+      time: '8:00am - 1:00pm',
+      day: 'Every Saturday',
+      image: show2,
     },
     {
-      id:'3',
-      title:'Gossip 9ja',
-      time:'5:00pm - 7:00pm',
-      day:'Monday - Friday',
-      image: show3
+      id: '3',
+      title: 'Gona zuwa Cokali mai yatsa',
+      time: '5:00pm - 7:00pm',
+      day: 'Monday - Friday',
+      image: show3,
     },
     {
-      id:'4',
-      title:'9ja Entertainment Industry',
-      time:'4:00pm - 6:00pm ',
-      day:'Saturday',
-      image: show4
+      id: '4',
+      title: 'Gona zuwa Cokali mai yatsa',
+      time: '4:00pm - 6:00pm ',
+      day: 'Saturday',
+      image: show4,
     },
     {
-      id:'5',
-      title:'Our Leaders',
-      time:'7:00pm - 8:00pm',
-      day:'Sundays',
-      image: show2
+      id: '5',
+      title: 'Hatsi',
+      time: '7:00pm - 8:00pm',
+      day: 'Sundays',
+      image: show5,
     },
   ]);
   const [Presenter, setPresenter] = useState([

@@ -7,7 +7,7 @@ import {
   FaYoutube,
 } from 'react-icons/fa';
 import { TfiTwitter } from 'react-icons/tfi';
-import logo from './images/HimmaLogo-3.png'
+import logo from './images/HimmaLogo-3.png';
 import { DataContext } from '../App';
 
 function Nav() {
@@ -60,7 +60,7 @@ console.log(findItemById(array, 'News'));
   }
   const navContainer = {
     width:'100%',
-    boxSizing:'BorderBox'
+    boxSizing:'BorderBox',
   }
   const logoStyle ={
     width:'70px',
