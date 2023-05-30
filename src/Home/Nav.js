@@ -63,8 +63,9 @@ console.log(findItemById(array, 'News'));
     boxSizing:'BorderBox'
   }
   const logoStyle ={
-    width:'100px',
-    height:'100px'
+    width:'70px',
+    height:'70px',
+    padding:'10px'
   }
 
   return (

@@ -1,7 +1,7 @@
 .page-container{
   background-color: black;
   color: White;
-  padding: 100px 70px;
+  padding: 20px 20px 50px ;
 }
 .pageBanner-container{
   padding: 50px 100px;
@@ -20,6 +20,7 @@
   padding: 10px 40px;
   border-radius: 5px;
   font-size: 18px;
+  margin-top: 20px;
 
 }
 

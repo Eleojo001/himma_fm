@@ -49,8 +49,7 @@ function NavShows() {
                 </div>
                 <div className='profileInfo'>
                   <h3>{items.title}</h3>
-                  <span>{items.time}</span>,{' '}
-                  <span>{items.day}</span>
+                  <span>{items.time}</span>, <span>{items.day}</span>
                 </div>
               </div>
             );
@@ -58,11 +57,12 @@ function NavShows() {
         </div>
       </div>
       <div className='page-container-mobile'>
+        <h1>Television News</h1>
         <div className='gridcontainer'>
           <div className='newsGrid'>
             {data.slice(0, visible).map((item) => {
               return (
-                <div>
+                <div className='card-mobile'>
                   <div className='newsCardImage_mobile'>
                     <img src={item.image} alt='' style={imageStyle} />
                   </div>

@@ -39,7 +39,7 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 0px 5px;
+  padding: 10px;
 }
 .nav_menu{
   display: flex;
@@ -51,9 +51,9 @@
   list-style: none;
 }
 .nav_toggler div{
-  width: 2.5rem;
+  width: 1.5rem;
   height: 0.2rem;
-  margin: 0.2rem;
+  margin: 0.1rem;
   background-color: darkgray;
   /* transition: 0.4s ease-in; */
 }
@@ -509,7 +509,7 @@
     padding: 10px 20px;
   } */
   .bannerPic{
-  height: 80vh;
+  height: 300px;
   background-color: rgb(58, 55, 55);
   text-align: center;
   display: flex;
@@ -575,11 +575,12 @@
   }
   .nav{
     position: sticky;
-    background-color: black;
+    background-color: whitesmoke;
     top: 0;
     z-index: 1;
     /* padding: 30px 0px; */
-    height: 20vh;
+    height: 100px;
+    border-bottom: 1px solid lightgrey;
   }
   .nav_menu{
     position: fixed;
@@ -629,6 +630,22 @@
   }
 }
 @media(max-width:470px){
+  .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding: 5px 0;
+  background-color: white;
+}
+.nav_brand{
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  /* gap: 0px 5px; */
+}
   /* .nav{
   justify-content: space-between;
   padding: 0px 20px;
@@ -650,8 +667,7 @@
     padding: 10px 20px;
   }
   .bannerPic{
-  height: 80vh;
-  background-color: rgb(58, 55, 55);
+  height: 200px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -708,15 +724,17 @@
   align-items: center;
 }
 .newsGrid{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 0px 0px;
-  gap: 10px 0px;
-  width: 80%;
+  display: flex;
+  overflow-x: scroll;
+  padding: 0px 20px;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin: 0, auto;
 }
 .newsCard{
-  width: 100%;
+  /* width: 100%; */
   padding-bottom: 5px;
 }
 .newsCardImage{
@@ -739,6 +757,7 @@
 }
 .page-container-mobile{
   display: block;
+  padding: 20px 20px 30px;
 }
 
 .presenterProfileHolder{
@@ -747,12 +766,19 @@
   align-items: center;
   overflow-x: hidden;
 }
+.card-mobile{
+  margin-top: 10px;
+}
+.profileInfo{
+  padding: 0;
+  margin: 0;
+}
 .newsCardImage_mobile{
   width: 70%;
   margin: auto;
   display: flex;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .presenterProfiles{
