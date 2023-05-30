@@ -1,0 +1,927 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Oxygen:wght@300&family=Roboto&display=swap');
+
+
+
+:root{
+  --bg-color: #2B7A0B;
+  --second-bg-color: #5BB318;
+  --text-color: #F1F6F9;
+  --third-bg-color: #7DCE13;
+  /* --yellow-bg-color: #EAE509; */
+  --yellow-bg-color: #f1d608;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  color: white;
+  font-family: 'Bona Nova', serif;
+
+}
+
+/* NAVIGATION SECTION  */
+.nav a{
+  text-decoration: none;
+  color: black;
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  padding: 10px 0;
+  background-color: white;
+}
+.nav_brand{
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0px 5px;
+}
+.nav_menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+.nav_menu li{
+  list-style: none;
+}
+.nav_toggler div{
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.2rem;
+  background-color: darkgray;
+  /* transition: 0.4s ease-in; */
+}
+.nav_toggler{
+  cursor: pointer;
+  display: none;
+}
+.nav_men{
+  display: none;
+}
+
+
+.whiteText{
+  color: black;
+  /* text-align: left; */
+}
+.myFonts{
+  color: var(--second-bg-color);
+}
+
+/* const designs */
+
+.myFlex{
+  display: flex;
+  align-items: center;
+}
+.myList{
+  list-style: none;
+}
+.myLink{
+  text-decoration: none;
+  color: white;
+}
+.myCircle, .homecardImage{
+  border-radius: 50%;
+}
+        /* privacy nav  */
+
+.privacyMedia{
+  /* display: flex; */
+  /* background-color: lightslategray; */
+  color: white;
+  /* font-weight: bold; */
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+.privacy li{
+  /* display: flex; */
+  /* align-items: center; */
+  list-style: none;
+  padding: 5px;
+}
+
+.media{
+  display: flex;
+  align-items: center;
+}
+.media-icons{
+  display: flex;
+  align-items: center;
+}
+.media-icons li{
+  list-style: none;
+  margin-right: 20px;
+}
+.webNav{
+  text-decoration: none;
+  color: black;
+}
+.icons{
+  color: var(--yellow-bg-color);
+}
+
+      /* Main Navigation */
+
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--yellow-bg-color);
+  color: white;
+  padding: 10px 40px;
+  border-bottom: 1px solid lightgray;
+
+}
+.logoSec{
+  display: flex;
+  align-items: center;
+}
+.logo{
+  height: 50px;
+  width: 60px;
+  margin-right: 5px;
+  background-color: white;
+  background-image: url(./Home/images/himmaLogo.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logoText, .show-time{
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+.texts{
+  color: white;
+}
+.webNav{
+  display: flex;
+  align-items: center;
+    font-size: 15px;
+  font-weight: bold;
+}
+.webNav li{
+  list-style: none;
+  margin-right: 25px;
+}
+.liveOnAir{
+  display: flex;
+  align-items: center;
+}
+.liveonAirImage{
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.liveonairTittle li{
+  list-style: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* banner section */
+
+.bannerPic{
+  height: 500px;
+  width: 100%;
+  background-color: rgb(58, 55, 55);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./Home/images/homebg.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.homeBannerEvents{
+  display: flex;
+  background-color: var(--yellow-bg-color);
+  color: black;
+  padding: 20px 60px;
+  font-weight: bold;
+  border-bottom: 1px solid darkgray;
+
+}
+.homeBannerSection1{
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+.homeBannerSection1 span{
+  color: red;
+  margin-right: 5px;
+}
+.homeBannerSection2{
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+.homecard1{
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+.homeBannerSection2 li{
+  list-style: none;
+  padding-top: 10px;
+}
+.homecardImage{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin-right: 10px;
+}
+.homecardDay{
+  font-size: 12px;
+}
+
+/* news section  */
+.viewmore{
+  background-color: var(--yellow-bg-color);
+  color: black;
+}
+.newcontainer{
+  padding: 30px 20px;
+  border-bottom: 1px solid darkgray;
+  color: white;
+  background-color: var(--bg-color);
+}
+.newsHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newsGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 40px;
+  gap: 10px 5px;
+}
+.newsCard{
+  height: 300px;
+  width: 250px;
+  margin: 20px 0 0 0;
+}
+.newsCardImage{
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+}
+/* .newsCardHeader h3{
+  line-height: 0.5px;
+} */
+.newCardDetails{
+  color: var(--text-color);
+}
+
+/* Television Section  */
+
+.tvFrameContainer{
+  padding: 50px 50px;
+  border-bottom: 1px solid darkgray;
+  /* background-color: var(--yellow-bg-color); */
+  background-color: white;
+  color: black;
+}
+.tvHeader{
+  color: var(--bg-color);
+  text-align: left;
+}
+.televisionLogo{
+  text-align: center;
+  /* padding-top: 10%; */
+}
+.televisionFrame{
+  width: 80%;
+  margin: auto;
+}
+.frameImage{
+  height: 400px;
+  width: 100%;
+  background-color: white;
+}
+.tvGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin-top: 40px;
+
+}
+.tvCardTitle{
+  margin: 5px 0px;
+  font-weight: bold;
+}
+.tvCardimg{
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+/* .tvCard{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+} */
+.textLimit{
+  display: -webkit-box;
+    -webkit-line-clamp: 2; /* Change the number to the desired line limit */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+.tvCardtext{
+}
+
+/* Shows Section  */
+
+.showsContainer{
+  padding: 50px 50px;
+  border-bottom: 1px solid darkgray;
+  background-color: var(--bg-color);
+}
+
+.showsSlider{
+  padding: 0px 40px;
+}
+.sliderCards{
+  overflow-x: scroll;
+  display: flex;
+  column-gap: 30px;
+  width: 90%;
+  margin: auto;
+  /* background-color: white; */
+  color: black;
+  padding: 40px;
+  padding-top: 60px;
+}
+.sliderCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.sliderCard li{
+  list-style: none;
+  padding: 5px 0px;
+}
+
+.sliderCardImg{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* background-color: white; */
+  margin-bottom: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Presenter-section */
+
+.presenterPage-container{
+  display: block;
+}
+
+.page-container-mobile{
+  display: none;
+}
+
+.presenterContainer{
+  padding: 50px 60px;
+  border-bottom: 1px solid darkgray;
+  background-color: var(--yellow-bg-color);
+}
+.presentersSlider{
+  padding: 40px;
+  /* background-color: white; */
+   display: flex;
+  /* gap: 50px;
+  row-gap: 100px; */
+  width: 85%;
+  margin: auto;
+  color: black;
+  font-weight: bold;
+}
+.presenterCards{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+.presenterCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.presenterCardImg{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.presentersSlider li{
+  list-style: none;
+  margin: 5px 0px;
+  color: white;
+}
+
+/* footer section */
+
+.footerContainer{
+  padding: 60px;
+  background-color: var(--bg-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid slategray;
+}
+
+
+
+.otherStation li{
+  list-style: none;
+  padding: 5px;
+  text-align: left;
+}
+
+.connectWithUs li{
+  list-style: none;
+  padding: 5px;
+}
+
+.siteMap li{
+  list-style: none;
+  padding: 5px;
+}
+.socialMedia, .siteApp{
+  display: flex;
+  align-items: start;
+}
+
+.socialMedia li{
+  list-style: none;
+  margin-right: 10px;
+}
+
+.siteApp{
+  list-style: none;
+  margin-right: 10px;
+}
+.copyRight{
+  background-color: white;
+  color: black;
+  padding: 2px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid slategray;
+}
+
+
+/* Responsiveness */
+@media(max-width:800px){
+  .main-nav {
+    display: flex;
+    padding: 20px 10px;
+  }
+  .media-icons, .liveOnAir{
+    display: none;
+  }
+  .logoSec {
+    display: block;
+  }
+  /* .logoSec, .webNav{
+    padding: 10px 20px;
+  } */
+  .bannerPic{
+  height: 80vh;
+  background-color: rgb(58, 55, 55);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBanner{
+  padding: 0;
+  margin: 0;
+}
+.homeBannerEvents{
+  display: flex;
+  color: white;
+  padding: 20px 10px 0px;
+  align-items: center;
+
+}
+.homeBannerSection1{
+  margin-right: 0px;
+  display: block;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+}
+.homeBannerSection2{
+  display: none;
+  align-items: center;
+  gap: 60px;
+}
+.homecard1{
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  margin-right: 0;
+  margin-bottom: 50px;
+}
+.homecardImage{
+  width: 50px;
+  height: 50px;
+}
+.newsGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0px 0px;
+  gap: 10px 30px;
+  width: 80%;
+  margin: 0, auto;
+}
+.newsCard{
+  height: 250px;
+  width: 200px;
+  margin: 20px 0 0 0;
+}
+
+
+}
+@media screen and (max-width:768px) {
+  .nav_toggler{
+    display: block;
+  }
+  .nav{
+    position: sticky;
+    background-color: black;
+    top: 0;
+    z-index: 1;
+    /* padding: 30px 0px; */
+    height: 20vh;
+  }
+  .nav_menu{
+    position: fixed;
+    top: 39px;
+    right: 0;
+    width: 50%;
+    background-color: red;
+    flex-direction: column;
+    gap: 1rem;
+    transform: translateX(100%);
+
+    top:'100px'
+  }
+  .nav_men{
+    /* width: 50%; */
+    background-color: black;
+    position: absolute;
+    /* display: none; */
+        transform: translateX(-100%);
+    transition: 0.5s ease-in;
+  }
+  .nav_men li{
+    list-style: none;
+    padding: 20px 80px;
+
+  }
+  .nav_men li a{
+    text-decoration: none;
+    color: white;
+  }
+  /* Nav active class  */
+  .nav_active{
+    transform: translateX(0%);
+    transition: 0.5s ease-out;
+    display: block;
+  }
+
+  /* Toggler icon animation  */
+  .toggle .line1{
+    transform: rotate(-47deg) translate(-4px, 5px);
+  }
+  .toggle .line2{
+    opacity: 0;
+  }
+  .toggle .line3{
+    transform: rotate(45deg) translate(-4px, -5px);
+  }
+}
+@media(max-width:470px){
+  /* .nav{
+  justify-content: space-between;
+  padding: 0px 20px;
+  } */
+  .privacyMedia, .privacy ul, .main-nav {
+    display: block;
+    padding: 20px 10px;
+  }
+  .privacy ul li{
+    padding: 10px 0px;
+  }
+  .media-icons, .liveOnAir{
+    display: none;
+  }
+  .logoSec, .webNav {
+    display: block;
+  }
+  .logoSec, .webNav{
+    padding: 10px 20px;
+  }
+  .bannerPic{
+  height: 80vh;
+  background-color: rgb(58, 55, 55);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeBanner{
+  padding: 0;
+  margin: 0;
+}
+.homeBannerEvents{
+  display: flex;
+  color: white;
+  padding: 20px 10px 0px;
+  align-items: center;
+
+}
+.homeBannerSection1{
+  margin-right: 0px;
+  display: block;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+}
+.homeBannerSection2{
+  display: none;
+  align-items: center;
+  gap: 60px;
+}
+.homecard1{
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+  margin-right: 0;
+  margin-bottom: 50px;
+}
+.homecardImage{
+  width: 50px;
+  height: 50px;
+}
+.newsHeader{
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+.newsArrow{
+  display: none;
+}
+.gridcontainer{
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsGrid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0px 0px;
+  gap: 10px 0px;
+  width: 80%;
+  margin: 0, auto;
+}
+.newsCard{
+  width: 100%;
+  padding-bottom: 5px;
+}
+.newsCardImage{
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
+.newsCardHeader h3{
+  margin: 10px 0px;
+  margin-top: 20px;
+}
+
+/* tv  */
+.presenterContainer{
+  background-color: var(--yellow-bg-color);
+  display: none;
+}
+.presenterPage-container{
+  display: none;
+}
+.page-container-mobile{
+  display: block;
+}
+
+.presenterProfileHolder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.newsCardImage_mobile{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.presenterProfiles{
+  overflow-x: scroll;
+}
+
+
+/* presenters page*/
+.Presenter-header{
+  padding-bottom: 50px;
+}
+.presenterProfileHolder{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.presenterProfiles{
+  padding: 0px 50px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.presenterProfile{
+  padding: 0px 50px;
+  display: block;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.presenterCard li{
+  list-style: none;
+}
+.profileImage{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+.profileImage{
+  text-align: center;
+}
+.Profile{
+  display: block;
+  column-gap: 80px;
+  width: 80%;
+  align-items: center;
+  padding: 20px 0px;
+  /* border-bottom: 1px solid lightslategray; */
+}
+/* presenters end  */
+
+.tvFrameContainer{
+  display: block;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 50px 50px;
+  border-bottom: 1px solid darkgray;
+}
+.televisionLogo{
+  text-align: center;
+  padding-top: 10%;
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: center; */
+}
+.televisionFrame{
+  width: 100%;
+}
+.frameImage{
+  height: 270px;
+  width: 100%;
+}
+.tvGrid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+.tvCardTitle{
+  margin: 5px 0px;
+  font-weight: bold;
+}
+.tvCardimg{
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+/* Shows Section  */
+
+.showsContainer{
+  padding: 10px 20px;
+  border-bottom: 1px solid darkgray;
+}
+
+.showsSlider{
+  padding: 0px 0px;
+}
+.sliderCards{
+  overflow-x: scroll;
+  display: flex;
+  column-gap: 30px;
+  width: 70%;
+  margin: auto;
+  /* background-color: white; */
+  color: black;
+  padding-top: 20px;
+}
+.sliderCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.sliderCard li{
+  list-style: none;
+  padding: 5px 0px;
+}
+
+.sliderCardImg{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  margin-bottom: 5px;
+}
+
+
+/* footer section */
+
+.footerContainer{
+  padding: 20px;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid slategray;
+}
+.socialMedia{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.copyRight{
+  background-color: white;
+  padding: 2px 30px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid slategray;
+  font-size: 10px;
+}
+
+
+
+
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
