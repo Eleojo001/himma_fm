@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useContext} from 'react'
 import { DataContext } from '../App';
-import img1 from './images/show1.jpeg'
-import img2 from './images/show2.jpeg'
+import img1 from './images/ag1.jpeg'
+import img2 from './images/ag2.jpeg'
 import { Link } from 'react-router-dom';
 function HomeBanner() {
     const containerStyle = {

@@ -579,7 +579,7 @@
   }
   .nav{
     position: sticky;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.88);
     top: 0;
     z-index: 1;
     /* padding: 30px 0px; */
