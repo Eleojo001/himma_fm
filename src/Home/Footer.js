@@ -16,7 +16,7 @@ function Footer() {
 
       <div className='footerContainer'>
         <div className='footLogo'>
-          {/* <h1>Himma </h1> */}
+          <h1>Himma Policy</h1>
           <div className='privacyMedia'>
             <div className='privacy'>
               <li>Privacy Policy</li>
