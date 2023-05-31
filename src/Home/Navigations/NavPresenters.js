@@ -59,14 +59,14 @@ function NavPresenters() {
       </div>
       <div className='page-container-mobile'>
         <div className='gridcontainer' style={spacer}>
-          <div className='newsGrid'>
+          <div className='newsGrid-shows'>
             {data.slice(0, visible).map((item) => {
               return (
-                <div>
+                <div className='card-mobile'>
                   <div className='newsCardImage_mobile'>
                     <img src={item.image} alt='' style={imageStyle} />
                   </div>
-                  <div className='newsCardHeader'>
+                  <div className='profileInfo'>
                     <h3 style={headerColor} className='textLimit'>
                       {item.name}
                     </h3>
