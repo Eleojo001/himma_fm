@@ -28,6 +28,11 @@ function NavTv() {
         height: '100%',
         borderRadius: '10px',
       };
+      const card = {
+        width: 'auto',
+        height: '300px',
+        borderRadius: '10px',
+      };
   return (
     <div>
       <div>
@@ -79,7 +84,7 @@ function NavTv() {
                   <div className='tv-card-mobile' >
                     {/* <div className='frameImage'></div> */}
                     <Link to={`/Himma-Tv/${item.id}`} key={item.id}>
-                      <div className='newsCardImage_mobile'>
+                      <div className='newsCardImage_mobile' style={card}>
                         <iframe
                           width='100%'
                           height='100%'
