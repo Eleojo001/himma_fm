@@ -20,10 +20,10 @@ function Footer() {
           <div className='privacyMedia'>
             <div className='privacy'>
               <li>Privacy Policy</li>
-              <Link to={'/about'} className='myLink'>
+              <Link to={'#'} className='myLink'>
                 <li>Terms</li>
               </Link>
-              <Link to={'/contact'} className='myLink'>
+              <Link to={'#'} className='myLink'>
                 <li>Contact</li>
               </Link>
             </div>
