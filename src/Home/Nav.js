@@ -61,8 +61,8 @@ useEffect( () => {
     boxSizing:'BorderBox',
   }
   const logoStyle ={
-    width:'220px',
-    height:'90px',
+    width:'120px',
+    height:'50px',
     padding:'10px'
   }
 

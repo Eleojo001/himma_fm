@@ -155,28 +155,28 @@ However, despite these challenges which can be found in many countries throughou
   ]);
   const [Presenter, setPresenter] = useState([
     {
-      id:'1',
-      name:'Amedu Jeremiah',
-      bio:'',
-      image:pImage1
+      id: '1',
+      name: 'Mustapha Sada',
+      bio: '',
+      image: '',
     },
     {
-      id:'2',
-      name:'Ameh Sunday',
-      bio:'',
-      image:pImage2
+      id: '2',
+      name: 'Ameh Sunday',
+      bio: '',
+      image: '',
     },
     {
-      id:'3',
-      name:'Oche Joseph',
-      bio:'',
-      image:pImage3
+      id: '3',
+      name: 'Vivian Obiora',
+      bio: '',
+      image: '',
     },
     {
-      id:'4',
-      name:'Yakubu Emmanuel',
-      bio:'',
-      image:pImage4
+      id: '4',
+      name: 'Tunde Fatah',
+      bio: '',
+      image: '',
     },
   ]);
   const [Television, setTelevision] = useState([
