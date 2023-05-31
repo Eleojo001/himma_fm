@@ -37,12 +37,12 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link to={'/'} className='myLink'>
+            <Link to={'/news'} className='myLink'>
               News
             </Link>
           </li>
           <li>
-            <Link to={'/'} className='myLink'>
+            <Link to={'/Himma-Tv'} className='myLink'>
               Himma TV
             </Link>
           </li>
@@ -62,7 +62,7 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link to={'/'} className='myLink'>
+            <Link to={'/podcast'} className='myLink'>
               Podcast
             </Link>
           </li>

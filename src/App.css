@@ -971,6 +971,13 @@
   display: flex;
   margin: 20px 0px;
 }
+.podcast{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-color: whitesmoke;
+}
 
 /* footer section */
 

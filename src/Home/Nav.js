@@ -101,7 +101,7 @@ useEffect( () => {
             </Link>
           </li>
           <li className='nav_item'>
-            <Link className='nav_link' to={'/'}>
+            <Link className='nav_link' to={'/podcast'}>
               Podcast
             </Link>
           </li>
@@ -139,7 +139,7 @@ useEffect( () => {
           </Link>
         </li>
         <li className='nav_item'>
-          <Link className='nav_link' to={'/'}>
+          <Link className='nav_link' to={'/podcast'}>
             Podcast
           </Link>
         </li>
