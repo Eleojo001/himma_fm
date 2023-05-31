@@ -877,7 +877,10 @@
   /* border-bottom: 1px solid lightslategray; */
 }
 /* presenters end  */
-
+.presenterPage-container{
+  color: black;
+  background-color: white;
+}
 .tvFrameContainer{
   display: block;
   /* align-items: center; */
