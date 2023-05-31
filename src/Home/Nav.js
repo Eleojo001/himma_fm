@@ -88,7 +88,7 @@ console.log(findItemById(array, 'News'));
             </Link>
           </li>
           <li className='nav_item'>
-            <Link className='nav_link' to={'/Himma-tv'}>
+            <Link className='nav_link' to={'/himma-tv'}>
               Himma TV
             </Link>
           </li>
@@ -126,7 +126,7 @@ console.log(findItemById(array, 'News'));
           </Link>
         </li>
         <li className='nav_item'>
-          <Link className='nav_link' to={'https://www.youtube.com/@HimmaTV261'}>
+          <Link className='nav_link' to={'himma-tv'}>
             Himma TV
           </Link>
         </li>
