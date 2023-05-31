@@ -69,9 +69,12 @@ function Footer() {
         </div>
         <div className='otherStation'>
           <h1>ADDRESS</h1>
-          <li>NMA Estate Abuja</li>
-          <li>+234 81 515 3780</li>
-          <li>+234 81 515 3780</li>
+          <li>
+            IKRA Multimedia Limited Km 25 Agalawa-Kafin Agur Along Madobi Road -
+            Kano State
+          </li>
+          {/* <li>+234 81 515 3780</li> */}
+          {/* <li>+234 81 515 3780</li> */}
         </div>
         <div className='connectWithUs'>
           <h1>Connect With Us</h1>
