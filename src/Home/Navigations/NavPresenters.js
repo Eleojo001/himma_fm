@@ -27,6 +27,12 @@ function NavPresenters() {
       height: '100%',
       borderRadius: '10px',
     };
+    const round={
+      width:'200px',
+      height:'200px',
+      borderRadius:'50%',
+      backgroundColor:'white'
+    }
     const spacer ={
       marginBottom:'40px'
     }
@@ -64,7 +70,8 @@ function NavPresenters() {
               return (
                 <div className='card-mobile'>
                   <div className='newsCardImage_mobile'>
-                    <img src={item.image} alt='' style={imageStyle} />
+                    <div style={round}></div>
+                    {/* <img src={item.image} alt='' style={imageStyle} /> */}
                   </div>
                   <div className='profileInfo'>
                     <h3 style={headerColor} className='textLimit'>
