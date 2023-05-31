@@ -129,7 +129,7 @@ However, despite these challenges which can be found in many countries throughou
       id: '1',
       title: 'Commodities Today',
       time: '2:00pm - 4:00pm',
-      day: 'Moday - Saturday',
+      day: 'Monday - Saturday',
       image: show1,
     },
     {
