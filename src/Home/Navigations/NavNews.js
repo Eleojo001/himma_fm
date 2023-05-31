@@ -22,6 +22,7 @@ function NavNews() {
    const headerColor = {
      color: 'white',
      overFlowY: 'hidden',
+     textAlign:'center'
    };
    const imageStyle = {
      width: '100%',
@@ -30,35 +31,62 @@ function NavNews() {
    };
   return (
     <div>
-      <Nav/>
-      <div className='page-container'>
-            <h1>News</h1>
-        <div className="gridcontainer">
-          <div className="newsGrid">
-        {
-          data.slice(0, visible).map((item)=>{
-            return (
-              <div>
-                <Link to={`/news/${item.id}`} key={item.id}>
-                  <div className='newsCardImage'>
-                    <img src={item.image} alt='' style={imageStyle} />
-                  </div>
-                  <div className='newsCardHeader'>
-                    <h3 style={headerColor} className='textLimit'>
-                      {item.title}
-                    </h3>
-                  </div>
-                </Link>
-              </div>
-            );
-
-          })
-        }
-
+      <Nav />
+      <div className='presenterPage-container'>
+        <h1>News</h1>
+        <div className='gridcontainer'>
+          <div className='newsGrid'>
+            {data.slice(0, visible).map((item) => {
+              return (
+                <div>
+                  <Link to={`/news/${item.id}`} key={item.id}>
+                    <div className='newsCardImage'>
+                      <img src={item.image} alt='' style={imageStyle} />
+                    </div>
+                    <div className='newsCardHeader'>
+                      <h3 style={headerColor} className='textLimit'>
+                        {item.title}
+                      </h3>
+                    </div>
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className='moreBtn'>
-          <button className='viewmore' onClick={showMoreItems}>View More</button>
+          <button className='viewmore' onClick={showMoreItems}>
+            View More
+          </button>
+        </div>
+      </div>
+
+      <div className='page-container-mobile'>
+        <h1>News</h1>
+        <div className='gridcontainer'>
+          <div className='newsGrid-shows'>
+            {data.slice(0, visible).map((item) => {
+              return (
+                <div className='card-mobile'>
+                  <Link to={`/news/${item.id}`} key={item.id}>
+                    <div className='newsCardImage_mobile'>
+                      <img src={item.image} alt='' style={imageStyle} />
+                    </div>
+                    <div className='profileInfo'>
+                      <h3 style={headerColor} className='textLimit'>
+                        {item.title}
+                      </h3>
+                    </div>
+                  </Link>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className='moreBtn'>
+          <button className='viewmore' onClick={showMoreItems}>
+            View More
+          </button>
         </div>
       </div>
     </div>
