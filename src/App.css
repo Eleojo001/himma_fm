@@ -638,6 +638,14 @@
   width:100%;
   background-color: white;
 }
+.nav_item:hover{
+  background-color: white;
+  color: var(--bg-color);
+}
+.nav_item:hover .nav_link{
+  color: var(--bg-color);
+}
+
 .nav_brand{
   text-transform: uppercase;
   font-weight: bold;
