@@ -14,6 +14,7 @@ function NewsDetails() {
   const [section, setSection] = useState([]);
 
   let data = category.News;
+  console.log(data)
      const imageStyle = {
        width: '100%',
        height: '100%',
@@ -27,6 +28,8 @@ function NewsDetails() {
       backgroundColor:'white',
       color:'black'
      }
+      
+
   return (
     <div style={mybg}>
       <Nav />
@@ -43,7 +46,15 @@ function NewsDetails() {
                 <div className='dtailsBanner'>
                   <img src={item.image} alt='' style={imageStyle} />
                 </div>
-                <p className='banner-content'>{item.content}</p>
+                {item.content.split('\n').map((paragraph, index) => (
+                  <p
+                    key={index}
+                    className='banner-content'
+                    style={{ fontSize: '18px', lineHeight: '1.5' }}
+                  >
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             );
           }
