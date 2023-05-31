@@ -33,7 +33,6 @@ useEffect( () => {
   const findItemById = (arr, itemId) => {
     return arr.find((item) => item.title === itemId);
   };
-console.log(findItemById(array, 'News'));
 },[])
 
   const [active, setActive] = useState('nav_men');
