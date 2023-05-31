@@ -32,6 +32,7 @@
   align-items: center;
   background-color: white;
   width: 200px;
+  border-bottom: 1px solid gray;
 }
 .nav_brand{
   text-transform: uppercase;

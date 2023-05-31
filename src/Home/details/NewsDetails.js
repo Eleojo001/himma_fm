@@ -22,8 +22,12 @@ function NewsDetails() {
      const authorStyle = {
        textAlign: 'left',
      };
+    const mybg={
+      backgroundColor:'white',
+      color:'black'
+     }
   return (
-    <div>
+    <div style={mybg}>
       <Nav />
       <div className='detailsHeader'>
         {data.map((item) => {

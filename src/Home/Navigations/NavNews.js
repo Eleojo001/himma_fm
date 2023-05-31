@@ -20,17 +20,24 @@ function NavNews() {
     setVisible((previousValue) => previousValue + 4);
   };
    const headerColor = {
-     color: 'white',
+     color: 'black',
      overFlowY: 'hidden',
      textAlign:'center'
    };
+   const blackColor = {
+    color:'black'
+   }
    const imageStyle = {
      width: '100%',
      height: '100%',
      borderRadius: '10px',
    };
+       const mybg = {
+         backgroundColor: 'white',
+         color: 'black',
+       };
   return (
-    <div>
+    <div style={mybg} >
       <Nav />
       <div className='presenterPage-container'>
         <h1>News</h1>
@@ -39,7 +46,11 @@ function NavNews() {
             {data.slice(0, visible).map((item) => {
               return (
                 <div>
-                  <Link to={`/news/${item.id}`} key={item.id}>
+                  <Link
+                    to={`/news/${item.id}`}
+                    key={item.id}
+                    style={blackColor}
+                  >
                     <div className='newsCardImage'>
                       <img src={item.image} alt='' style={imageStyle} />
                     </div>
