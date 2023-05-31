@@ -47,7 +47,6 @@ useEffect(()=>{
           <div className='tvGrid'>
             {tv.map((item) => {
               return (
-                <Link to={`/Himma-Tv/${item.id}`}>
                   <div className='tvCard' key={item.id}>
                     <div className='tvCardimg'>
                       <iframe
@@ -60,12 +59,13 @@ useEffect(()=>{
                         allowfullscreen
                       ></iframe>
                     </div>
+                    <a href={item.url}>
                     <div className='tvCardHeader'>
                       <div className='tvCardTitle'>{item.title}</div>
                     </div>
                     <div className='tvCardtext textLimit'>{item.content}</div>
+                    </a>
                   </div>
-                </Link>
               );
             })}
           </div>

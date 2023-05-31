@@ -191,28 +191,32 @@ However, despite these challenges which can be found in many countries throughou
       title: 'History of Agriculture',
       content:
         'In every multi-socio-cultural entity, there underlies certain unifying factors that bond the inhabitants together. It could range from trade, commerce, similarities in traditions, cultures, belief systems inter marriages amongst a host of others.',
-        image:tv1
+        image:tv1,
+        url:'https://www.youtube.com/@HimmaTV261'
     },
     {
       id: '2',
       title: 'State of the Nation',
       content:
         'When a man rises at dawn, what gives him an assurance of a bright day is not the shining rays of the sunlight or a pleasant weather, but the hope of getting three square meals with the right diet for his family and himself by sun set.',
-        image:tv2
+        image:tv2,
+        url:'https://www.youtube.com/@HimmaTV261'
     },
     {
       id: '3',
       title: 'Agriculture in the North',
       content:
         ' The agricultural sector being Nigeria’s major source of revenue has also witnessed evolution. Though it suffered setbacks as it was abandoned following the oil boom in the seventies, it has remained valuable to the Nigerian populace.',
-        image:tv3
+        image:tv3,
+        url:'https://www.youtube.com/@HimmaTV261'
     },
     {
       id: '4',
       title: 'Agriculture and Exports',
       content:
         'Every human endeavor is rapidly experiencing fascinating evolution making regular activities such as construction, education, healthcare, sports and agricultural activities more efficient and far reaching.',
-        image:tv4
+        image:tv4,
+        url:'https://www.youtube.com/@HimmaTV261'
     },
   ]);
   const [Navigation, setNavigation] = useState([
