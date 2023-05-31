@@ -76,12 +76,14 @@ function NavTv() {
           </div>
         </div>
         <div className='page-container-mobile'>
-          <h1>Television</h1>
+          <h1>
+            <h1>Live TV </h1>
+          </h1>
           <div className='gridcontainer'>
             <div className='newsGrid-shows'>
               {data.slice(0, visible).map((item) => {
                 return (
-                  <div className='tv-card-mobile' >
+                  <div className='tv-card-mobile'>
                     {/* <div className='frameImage'></div> */}
                     <Link to={`/Himma-Tv/${item.id}`} key={item.id}>
                       <div className='newsCardImage_mobile' style={card}>
