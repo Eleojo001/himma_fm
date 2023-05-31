@@ -144,13 +144,7 @@ However, despite these challenges which can be found in many countries throughou
       day: 'Monday - Friday',
       image: show3,
     },
-    {
-      id: '4',
-      title: 'Gona zuwa Cokali mai yatsa',
-      time: '4:00pm - 6:00pm ',
-      day: 'Saturday',
-      image: show4,
-    },
+
     {
       id: '5',
       title: 'Hatsi',

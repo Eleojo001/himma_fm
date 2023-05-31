@@ -796,7 +796,15 @@
 }
 
 .presenterProfiles{
-  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+.Profile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 

@@ -31,12 +31,41 @@ function Footer() {
         </div>
         <div className='siteMap'>
           <h1>SITE MAP</h1>
-          <li>Home</li>
-          <li>News</li>
-          <li>Himma-Tv</li>
-          <li>Shows</li>
-          <li>Events</li>
-          <li>Presenters</li>
+          <li>
+            <Link to={'/'} className='myLink'>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to={'/'} className='myLink'>
+              News
+            </Link>
+          </li>
+          <li>
+            <Link to={'/'} className='myLink'>
+              Himma TV
+            </Link>
+          </li>
+          <li>
+            <Link to={'/shows'} className='myLink'>
+              Shows/Programs
+            </Link>
+          </li>
+          {/* <li>
+            <Link to={'/'} className='myLink'>
+              Events
+            </Link>
+          </li> */}
+          <li>
+            <Link to={'/presenters'} className='myLink'>
+              Presenters
+            </Link>
+          </li>
+          <li>
+            <Link to={'/'} className='myLink'>
+              Podcast
+            </Link>
+          </li>
         </div>
         <div className='otherStation'>
           <h1>ADDRESS</h1>

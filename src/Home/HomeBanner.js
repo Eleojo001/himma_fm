@@ -25,16 +25,15 @@ function HomeBanner() {
       {/* home section  */}
 
       <div className='homeBanner'>
-        <div className='bannerPic'>
-        </div>
+        <div className='bannerPic'></div>
         <div className='homeBannerEvents'>
           <div className='homeBannerSection1'>
-            <span>Listen Live </span> Himma Fm
+            <span>Listen Live </span> Himma FM 91.1
           </div>
           <div className='homeBannerSection2'>
             <div className='homecard1'>
               <div className='homecardImage'>
-                <img src={img1} alt="" style={imageStyle} />
+                <img src={img1} alt='' style={imageStyle} />
               </div>
               <div className='homecardtext'>
                 <li className='homecardTextTitle'>Live on Air</li>
@@ -45,7 +44,7 @@ function HomeBanner() {
 
             <div className='homecard1'>
               <div className='homecardImage'>
-                <img src={img2} alt="" style={imageStyle} />
+                <img src={img2} alt='' style={imageStyle} />
               </div>
               <div className='homecardtext'>
                 <li className='homecardTextTitle'>Up Next</li>

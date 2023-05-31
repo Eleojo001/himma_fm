@@ -63,8 +63,8 @@ console.log(findItemById(array, 'News'));
     boxSizing:'BorderBox',
   }
   const logoStyle ={
-    width:'70px',
-    height:'70px',
+    width:'90px',
+    height:'90px',
     padding:'10px'
   }
 
@@ -88,7 +88,10 @@ console.log(findItemById(array, 'News'));
             </Link>
           </li>
           <li className='nav_item'>
-            <Link className='nav_link' to={'/Himma-tv'}>
+            <Link
+              className='nav_link'
+              to={'https://www.youtube.com/@HimmaTV261'}
+            >
               Himma TV
             </Link>
           </li>
@@ -121,18 +124,23 @@ console.log(findItemById(array, 'News'));
           </Link>
         </li>
         <li className='nav_item'>
-          <Link className='nav_link' to={'/Himma-tv'}>
+          <Link className='nav_link' to={'https://www.youtube.com/@HimmaTV261'}>
             Himma TV
           </Link>
         </li>
         <li className='nav_item'>
           <Link className='nav_link' to={'/shows'}>
-            Shows
+            Shows/Programs
           </Link>
         </li>
         <li className='nav_item'>
           <Link className='nav_link' to={'/presenters'}>
             Presenters
+          </Link>
+        </li>
+        <li className='nav_item'>
+          <Link className='nav_link' to={'/'}>
+            Podcast
           </Link>
         </li>
       </div>
