@@ -57,9 +57,9 @@ function NavShows() {
         </div>
       </div>
       <div className='page-container-mobile'>
-        <h1>Television News</h1>
+        <h1>Shows</h1>
         <div className='gridcontainer'>
-          <div className='newsGrid'>
+          <div className='newsGrid-shows'>
             {data.slice(0, visible).map((item) => {
               return (
                 <div className='card-mobile'>

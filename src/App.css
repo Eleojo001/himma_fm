@@ -735,6 +735,14 @@
   width: 100%;
   margin: 0, auto;
 }
+.newsGrid-shows{
+  display: block;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 20px;
+  gap: 30px;
+  width: 100%;
+  margin: 0, auto;
+}
 .newsCard{
   /* width: 100%; */
   padding-bottom: 5px;
@@ -770,13 +778,17 @@
 }
 .card-mobile{
   margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 .profileInfo{
   padding: 0;
   margin: 0;
 }
 .newsCardImage_mobile{
-  width: 70%;
+  width: 60%;
   margin: auto;
   display: flex;
   align-items: center;
