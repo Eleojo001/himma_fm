@@ -110,8 +110,8 @@ function Footer() {
       </div>
 
       <div className='copyRight'>
-        <p>2023 &copy; All rights reserved. Eletech & Sunny</p>
-        <p>Designed by Eletech & Sunny</p>
+        <p>2023 &copy; All rights reserved.</p>
+        <p>Designed by Jomiahcreations Limited.</p>
       </div>
     </div>
   );
