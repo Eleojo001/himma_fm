@@ -30,7 +30,6 @@ function Nav() {
 // useEffect()
 const array  = navCat.Navigation
 useEffect( () => {
-  console.log(array)
   const findItemById = (arr, itemId) => {
     return arr.find((item) => item.title === itemId);
   };
