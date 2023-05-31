@@ -48,7 +48,7 @@ function Footer() {
           </li>
           <li>
             <Link to={'/shows'} className='myLink'>
-              Shows/Programs
+              Shows/Programmes
             </Link>
           </li>
           {/* <li>

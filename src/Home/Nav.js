@@ -97,12 +97,17 @@ console.log(findItemById(array, 'News'));
           </li>
           <li className='nav_item'>
             <Link className='nav_link' to={'/shows'}>
-              Shows
+              Shows/Programmes
             </Link>
           </li>
           <li className='nav_item'>
             <Link className='nav_link' to={'/presenters'}>
               Presenters
+            </Link>
+          </li>
+          <li className='nav_item'>
+            <Link className='nav_link' to={'/'}>
+              Podcast
             </Link>
           </li>
         </ul>
@@ -130,7 +135,7 @@ console.log(findItemById(array, 'News'));
         </li>
         <li className='nav_item'>
           <Link className='nav_link' to={'/shows'}>
-            Shows/Programs
+            Shows/Programmes
           </Link>
         </li>
         <li className='nav_item'>
