@@ -38,7 +38,7 @@ function NavTv() {
       <div>
         <Nav />
         <div className='presenterPage-container'>
-          <h1>Himma TV</h1>
+          <h1>Himma TV </h1>
           <div className='gridcontainer'>
             <div className='newsGrid'>
               {data.slice(0, visible).map((item) => {
