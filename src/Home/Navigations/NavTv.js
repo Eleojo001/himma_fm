@@ -38,9 +38,19 @@ function NavTv() {
               {data.slice(0, visible).map((item) => {
                 return (
                   <div>
+                    <div className='frameImage'></div>
                     <Link to={`/Himma-Tv/${item.id}`} key={item.id}>
                       <div className='newsCardImage'>
-                        <img src={item.image} alt='' style={imageStyle} />
+                        <iframe
+                          width='100%'
+                          height='100%'
+                          src='https://www.youtube.com/embed/WOgUgbui-sk'
+                          title='YouTube video player'
+                          frameborder='0'
+                          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                          allowfullscreen
+                        ></iframe>
+                        {/* <img src={item.image} alt='' style={imageStyle} /> */}
                       </div>
                       <div className='newsCardHeader'>
                         <h3 style={headerColor} className='textLimit'>
