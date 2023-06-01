@@ -1,5 +1,13 @@
 import React from 'react';
 import Nav from '../Nav';
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaWhatsapp,
+  FaYoutube,
+} from 'react-icons/fa';
+import {FcGoogle} from 'react-icons/fc'
+import {Link} from 'react-router-dom'
 
 function Contact (){
   return (
@@ -36,12 +44,16 @@ function Contact (){
             <div className='formrow'>
               <div className='formColumn'>
                 <p className='formLabel'> Message</p>
-                <textarea name="" id="" cols="30" rows="10" style={{width:'100%'}}></textarea>
+                <textarea
+                  name=''
+                  id=''
+                  cols='30'
+                  rows='10'
+                  style={{ width: '100%' }}
+                ></textarea>
               </div>
-              <div className="formbtn">
-                <button>
-                  Submit
-                </button>
+              <div className='formbtn'>
+                <button>Submit</button>
               </div>
             </div>
           </form>

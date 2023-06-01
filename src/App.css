@@ -18,7 +18,7 @@
   background: black;
   color: white;
   font-family: 'Bona Nova', serif;
-
+  font-size: '18px';
 }
 
 /* NAVIGATION SECTION  */
@@ -551,7 +551,9 @@
   align-items: center;
   color: red;
 }
-
+.modal{
+  
+}
 
 /* Responsiveness */
 @media(max-width:800px){
@@ -1010,6 +1012,21 @@
   align-items: start;
   display: flex;
   margin: 20px 0px;
+}
+.socialMed{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.med_icon{
+  margin: 20px;
+}
+.mediaContact{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: space-between;
+
 }
 
 /* footer section */

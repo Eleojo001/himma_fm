@@ -47,11 +47,11 @@ function NavPresenters() {
               <div className='Profile'>
                 <div className='p-image'>
                   <div className='profileImage profilestyle'>
-                    <img
+                    {/* <img
                       src={items.image}
                       className='profileImage profilestyle'
                       alt=''
-                    />
+                    /> */}
                   </div>
                 </div>
                 <div className='profileInfo'>
