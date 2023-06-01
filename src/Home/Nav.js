@@ -114,36 +114,36 @@ useEffect( () => {
         </div>
       </nav>
       <div className={active}>
-        <li className='nav_item'>
           <Link className='nav_link' to={'/'}>
+        <li className='nav_item'>
             Home
-          </Link>
         </li>
-        <li className='nav_item'>
+          </Link>
           <Link className='nav_link' to={'/news'}>
+        <li className='nav_item'>
             News
-          </Link>
         </li>
-        <li className='nav_item'>
+          </Link>
           <Link className='nav_link' to={'/Himma-tv'}>
+        <li className='nav_item'>
             Himma TV
-          </Link>
         </li>
-        <li className='nav_item'>
+          </Link>
           <Link className='nav_link' to={'/shows'}>
+        <li className='nav_item'>
             Shows/Programmes
-          </Link>
         </li>
-        <li className='nav_item'>
+          </Link>
           <Link className='nav_link' to={'/presenters'}>
-            Presenters
-          </Link>
-        </li>
         <li className='nav_item'>
-          <Link className='nav_link' to={'/podcast'}>
-            Podcast
-          </Link>
+            Presenters
         </li>
+          </Link>
+          <Link className='nav_link' to={'/podcast'}>
+        <li className='nav_item'>
+            Podcast
+        </li>
+          </Link>
       </div>
       <div className="modal">hello</div>
       {/* {array.map((item) => {

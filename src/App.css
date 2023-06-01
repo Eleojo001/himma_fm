@@ -727,11 +727,18 @@
   width:100%;
   background-color: white;
 }
-.nav_item:hover{
+.nav_men{
+  list-style: none;
+}
+.nav_link{
+  text-decoration: none;
+  color: white;
+}
+.nav_link:hover{
   background-color: white;
   color: var(--bg-color);
 }
-.nav_item:hover .nav_link{
+.nav_link:hover .nav_link{
   color: var(--bg-color);
 }
 
