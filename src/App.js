@@ -35,6 +35,7 @@ import PresenterDetails from './Home/details/PresenterDetails';
 import ShowsDetails from './Home/details/ShowsDetails';
 import TvDetails from './Home/details/TvDetails';
 import Podcast from './Home/page/Podcast';
+import NoteFound from './Home/NoteFound';
 
 export const DataContext = React.createContext();
 
@@ -265,6 +266,7 @@ However, despite these challenges which can be found in many countries throughou
             <Route path='/Himma-tv' element={<NavTv />} />
             <Route path='/shows' element={<NavShows />} />
             <Route path='/podcast' element={<Podcast />} />
+            <Route path='*' element={<NoteFound />} />
           </Routes>
         </DataContext.Provider>
         <Footer />

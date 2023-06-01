@@ -23,7 +23,7 @@ function Footer() {
               <Link to={'#'} className='myLink'>
                 <li>Terms</li>
               </Link>
-              <Link to={'#'} className='myLink'>
+              <Link to={'/contact'} className='myLink'>
                 <li>Contact</li>
               </Link>
             </div>
@@ -37,12 +37,12 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link to={'/news'} className='myLink'>
+            <Link to={'/'} className='myLink'>
               News
             </Link>
           </li>
           <li>
-            <Link to={'/Himma-Tv'} className='myLink'>
+            <Link to={'/'} className='myLink'>
               Himma TV
             </Link>
           </li>
@@ -62,7 +62,7 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link to={'/podcast'} className='myLink'>
+            <Link to={'/'} className='myLink'>
               Podcast
             </Link>
           </li>

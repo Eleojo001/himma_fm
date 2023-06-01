@@ -30,7 +30,7 @@ function PresenterDetails() {
               <div key={item.id}>
                 
                 <div className='dtailsBanner'>
-                  <img src={item.image} alt='' style={imageStyle} />
+                  {/* <img src={item.image} alt='' style={imageStyle} /> */}
                 </div>
                 <p className=' banner-content author'>
                   {item.name} <span>{item.date}</span>
