@@ -1062,7 +1062,8 @@
   padding: 50px 10px;
 }
 .contact{
-  width: 100%;
+  width: 99%;
+  margin: auto;
 }
 
 /* footer section */
