@@ -70,7 +70,7 @@ function Footer() {
         <div className='otherStation'>
           <h1>ADDRESS</h1>
           <li>
-            IKRA Multimedia Limited Km 25 Agalawa-Kafin Agur Along Madobi Road -
+            IKRA Multimedia Limited Km 25 <br /> Agalawa-Kafin Agur <br /> Along Madobi Road -
             Kano State
           </li>
           {/* <li>+234 81 515 3780</li> */}
