@@ -37,7 +37,8 @@ useEffect( () => {
 
   const [active, setActive] = useState('nav_men');
   const [toggleIcon, setToggleIcon] = useState('nav_toggler');
-  const [modalActive, setModalActive] = useState('modal')
+  const [modalActive, setModalActive] = useState("modal");
+  const [modalToggle, setModalToggle] = useState('modalToggle')
 
   const navToggler =() =>{
     active === 'nav_men' ? setActive('nav_men nav_active') : setActive('nav_men');
@@ -46,6 +47,12 @@ useEffect( () => {
 
     toggleIcon === 'nav_toggler' ? setToggleIcon('nav_toggler toggle') : setToggleIcon('nav_toggler')
   }
+  // const modalToggler =() =>{
+  //   modalActive === 'modal' ? setModalActive('modal modal-active') : setModalActive('modal')
+  //   modalToggle === 'modalToggle'
+  //     ? setModalToggle('modalToggle modal_toggler')
+  //     : setModalToggle('modal_toggler');
+  // }
 
   const loadingStyle = {
     margin: '0, auto',
@@ -114,38 +121,26 @@ useEffect( () => {
         </div>
       </nav>
       <div className={active}>
-          <Link className='nav_link' to={'/'}>
-        <li className='nav_item'>
-            Home
-        </li>
-          </Link>
-          <Link className='nav_link' to={'/news'}>
-        <li className='nav_item'>
-            News
-        </li>
-          </Link>
-          <Link className='nav_link' to={'/Himma-tv'}>
-        <li className='nav_item'>
-            Himma TV
-        </li>
-          </Link>
-          <Link className='nav_link' to={'/shows'}>
-        <li className='nav_item'>
-            Shows/Programmes
-        </li>
-          </Link>
-          <Link className='nav_link' to={'/presenters'}>
-        <li className='nav_item'>
-            Presenters
-        </li>
-          </Link>
-          <Link className='nav_link' to={'/podcast'}>
-        <li className='nav_item'>
-            Podcast
-        </li>
-          </Link>
+        <Link className='nav_link' to={'/'}>
+          <li className='nav_item'>Home</li>
+        </Link>
+        <Link className='nav_link' to={'/news'}>
+          <li className='nav_item'>News</li>
+        </Link>
+        <Link className='nav_link' to={'/Himma-tv'}>
+          <li className='nav_item'>Himma TV</li>
+        </Link>
+        <Link className='nav_link' to={'/shows'}>
+          <li className='nav_item'>Shows/Programmes</li>
+        </Link>
+        <Link className='nav_link' to={'/presenters'}>
+          <li className='nav_item'>Presenters</li>
+        </Link>
+        <Link className='nav_link' to={'/podcast'}>
+          <li className='nav_item'>Podcast</li>
+        </Link>
       </div>
-      <div className="modal">hello</div>
+      {/* <div className={modalActive}>hello</div> */}
       {/* {array.map((item) => {
           return (
             <li className='nav_item' key={item.id}>

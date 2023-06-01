@@ -16,7 +16,7 @@ useEffect(()=>{
 
       <div className='tvFrameContainer'>
         <div className='televisionLogo'>
-          <h1 className='tvHeader'>Himma TV</h1>
+          <h1 className='tvHeader'>HIMMA TV</h1>
         </div>
         <div className='televisionFrame'>
           <div className='tvFrame'>
