@@ -37,6 +37,7 @@ useEffect( () => {
 
   const [active, setActive] = useState('nav_men');
   const [toggleIcon, setToggleIcon] = useState('nav_toggler');
+  const [modalActive, setModalActive] = useState('modal')
 
   const navToggler =() =>{
     active === 'nav_men' ? setActive('nav_men nav_active') : setActive('nav_men');
@@ -144,6 +145,7 @@ useEffect( () => {
           </Link>
         </li>
       </div>
+      <div className="modal">hello</div>
       {/* {array.map((item) => {
           return (
             <li className='nav_item' key={item.id}>

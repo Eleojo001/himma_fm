@@ -108,16 +108,4 @@
   text-align: justify;
   padding: 10px 40px;
 }
-.contact-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-}
-.contact{
-  width: 30%;
-  margin: auto;
-  background-color: white;
-  padding: 20px 40px 50px;
-  color: black;
-}
+
