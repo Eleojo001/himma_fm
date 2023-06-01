@@ -37,12 +37,12 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link to={'/'} className='myLink'>
+            <Link to={'/news'} className='myLink'>
               News
             </Link>
           </li>
           <li>
-            <Link to={'/'} className='myLink'>
+            <Link to={'/Himma-tv'} className='myLink'>
               Himma TV
             </Link>
           </li>
@@ -62,7 +62,7 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link to={'/'} className='myLink'>
+            <Link to={'/podcast'} className='myLink'>
               Podcast
             </Link>
           </li>
@@ -70,8 +70,8 @@ function Footer() {
         <div className='otherStation'>
           <h1>ADDRESS</h1>
           <li>
-            IKRA Multimedia Limited Km 25 <br /> Agalawa-Kafin Agur <br /> Along Madobi Road -
-            Kano State
+            IKRA Multimedia Limited Km 25 <br /> Agalawa-Kafin Agur <br /> Along
+            Madobi Road - Kano State
           </li>
           {/* <li>+234 81 515 3780</li> */}
           {/* <li>+234 81 515 3780</li> */}
