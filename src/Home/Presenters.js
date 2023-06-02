@@ -62,9 +62,9 @@ function Presenters() {
             }
           </div>
         </div>
-          <div style={containerStyles}>
+          {/* <div style={containerStyles}>
             <Slider slides={slides} />
-          </div>
+          </div> */}
       </div>
     </div>
   );
