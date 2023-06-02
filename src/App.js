@@ -36,6 +36,7 @@ import ShowsDetails from './Home/details/ShowsDetails';
 import TvDetails from './Home/details/TvDetails';
 import Podcast from './Home/page/Podcast';
 import NoteFound from './Home/NoteFound';
+import Radio from './Home/Radio';
 
 export const DataContext = React.createContext();
 
@@ -259,6 +260,7 @@ However, despite these challenges which can be found in many countries throughou
             {/* details section  */}
 
             {/* <Route path='/Presenters' element={<PresentersPage />} /> */}
+            <Route path='/radio' element={<Radio />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/news' element={<NavNews />} />
