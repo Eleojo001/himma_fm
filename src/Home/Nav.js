@@ -7,7 +7,7 @@ import {
   FaYoutube,
 } from 'react-icons/fa';
 import { TfiTwitter } from 'react-icons/tfi';
-import logo from './images/logo-4.png';
+import logo from './images/logoN.png';
 import { DataContext } from '../App';
 
 function Nav() {
@@ -69,8 +69,8 @@ useEffect( () => {
     boxSizing:'BorderBox',
   }
   const logoStyle ={
-    width:'120px',
-    height:'50px',
+    width:'150px',
+    height:'150px',
     padding:'10px'
   }
 

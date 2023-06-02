@@ -2,7 +2,11 @@ import React from 'react'
 
 function Radio() {
   return (
-    <div>Radio</div>
+    <div>
+      <div className="radio">
+        
+      </div>
+    </div>
   )
 }
 
