@@ -27,7 +27,7 @@ function HomeBanner() {
       {/* home section  */}
 
       <div className='homeBanner'>
-        <div className='bannerPic'></div>
+        {/* <div className='bannerPic'></div> */}
         <div className='homeBannerEvents'>
           <div className='homeBannerSection1'>
             <Link className="myLink">

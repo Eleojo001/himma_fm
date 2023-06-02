@@ -85,7 +85,7 @@ useEffect( () => {
         <ul className='nav_menu'>
           <li className='nav_item'>
             <Link className='nav_link' to={'/'}>
-              Home
+              Radio
             </Link>
           </li>
           <li className='nav_item'>
