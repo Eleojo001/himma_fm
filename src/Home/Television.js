@@ -47,25 +47,25 @@ useEffect(()=>{
           <div className='tvGrid'>
             {tv.map((item) => {
               return (
-                  <div className='tvCard' key={item.id}>
-                    <div className='tvCardimg'>
-                      <iframe
-                        width='100%'
-                        height='100%'
-                        src='https://www.youtube.com/embed/l0bpy857deM'
-                        title='YouTube video player'
-                        frameborder='0'
-                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                        allowfullscreen
-                      ></iframe>
-                    </div>
-                    <a href={item.url}>
+                <div className='tvCard' key={item.id}>
+                  <div className='tvCardimg'>
+                    <iframe
+                      width='100%'
+                      height='100%'
+                      src='https://www.youtube.com/embed/l0bpy857deM'
+                      title='YouTube video player'
+                      frameborder='0'
+                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <a href={item.url}>
                     <div className='tvCardHeader'>
                       <div className='tvCardTitle'>{item.title}</div>
                     </div>
                     <div className='tvCardtext textLimit'>{item.content}</div>
-                    </a>
-                  </div>
+                  </a>
+                </div>
               );
             })}
           </div>

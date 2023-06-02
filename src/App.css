@@ -259,7 +259,7 @@
   color: black;
 }
 .newcontainer{
-  padding: 30px 20px;
+  padding: 10px 20px;
   border-bottom: 1px solid darkgray;
   color: white;
   background-color: var(--bg-color);
@@ -297,7 +297,7 @@
 /* Television Section  */
 
 .tvFrameContainer{
-  padding: 50px 50px;
+  padding: 20px 50px;
   border-bottom: 1px solid darkgray;
   /* background-color: var(--yellow-bg-color); */
   background-color: white;
@@ -791,18 +791,22 @@
 .homeBannerEvents{
   display: flex;
   color: white;
-  padding: 20px 10px 0px;
+  padding: 10px 10px ;
   align-items: center;
-
 }
 .homeBannerSection1{
-  margin-right: 0px;
-  display: block;
+  margin: 0;
   align-items: center;
   padding: 5px 10px;
   border-radius: 5px;
+  /* font-size: 15px; */
   background-color: var(--bg-color);
 }
+.homeBannerSection1 Link span{
+  font-size: 10px;
+  color: blue;
+}
+
 .homeBannerSection2{
   display: none;
   align-items: center;
@@ -819,6 +823,27 @@
 .homecardImage{
   width: 50px;
   height: 50px;
+}
+.homebannerLiveSec{
+  width: 100%;
+  height: 300px;
+}
+
+.newcontainer{
+  padding: 5px 20px 10px;
+  border-bottom: 1px solid darkgray;
+  color: white;
+  background-color: var(--bg-color);
+}
+.gridcontainer{
+  width: 90%;
+  margin: auto;
+}
+
+.newsGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 .newsHeader{
   display: block;
@@ -842,7 +867,7 @@
   width: 100%;
   margin: auto;
   column-gap: 30px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 .newsGrid-shows{
   display: block;
@@ -853,16 +878,16 @@
   margin: 0, auto;
 }
 .newsCard{
-  /* width: 100%; */
-  padding-bottom: 5px;
+  height: 300px;
+  width: 200px;
+  /* padding-bottom: 5px; */
 }
 .newsCardImage{
   height: 200px;
-  background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .newsCardHeader h3{
-  margin: 10px 0px;
+  margin: 5px 0px;
   margin-top: 20px;
 }
 

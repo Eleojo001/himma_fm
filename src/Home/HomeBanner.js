@@ -4,9 +4,11 @@ import img1 from './images/mid-show.jpeg'
 import img2 from './images/ag2.jpeg'
 import { Link } from 'react-router-dom';
 function HomeBanner() {
-    const containerStyle = {
+    const containerStyles = {
       backgroundImage: 'url(./images/homeBanner.jpeg)',
       backgroundSize: 'cover',
+      width:'100%',
+      height:'100%',
     };
     const category = useContext(DataContext)
     const [data, setData] = useState([])
@@ -55,6 +57,20 @@ function HomeBanner() {
               </div>
             </div>
           </div>
+        </div>
+        <div className='homebannerLiveSec'>
+          <iframe
+            src='https://zeno.fm/player/himma-radio-91-1fm'
+            width='100%'
+            height='100%'
+            frameborder='0'
+            scroll='no'
+          ></iframe>
+          {/* <a
+            href='https://zeno.fm/'
+          >
+            A Zeno.FM Station
+          </a> */}
         </div>
       </div>
     </div>

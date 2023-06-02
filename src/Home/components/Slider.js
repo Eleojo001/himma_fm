@@ -63,6 +63,9 @@ function Slider({slides}) {
   alignItems: 'center',
   justifyContent: 'center',
   overFlow: 'hidden',
+  width:'100%',
+  height:'100%',
+  objectFit:'cover'
   }
   return (
     <div style={sliderStyles}>
@@ -76,24 +79,23 @@ function Slider({slides}) {
       {/* slide arrow end  */}
 
       <div style={slideStyles}>
-        <div className='presenterCard'>
+        <img src={image} alt='' style={imageStyle} />
+        {/* <div className='presenterCard'>
           <div className='presenterCardImg'>
-            <img src={image} alt="" style={imageStyle}/>
           </div>
           <li>{slides[currentIndex].title}</li>
           <li className='show-time'>Time</li>
+        </div> */}
+        <div style={dotsContainerStyles}>
+          {slides.map((slide, slideIndex) => (
+            <div
+              key={slideIndex}
+              style={dotStyle}
+              onClick={() => gotoSlide(slideIndex)}>
+              .
+            </div>
+          ))}
         </div>
-      </div>
-      <div style={dotsContainerStyles}>
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            style={dotStyle}
-            onClick={() => gotoSlide(slideIndex)}
-          >
-            .
-          </div>
-        ))}
       </div>
     </div>
   );
