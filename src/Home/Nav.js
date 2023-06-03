@@ -70,7 +70,7 @@ useEffect( () => {
   }
   const logoStyle ={
     width:'150px',
-    height:'150px',
+    height:'100px',
     padding:'10px'
   }
 
