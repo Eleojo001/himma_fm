@@ -89,13 +89,13 @@ useEffect( () => {
             </Link>
           </li>
           <li className='nav_item'>
-            <Link className='nav_link' to={'/news'}>
-              News
+            <Link className='nav_link' to={'/Himma-tv'}>
+              TV
             </Link>
           </li>
           <li className='nav_item'>
-            <Link className='nav_link' to={'/Himma-tv'}>
-              Himma TV
+            <Link className='nav_link' to={'/news'}>
+              News
             </Link>
           </li>
           <li className='nav_item'>
@@ -124,11 +124,11 @@ useEffect( () => {
         <Link className='nav_link' to={'/'}>
           <li className='nav_item'>Home</li>
         </Link>
+        <Link className='nav_link' to={'/Himma-tv'}>
+          <li className='nav_item'>TV</li>
+        </Link>
         <Link className='nav_link' to={'/news'}>
           <li className='nav_item'>News</li>
-        </Link>
-        <Link className='nav_link' to={'/Himma-tv'}>
-          <li className='nav_item'>Himma TV</li>
         </Link>
         <Link className='nav_link' to={'/shows'}>
           <li className='nav_item'>Shows/Programmes</li>
