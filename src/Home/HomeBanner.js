@@ -31,7 +31,7 @@ function HomeBanner() {
         <div className='homeBannerEvents'>
           <div className='homeBannerSection1'>
             <Link className="myLink">
-            <span style={{color:'red'}} >Listen Live </span> Himma FM 91.1
+            <span style={{color:'red'}} >Listen Live </span>
             </Link>
           </div>
           <div className='homeBannerSection2'>
