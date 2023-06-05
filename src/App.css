@@ -51,6 +51,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 2rem 3rem;
+  padding-top: 40px;
 }
 .nav_menu li{
   list-style: none;
@@ -261,7 +262,7 @@
   background-color: var(--yellow-bg-color);
   color: black;
 }
-.newcontainer{
+.gencontainer{
   padding: 10px 20px;
   border-bottom: 1px solid darkgray;
   color: white;
@@ -300,7 +301,7 @@
 /* Television Section  */
 
 .tvFrameContainer{
-  padding: 20px 50px;
+  padding: 10px 20px;
   border-bottom: 1px solid darkgray;
   /* background-color: var(--yellow-bg-color); */
   background-color: white;
@@ -832,7 +833,7 @@
   height: 300px;
 }
 
-.newcontainer{
+.gencontainer{
   padding: 5px 20px 10px;
   border-bottom: 1px solid darkgray;
   color: white;
@@ -996,7 +997,7 @@
   display: block;
   /* align-items: center; */
   justify-content: space-between;
-  padding: 50px 50px;
+  padding: 5px 20px 10px;
   border-bottom: 1px solid darkgray;
 }
 .televisionLogo{

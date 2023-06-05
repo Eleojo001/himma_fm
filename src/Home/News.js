@@ -46,7 +46,7 @@ function News() {
     <div>
       {/* NEWS SECTIONS  */}
 
-      <div className='newcontainer'>
+      <div className='gencontainer'>
         <div className='newsHeader'>
           <div className='newsLogo'>
             <h1 className='Sansita '>NEWS</h1>
