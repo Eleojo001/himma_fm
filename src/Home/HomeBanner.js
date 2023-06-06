@@ -30,7 +30,7 @@ function HomeBanner() {
         {/* <div className='bannerPic'></div> */}
         <div className='homeBannerEvents'>
           <div className='homeBannerSection1'>
-            <Link className="myLink" to={'/'}>
+            <Link className="myLink" to={'/radio'}>
             <span style={{color:'red'}} >Listen Live </span>
             </Link>
           </div>
