@@ -17,9 +17,7 @@
 
 .clock {
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;;
+  margin-right: 30px;
 }
 .clock h3{
   font-family: 'Bona Nova', serif;
@@ -29,8 +27,6 @@
 .radioShedule{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 59%;
 }
 .radioShedule h3, p{
   margin-right: 5px;
@@ -39,7 +35,7 @@
 .hidder{
   width: 100%;
   background-color: var(--yellow-bg-color);
-  height: 150px;
+  padding: 6px 145px;
   position: absolute;
   top: 110px;
   z-index: 10000;
@@ -48,6 +44,14 @@
   animation: example 5s infinite linear;
   animation-iteration-count: infinite;
   animation-delay: -7s;
+}
+.listner{
+  display: flex;
+  align-items: center;
+}
+.listenIcon{
+  width: 50px;
+  height: 50px;
 }
 .App {
   margin: 0;
@@ -112,7 +116,6 @@
 }
 .nav_link{
   font-weight: bold;
-  font-size: 20px;
 }
 
 
@@ -255,10 +258,10 @@
   background-repeat: no-repeat;
 }
 .homeBannerEvents{
-  display: flex;
+  /* display: flex; */
   background-color: rgba(0, 0, 0, 0.596);
   color: black;
-  padding: 20px 120px;
+  padding: 8px 145px;
   font-weight: bold;
   border-bottom: 1px solid darkgray;
 
@@ -267,8 +270,10 @@
   margin-right: 40px;
   display: flex;
   align-items: center;
-  font-size: 25px;
   font-weight: bold;
+  animation: change 5s infinite linear;
+  animation-iteration-count: infinite;
+  animation-delay: -5s;
 }
 .homeBannerSection1 span{
   color: red;
@@ -304,7 +309,7 @@
   color: white;
 }
 .gencontainer{
-  padding: 20px 120px;
+  padding: 20px 145px;
   border-bottom: 1px solid darkgray;
   color: white;
   background-color: var(--bg-color);
@@ -342,7 +347,7 @@
 /* Television Section  */
 
 .tvFrameContainer{
-  padding: 20px 142px;
+  padding: 20px 145px;
   border-bottom: 1px solid darkgray;
   /* background-color: var(--yellow-bg-color); */
   background-color: white;
@@ -401,7 +406,7 @@
 /* Shows Section  */
 
 .showsContainer{
-  padding: 20px 120px;
+  padding: 20px 145px;
   border-bottom: 1px solid darkgray;
   background-color: var(--bg-color);
 }
@@ -453,7 +458,7 @@
 }
 
 .presenterContainer{
-  padding: 20px 120px;
+  padding: 20px 145px;
   border-bottom: 1px solid darkgray;
   background-color: var(--yellow-bg-color);
 }
@@ -1222,4 +1227,8 @@
 @keyframes example {
   from {background-color: var(--bg-color);}
   to {background-color: var(--yellow-bg-color);}
+}
+@keyframes change{
+  from{background-color: black;}
+  to{background-color: rgba(15, 15, 15, 0.911);}
 }

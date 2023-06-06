@@ -17,16 +17,13 @@ function Radio() {
       <div className='hidder'>
         <span className='radioShedule'>
           <div className='clock'>
-            <span>
-              <h3>Studio Clock:</h3>
-            </span>
             <h3>{time.toLocaleTimeString()}</h3>
           </div>
-          <div style={{marginRight:'30px'}}>
-          <h3>Live on Air: Music</h3>
+          <div style={{ marginRight: '30px' }}>
+            <h3>Live on Air: Music</h3>
           </div>
-          <div>
-          <h3>Up Next: News</h3>
+          <div style={{ marginRight: '30px' }}>
+            <h3>Up Next: News</h3>
           </div>
         </span>
       </div>

@@ -3,6 +3,7 @@ import { DataContext } from '../App';
 import img1 from './images/mid-show.jpeg'
 import img2 from './images/ag2.jpeg'
 import { Link } from 'react-router-dom';
+import listenIcon from './images/Red_circle.gif'
 function HomeBanner() {
     const containerStyles = {
       backgroundImage: 'url(./images/homeBanner.jpeg)',
@@ -17,9 +18,9 @@ function HomeBanner() {
       setData(category.Shows)
     },[])
         const imageStyle = {
-          width: '100%',
-          height: '100%',
-          borderRadius: '10px',
+          width: '40px',
+          height: '40px',
+          marginTop:'5px'
         };
 
   return (
@@ -30,8 +31,11 @@ function HomeBanner() {
         {/* <div className='bannerPic'></div> */}
         <div className='homeBannerEvents'>
           <div className='homeBannerSection1'>
-            <Link className="myLink" to={'/radio'}>
-            <span style={{color:'red'}} >Listen Live </span>
+            <Link className="myLink listner" to={'/radio'}>
+              <span className="listenIcon">
+                <img src={listenIcon} alt="" style={imageStyle} />
+              </span>
+            <span style={{color:'red', fontSize:'18px'}} >Listen Live </span>
             </Link>
           </div>
           {/* <div className='homeBannerSection2'>
