@@ -465,6 +465,7 @@
   padding: 20px 143px;
   border-bottom: 1px solid darkgray;
   background-color: var(--yellow-bg-color);
+  color: black;
 }
 .presenterProfiles{
   padding: 0;

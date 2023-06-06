@@ -54,7 +54,7 @@ function Presenters() {
                   <div className='presenterCardImg'>
                     {/* <img src={item.image} alt='' /> */}
                   </div>
-                  <li className='texts'>
+                  <li className=''>
                     <h3>{item.name}</h3>
                   </li>
                 </div>
