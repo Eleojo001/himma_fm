@@ -23,7 +23,9 @@
   font-family: 'Bona Nova', serif;
 }
 
-
+.timer{
+  margin-right: 30px;
+}
 .radioShedule{
   display: flex;
   align-items: center;
@@ -36,7 +38,8 @@
 .hidder{
   width: 100%;
   background-color: var(--yellow-bg-color);
-  padding: 6px 145px;
+  padding: 6px;
+  padding-left: 145px;
   position: absolute;
   top: 110px;
   z-index: 10000;

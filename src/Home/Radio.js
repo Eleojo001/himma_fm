@@ -16,7 +16,7 @@ function Radio() {
       <Nav />
       <div className='hidder'>
         <span className='radioShedule'>
-          <div className='clock'>
+          <div className='timer'>
             <h3>{time.toLocaleTimeString()}</h3>
           </div>
           <div style={{ marginRight: '30px' }}>
