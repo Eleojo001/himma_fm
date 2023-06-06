@@ -1063,6 +1063,7 @@
 }
 .televisionFrame{
   width: 100%;
+  padding: 5px 100px 10px;
 }
 .frameImage{
   height: 270px;

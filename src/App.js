@@ -249,7 +249,7 @@ However, despite these challenges which can be found in many countries throughou
           value={{ book, News, Shows, Presenter, Television, Navigation }}
         >
           <Routes>
-            <Route path='/' element={<Radio />} />
+            <Route path='/' element={<Home />} />
             <Route path='/page/:id/' element={<Page />} />
             {/* details section  */}
             <Route path='/news/:id' element={<NewsDetails />} />
