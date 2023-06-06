@@ -10,7 +10,45 @@
   /* --yellow-bg-color: #EAE509; */
   --yellow-bg-color: #dbc51c;
 }
+.radio{
+  width: 100%;
+  height: 600px;
+}
 
+.clock {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+}
+.clock h3{
+  font-family: 'Bona Nova', serif;
+}
+
+
+.radioShedule{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 59%;
+}
+.radioShedule h3, p{
+  margin-right: 5px;
+  font-weight: 900;
+}
+.hidder{
+  width: 100%;
+  background-color: var(--yellow-bg-color);
+  height: 100px;
+  position: absolute;
+  top: 110px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  animation: example 5s infinite linear;
+  animation-iteration-count: infinite;
+  animation-delay: -7s;
+}
 .App {
   margin: 0;
   padding: 0;
@@ -74,6 +112,7 @@
 }
 .nav_link{
   font-weight: bold;
+  font-size: 20px;
 }
 
 
@@ -166,7 +205,7 @@
   background-position: center;
 }
 
-.logoText, .show-time{
+.logoText{
   color: red;
   font-size: 15px;
   font-weight: bold;
@@ -217,9 +256,9 @@
 }
 .homeBannerEvents{
   display: flex;
-  background-color: var(--yellow-bg-color);
+  background-color: rgba(0, 0, 0, 0.596);
   color: black;
-  padding: 20px 142px;
+  padding: 5px 120px;
   font-weight: bold;
   border-bottom: 1px solid darkgray;
 
@@ -262,16 +301,16 @@
 /* news section  */
 .viewmore{
   background-color: var(--yellow-bg-color);
-  color: black;
+  color: white;
 }
 .gencontainer{
-  padding: 10px 20px;
+  padding: 20px 120px;
   border-bottom: 1px solid darkgray;
   color: white;
   background-color: var(--bg-color);
 }
 .gridcontainer{
-  width: 80%;
+  /* width: 80%; */
   margin: auto;
 }
 .newsHeader{
@@ -281,7 +320,7 @@
 }
 .newsGrid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 .newsCard{
@@ -303,14 +342,14 @@
 /* Television Section  */
 
 .tvFrameContainer{
-  padding: 10px 20px;
+  padding: 20px 142px;
   border-bottom: 1px solid darkgray;
   /* background-color: var(--yellow-bg-color); */
   background-color: white;
   color: black;
 }
 .tvHeader{
-  color: var(--bg-color);
+  color: black;
   text-align: left;
 }
 .televisionLogo{
@@ -362,39 +401,40 @@
 /* Shows Section  */
 
 .showsContainer{
-  padding: 50px 50px;
+  padding: 20px 120px;
   border-bottom: 1px solid darkgray;
   background-color: var(--bg-color);
 }
 
 .showsSlider{
-  padding: 0px 40px;
+  /* padding: 0px 40px; */
 }
 .sliderCards{
   overflow-x: scroll;
   display: flex;
   column-gap: 30px;
-  width: 90%;
+  /* width: 90%; */
   margin: auto;
   /* background-color: white; */
   color: black;
-  padding: 40px;
+  /* padding: 40px; */
   padding-top: 60px;
 }
 .sliderCard{
   display: flex;
+  height: 300px;
+  width: 250px;
   flex-direction: column;
-  align-items: center;
   
 }
 .sliderCard li{
   list-style: none;
-  padding: 5px 0px;
 }
 
 .sliderCardImg{
-  width: 150px;
   height: 150px;
+  width: 250px;
+
   border-radius: 50%;
   /* background-color: white; */
   margin-bottom: 5px;
@@ -413,17 +453,21 @@
 }
 
 .presenterContainer{
-  padding: 50px 60px;
+  padding: 20px 120px;
   border-bottom: 1px solid darkgray;
   background-color: var(--yellow-bg-color);
 }
+.presenterProfiles{
+  padding: 0;
+  width: 100%;
+}
 .presentersSlider{
-  padding: 40px;
+  /* padding: 40px; */
   /* background-color: white; */
    display: flex;
   /* gap: 50px;
   row-gap: 100px; */
-  width: 85%;
+  /* width: 85%; */
   margin: auto;
   color: black;
   font-weight: bold;
@@ -451,7 +495,7 @@
 
 .presentersSlider li{
   list-style: none;
-  margin: 5px 0px;
+  /* margin: 5px 0px; */
   color: white;
 }
 
@@ -479,7 +523,7 @@
 /* footer section */
 
 .footerContainer{
-  padding: 60px;
+  padding: 20px 120px;
   background-color: var(--bg-color);
   color: white;
   display: flex;
@@ -522,7 +566,7 @@
 .copyRight{
   background-color: white;
   color: black;
-  padding: 2px 30px;
+  padding: 5px 120px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid slategray;
@@ -763,6 +807,14 @@
   padding: 5px;
   /* gap: 0px 5px; */
 }
+.hidder{
+  top: 95px;
+  width: 100%;
+}
+.radioShedule{
+  width: 100%;
+  display: none;
+}
   /* .nav{
   justify-content: space-between;
   padding: 0px 20px;
@@ -944,7 +996,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 
@@ -958,14 +1010,13 @@
   justify-content: center;
 }
 .presenterProfiles{
-  padding: 0px 50px;
   display: flex;
-  gap: 50px;
+  /* gap: 50px; */
   align-items: center;
 }
 
 .presenterProfile{
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
   display: block;
   flex-direction: column;
   row-gap: 50px;
@@ -1154,4 +1205,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+@keyframes rotate{
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes roll{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes example {
+  from {background-color: var(--bg-color);}
+  to {background-color: var(--yellow-bg-color);}
 }

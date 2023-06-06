@@ -7,7 +7,7 @@ import { DataContext } from '../App';
 function News() {
  const category = useContext(DataContext);
  const [news, setNews] = useState([]);
- const [visible, setVisible] = useState(3);
+ const [visible, setVisible] = useState(4);
   const url = 'http://localhost:5003/posts';
   const fakeurl = 'https://jsonplaceholder.typicode.com/posts';
   const [section, setSection] = useState([])
@@ -111,11 +111,11 @@ function News() {
               // </Link>
             ))}
           </div>
-        </div>
         <div className='moreBtn'>
           <button className='viewmore' onClick={showMoreItems}>
             View More
           </button>
+        </div>
         </div>
       </div>
     </div>

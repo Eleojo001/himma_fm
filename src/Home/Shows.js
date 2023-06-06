@@ -14,6 +14,7 @@ function Shows() {
       width: '100%',
       height: '100%',
       borderRadius: '10px',
+      objectFit:'cover'
     };
   return (
     <div>
@@ -29,10 +30,16 @@ function Shows() {
               return (
                 <div className='sliderCard' key={item.id}>
                   <div className='sliderCardImg'>
-                    <img src={item.image} style={imageStyle} alt="" />
+                    <img src={item.image} style={imageStyle} alt='' />
                   </div>
-                  <li className='show-time textLimit'>{item.title} </li>
-                  <li className='texts'>{item.time}</li>
+                  <li className='texts textLimit'>
+                    <h3>
+                      {item.title} <br /> {item.time}
+                    </h3>
+                  </li>
+                  <li className='texts'>
+                    <h3></h3>
+                  </li>
                 </div>
               );
             })}

@@ -39,7 +39,7 @@
   justify-content: center;
 }
 .presenterProfiles{
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
   display: flex;
   gap: 50px;
   align-items: center;

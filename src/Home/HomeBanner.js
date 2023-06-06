@@ -30,11 +30,11 @@ function HomeBanner() {
         {/* <div className='bannerPic'></div> */}
         <div className='homeBannerEvents'>
           <div className='homeBannerSection1'>
-            <Link className="myLink">
+            <Link className="myLink" to={'/'}>
             <span style={{color:'red'}} >Listen Live </span>
             </Link>
           </div>
-          <div className='homeBannerSection2'>
+          {/* <div className='homeBannerSection2'>
             <div className='homecard1'>
               <div className='homecardImage'>
                 <img src={img1} alt='' style={imageStyle} />
@@ -56,7 +56,7 @@ function HomeBanner() {
                 <li className='homecardDay'>Tuesday 4:00pm to 9:00pm</li>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* <div className='homebannerLiveSec'>
           <iframe

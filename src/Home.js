@@ -61,7 +61,7 @@ function Home() {
       <HomeBanner/>
       <News id='#News' />
       <Presenters id='#Presenter' />
-      <Television id='#Television' />
+      {/* <Television id='#Television' /> */}
       <Shows id='#Shows' />
 
 
