@@ -49,7 +49,7 @@ function News() {
       <div className='gencontainer'>
         <div className='newsHeader'>
           <div className='newsLogo'>
-            <h1 className='Sansita '>NEWS</h1>
+            <h1 className='Sansita headersFont'>NEWS</h1>
           </div>
         </div>
         <div className='gridcontainer'>
@@ -111,11 +111,11 @@ function News() {
               // </Link>
             ))}
           </div>
-        <div className='moreBtn'>
-          <button className='viewmore' onClick={showMoreItems}>
-            View More
-          </button>
-        </div>
+          <div className='moreBtn'>
+            <button className='viewmore' onClick={showMoreItems}>
+              View More
+            </button>
+          </div>
         </div>
       </div>
     </div>

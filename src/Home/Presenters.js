@@ -44,27 +44,25 @@ function Presenters() {
 
       <div className='presenterContainer'>
         <div className='presenterHeader'>
-          <h1 className=''>PRESENTERS</h1>
+          <h1 className='headersFont'>PRESENTERS</h1>
         </div>
         <div className='presenterProfileHolder'>
           <div className='presenterProfiles'>
-            {
-              presenter.map((item)=>{
-                return (
-                  <div className='presenterCard' key={item.id}>
-                    <div className='presenterCardImg'>
-                      {/* <img src={item.image} alt='' /> */}
-                    </div>
-                    <li className='texts'>
-                      <h3>{item.name}</h3>
-                    </li>
+            {presenter.map((item) => {
+              return (
+                <div className='presenterCard' key={item.id}>
+                  <div className='presenterCardImg'>
+                    {/* <img src={item.image} alt='' /> */}
                   </div>
-                );
-              })
-            }
+                  <li className='texts'>
+                    <h3>{item.name}</h3>
+                  </li>
+                </div>
+              );
+            })}
           </div>
         </div>
-          {/* <div style={containerStyles}>
+        {/* <div style={containerStyles}>
             <Slider slides={slides} />
           </div> */}
       </div>

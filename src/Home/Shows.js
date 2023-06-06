@@ -22,7 +22,7 @@ function Shows() {
 
       <div className='showsContainer'>
         <div className='showHeader'>
-          <h1 className=''>SHOWS</h1>
+          <h1 className='headersFont'>SHOWS</h1>
         </div>
         <div className='showsSlider'>
           <div className='sliderCards'>
