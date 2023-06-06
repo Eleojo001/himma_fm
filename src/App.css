@@ -810,6 +810,7 @@
 .hidder{
   top: 95px;
   width: 100%;
+  display: none;
 }
 .radioShedule{
   width: 100%;
