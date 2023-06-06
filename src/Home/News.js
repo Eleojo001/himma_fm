@@ -40,6 +40,11 @@ function News() {
   borderRadius:'10px',
   objectFit:'cover'
  }
+       const card = {
+         width: 'auto',
+         height: '300px',
+         borderRadius: '10px',
+       };
 
 
   return (
@@ -111,12 +116,12 @@ function News() {
               // </Link>
             ))}
           </div>
+        </div>
           <div className='moreBtn'>
             <button className='viewmore' onClick={showMoreItems}>
               View More
             </button>
           </div>
-        </div>
       </div>
     </div>
   );

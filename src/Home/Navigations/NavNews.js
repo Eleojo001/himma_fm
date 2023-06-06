@@ -38,10 +38,10 @@ function NavNews() {
          color: 'black',
        };
   return (
-    <div style={mybg} >
+    <div style={mybg}>
       <Nav />
       <div className='presenterPage-container'>
-        <h1>News</h1>
+        <h1 className='headersFont'>News</h1>
         <div className='gridcontainer'>
           <div className='newsGrid'>
             {data.slice(0, visible).map((item) => {

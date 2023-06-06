@@ -33,7 +33,7 @@ function NavShows() {
     <div style={spacer}>
       <Nav />
       <div className='presenterPage-container'>
-        <h1 className='Presenter-header'>Shows</h1>
+        <h1 className='Presenter-header headersFont'>Shows</h1>
         <div className='presenterProfile'>
           {data.slice(0, visible).map((items) => {
             return (

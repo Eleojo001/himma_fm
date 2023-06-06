@@ -40,7 +40,7 @@ function NavPresenters() {
     <div>
       <Nav />
       <div className='presenterPage-container'>
-        <h1 className='Presenter-header'>PRESENTERS</h1>
+        <h1 className='Presenter-header headersFont'>PRESENTERS</h1>
         <div className='presenterProfile'>
           {data.slice(0, visible).map((items) => {
             return (

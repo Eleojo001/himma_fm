@@ -38,15 +38,13 @@ function NewsDetails() {
           if (item.id == id) {
             return (
               <div key={item.id}>
-                <h1 className=''>{item.title}</h1>
+                <h1 className='headersFont'>{item.title}</h1>
 
                 <p className=' banner-content author'>
                   {item.author} <BsDot size={'1rem'} /> <span>{item.date}</span>
                 </p>
                 <div className='dtailsBanner'>
-                  <div className="imageHolder">
-                    
-                  </div>
+                  <div className='imageHolder'></div>
                   <img src={item.image} alt='' style={imageStyle} />
                 </div>
                 {item.content.split('\n').map((paragraph, index) => (

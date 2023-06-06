@@ -38,7 +38,7 @@ function NavTv() {
       <div>
         <Nav />
         <div className='presenterPage-container television'>
-          <h1>Live TV </h1>
+          <h1 className='headersFont'>Live TV </h1>
           <div className='gridcontainer'>
             <div className='newsGrid'>
               {data.slice(0, visible).map((item) => {
