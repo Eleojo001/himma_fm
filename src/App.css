@@ -264,6 +264,9 @@
   padding: 8px 145px;
   font-weight: bold;
   border-bottom: 1px solid darkgray;
+  animation: change 5s infinite linear;
+  animation-iteration-count: infinite;
+  animation-delay: -5s;
 
 }
 .homeBannerSection1{
@@ -271,9 +274,6 @@
   display: flex;
   align-items: center;
   font-weight: bold;
-  animation: change 5s infinite linear;
-  animation-iteration-count: infinite;
-  animation-delay: -5s;
 }
 .homeBannerSection1 span{
   color: red;
@@ -1230,5 +1230,5 @@
 }
 @keyframes change{
   from{background-color: black;}
-  to{background-color: rgba(15, 15, 15, 0.911);}
+  to{background-color: var(--yellow-bg-color);}
 }
