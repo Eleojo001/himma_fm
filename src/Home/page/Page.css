@@ -69,10 +69,10 @@
   width: 80%;
   align-items: center;
   padding: 20px 0px;
+  text-align: center;
   /* border-bottom: 1px solid lightslategray; */
 }
 .detailsHeader{
-  text-align: center;
   width: 70%;
   margin: auto;
   /* padding: 20px 150px; */
