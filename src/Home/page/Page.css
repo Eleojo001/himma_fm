@@ -30,8 +30,8 @@
   padding: 80px 70px;
   
 }
-.Presenter-header{
-  padding-bottom: 50px;
+.Presenter-header, .presenterHeader{
+  padding-bottom: 20px;
 }
 .presenterProfileHolder{
   display: flex;
