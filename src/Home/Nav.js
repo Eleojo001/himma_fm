@@ -105,7 +105,7 @@ useEffect( () => {
           </li>
           <li className='nav_item'>
             <Link className='nav_link' to={'/shows'}>
-              Shows
+              Programmes
             </Link>
           </li>
           <li className='nav_item'>
