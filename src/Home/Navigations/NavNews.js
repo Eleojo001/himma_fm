@@ -8,7 +8,7 @@ import Nav from '../Nav';
 function NavNews() {
   const category = useContext(DataContext)
   const [data,setData] = useState([])
- const [visible, setVisible] = useState(3);
+ const [visible, setVisible] = useState(4);
   useEffect(()=>{
     let feed = category.News
     console.log(feed);

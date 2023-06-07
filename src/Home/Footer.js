@@ -68,7 +68,7 @@ function Footer() {
           </li>
         </div>
         <div className='otherStation'>
-          <h1 className='headersFont' >ADDRESS</h1>
+          <h1 className='headersFont' >Address</h1>
           <li>
             IKRA Multimedia Limited Km 25 <br /> Agalawa-Kafin Agur <br /> Along
             Madobi Road - Kano State

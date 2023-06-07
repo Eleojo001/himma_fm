@@ -27,7 +27,8 @@
 /* Presenter CONTAINER  */
 
 .presenterPage-container{
-  padding: 80px 70px;
+  padding: 20px 143px;
+  padding-left: 143px;
   
 }
 .Presenter-header, .presenterHeader{
@@ -48,23 +49,22 @@
 .presenterProfile{
   padding: 0px 50px;
   display: flex;
-  flex-direction: column;
-  row-gap: 50px;
+  gap: 50px;
+  overflow-x: scroll;
 }
 .presenterCard li{
   list-style: none;
 }
 .profileImage{
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   background-color: white;
 }
 .profileImage{
   text-align: center;
 }
 .Profile{
-  display: flex;
   column-gap: 80px;
   width: 80%;
   align-items: center;
@@ -72,7 +72,7 @@
   /* border-bottom: 1px solid lightslategray; */
 }
 .detailsHeader{
-  text-align: left;
+  text-align: center;
   width: 70%;
   margin: auto;
   /* padding: 20px 150px; */
