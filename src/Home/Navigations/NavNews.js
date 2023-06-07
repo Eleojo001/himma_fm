@@ -22,7 +22,6 @@ function NavNews() {
    const headerColor = {
      color: 'black',
      overFlowY: 'hidden',
-     textAlign:'center'
    };
    const blackColor = {
     color:'black'
@@ -30,6 +29,12 @@ function NavNews() {
  const imageStyle = {
    width: '100%',
    height: '100%',
+   borderRadius: '10px',
+   objectFit: 'cover',
+ };
+ const imageStyleMobile = {
+   width: '100%',
+   height: '200px',
    borderRadius: '10px',
    objectFit: 'cover',
  };
@@ -74,7 +79,7 @@ function NavNews() {
       </div>
 
       <div className='page-container-mobile'>
-        <h1>News</h1>
+        <h1 className='headersFont'>News</h1>
         <div className='gridcontainer'>
           <div className='newsGrid-shows'>
             {data.slice(0, visible).map((item) => {
@@ -82,7 +87,7 @@ function NavNews() {
                 <div className='card-mobile'>
                   <Link to={`/news/${item.id}`} key={item.id}>
                     <div className='newsCardImage_mobile'>
-                      <img src={item.image} alt='' style={imageStyle} />
+                      <img src={item.image} alt='' style={imageStyleMobile} />
                     </div>
                     <div className='profileInfo'>
                       <h3 style={headerColor} className='textLimit'>

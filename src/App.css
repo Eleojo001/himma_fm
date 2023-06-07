@@ -32,16 +32,17 @@
 .radioShedule{
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 95%;
+  margin: auto;
 }
-.radioShedule h3, p{
+.radioShedule h3, .radioShedule p{
   margin-right: 5px;
   font-weight: 900;
 }
 .hidder{
   width: 100%;
   background-color: var(--bg-color);
-  padding: 6px 22px;
+  padding: 6px 0px;
   position: absolute;
   top: 110px;
   z-index: 10000;
@@ -50,6 +51,9 @@
   /* animation: example 5s infinite linear;
   animation-iteration-count: infinite;
   animation-delay: -7s; */
+}
+.mobileHider, .mobileHiderHolder{
+  display: none;
 }
 .listner{
   display: flex;
@@ -87,7 +91,6 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  padding: 0px;
   margin-top: -5px;
 }
 .nav_brand img {
@@ -581,6 +584,7 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid slategray;
+  font-weight: lighter;
 }
 
 
@@ -759,13 +763,14 @@
     /* width: 50%; */
     background-color: rgba(0, 0, 0, 0.836);
     position: absolute;
+    z-index: 10000000;
     /* display: none; */
         transform: translateX(-100%);
     transition: 0.5s ease-in;
   }
   .nav_men li{
     list-style: none;
-    padding: 20px 80px;
+    padding: 10px 80px;
 
   }
   .nav_men li a{
@@ -793,10 +798,14 @@
 @media(max-width:470px){
   .nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width:100%;
+  padding: 5px 0px;
   background-color: white;
+}
+.nav_toggler{
+  padding: 30px 30px 0px;
 }
 .nav_men{
   list-style: none;
@@ -817,19 +826,73 @@
   text-transform: uppercase;
   font-weight: bold;
   display: flex;
-  align-items: center;
-  padding: 5px;
+  align-items: end;
+  padding: 0px;
   /* gap: 0px 5px; */
 }
+.logostyle {
+    width:'150px';
+    height:'100px';
+   padding:'7px';
+   padding-top: 0px;
+  }
 .hidder{
-  top: 95px;
-  width: 100%;
+  /* width: 100%; */
+  /* height: 100px; */
+  background-color: var(--bg-color);
+  padding: 0px 22px;
+  position: absolute;
+  top: 110px;
+  z-index: 10000;
   display: none;
+  align-items: center;
+  /* animation: example 5s infinite linear;
+  animation-iteration-count: infinite;
+  animation-delay: -7s; */
+}
+
+.timer{
+  padding: 0;
 }
 .radioShedule{
   width: 100%;
-  display: none;
+  display: block;
 }
+.radioevents{
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+
+}
+.mobileHider{
+  /* height: 70px; */
+  width: 100%;
+  background-color: var(--bg-color);
+  position: absolute;
+  top: 110px;
+  left: 0;
+  z-index: 1000;
+  /* padding-left: 20px; */
+  display: block;
+  overflow-x: hidden;
+  /* justify-content: space-between; */
+  /* border-bottom: 1px solid whitesmoke; */
+}
+.mobileHiderHolder{
+  width: 87%;
+  margin: auto;
+  display: flex;
+}
+.mobileHiderHolder h3{
+  margin-right: 10px;
+}
+.radioEVT{
+  display: flex;
+}
+.radioEVT h4{
+  margin-right: 10px;
+}
+
   /* .nav{
   justify-content: space-between;
   padding: 0px 20px;
@@ -872,8 +935,8 @@
   align-items: center;
   padding: 5px 10px;
   border-radius: 5px;
+  background-color: black;
   /* font-size: 15px; */
-  background-color: var(--bg-color);
 }
 .homeBannerSection1 Link span{
   font-size: 10px;
@@ -903,7 +966,7 @@
 }
 
 .gencontainer{
-  padding: 5px 20px 10px;
+  padding: 5px 20px 30px;
   border-bottom: 1px solid darkgray;
   color: white;
   background-color: var(--bg-color);
@@ -967,7 +1030,12 @@
 /* tv  */
 .presenterContainer{
   background-color: var(--yellow-bg-color);
-  display: none;
+  display: block;
+  padding: 5px 20px 10px;
+
+}
+.mb-header{
+  text-align: left;
 }
 .presenterPage-container{
   display: none;
@@ -979,9 +1047,10 @@
 
 .presenterProfileHolder{
   display: flex;
-  justify-content: center;
+  gap: 50px;
+  padding: 0px 20px;
   align-items: center;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 .card-mobile{
   margin-top: 10px;
@@ -989,16 +1058,17 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  width: 300px;
 }
 .profileInfo{
   padding: 0;
   margin: 0;
 }
 .newsCardImage_mobile{
-  width: 60%;
+  width: 90%;
   margin: auto;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   padding-bottom: 10px;
 }
 
@@ -1119,18 +1189,18 @@
 .sliderCards{
   overflow-x: scroll;
   display: flex;
-  column-gap: 30px;
-  width: 70%;
+  column-gap: 50px;
   margin: auto;
   /* background-color: white; */
   color: black;
-  padding-top: 20px;
+  padding: 20px 20px 0px;
 }
 .sliderCard{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  /* align-items: center; */
+  width: 200px;
+  height: 300px;
 }
 .sliderCard li{
   list-style: none;
@@ -1138,8 +1208,8 @@
 }
 
 .sliderCardImg{
-  width: 150px;
-  height: 150px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   background-color: white;
   margin-bottom: 5px;

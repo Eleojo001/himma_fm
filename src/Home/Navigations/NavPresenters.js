@@ -64,6 +64,7 @@ function NavPresenters() {
         </div>
       </div>
       <div className='page-container-mobile'>
+        <h1 className='Presenter-header headersFont'>PRESENTERS</h1>
         <div className='gridcontainer' style={spacer}>
           <div className='newsGrid-shows'>
             {data.slice(0, visible).map((item) => {

@@ -43,7 +43,7 @@ function Presenters() {
       {/* presenters section  */}
 
       <div className='presenterContainer'>
-        <div className='presenterHeader'>
+        <div className='presenterHeader mb-header'>
           <h1 className='headersFont'>PRESENTERS</h1>
         </div>
         <div className='presenterProfileHolder'>

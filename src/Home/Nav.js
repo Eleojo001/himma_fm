@@ -71,7 +71,7 @@ useEffect( () => {
   const logoStyle ={
     width:'150px',
     height:'100px',
-    padding:'10px'
+    padding:'15px 6px'
   }
 
   return (
@@ -80,7 +80,7 @@ useEffect( () => {
 
       <nav className='nav' style={navContainer}>
         <Link to={'/'} className='nav_brand'>
-          <img src={logo} alt='' style={logoStyle} />
+          <img src={logo} alt='' style={logoStyle} className='logostyle' />
         </Link>
         <ul className='nav_menu'>
           <li className='nav_item'>
@@ -104,7 +104,7 @@ useEffect( () => {
             </Link>
           </li>
           <li className='nav_item'>
-            <Link className='nav_link' to={'/shows'}>
+            <Link className='nav_link' to={'/programmes'}>
               Programmes
             </Link>
           </li>
@@ -129,14 +129,24 @@ useEffect( () => {
         <Link className='nav_link' to={'/'}>
           <li className='nav_item'>Home</li>
         </Link>
+        <li className='nav_item'>
+          <Link className='nav_link' to={'/about'}>
+            About Us
+          </Link>
+        </li>
+        <li className='nav_item'>
+          <Link className='nav_link' to={'/radio'}>
+            Radio
+          </Link>
+        </li>
         <Link className='nav_link' to={'/Himma-tv'}>
           <li className='nav_item'>TV</li>
         </Link>
         <Link className='nav_link' to={'/news'}>
           <li className='nav_item'>News</li>
         </Link>
-        <Link className='nav_link' to={'/shows'}>
-          <li className='nav_item'>Shows/Programmes</li>
+        <Link className='nav_link' to={'/programmes'}>
+          <li className='nav_item'>Programmes</li>
         </Link>
         <Link className='nav_link' to={'/presenters'}>
           <li className='nav_item'>Presenters</li>

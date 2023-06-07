@@ -11,8 +11,8 @@ function Shows() {
   }, []);
 
     const imageStyle = {
-      width: '100%',
-      height: '100%',
+      width: '200px',
+      height: '200px',
       borderRadius: '10px',
       objectFit:'cover'
     };
@@ -36,9 +36,6 @@ function Shows() {
                     <h3>
                       {item.title} <br /> {item.time}
                     </h3>
-                  </li>
-                  <li className='texts'>
-                    <h3></h3>
                   </li>
                 </div>
               );

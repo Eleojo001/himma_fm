@@ -19,13 +19,22 @@ function Radio() {
           <div className='timer'>
             <h3 className='time'>{time.toLocaleTimeString()}</h3>
           </div>
-          <div style={{ marginRight: '30px'  }}>
-            <h4>On Air: Hatsi</h4>
-          </div>
-          <div style={{ marginRight: '30px' }}>
-            <h4>Up Next: Mid-Day News</h4>
-          </div>
+            <div style={{ marginRight: '30px' }}>
+              <h4>On Air: Hatsi</h4>
+            </div>
+            <div style={{ marginRight: '30px' }}>
+              <h4>Up Next: Mid-Day News</h4>
+            </div>
         </span>
+      </div>
+      <div className='mobileHider'>
+        <div className='mobileHiderHolder'>
+          <h3 className='time'>{time.toLocaleTimeString()}</h3>
+          <div className='radioEVT'>
+            <h4>On Air: <br /> Hatsi</h4>
+            <h4>Up Next: <br /> Mid-Day News</h4>
+          </div>
+        </div>
       </div>
 
       <div className='radio'>

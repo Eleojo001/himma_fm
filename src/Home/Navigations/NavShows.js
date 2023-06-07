@@ -57,7 +57,7 @@ function NavShows() {
         </div>
       </div>
       <div className='page-container-mobile'>
-        <h1>Shows</h1>
+        <h1 className='headersFont'>PROGRAMMES</h1>
         <div className='gridcontainer'>
           <div className='newsGrid-shows'>
             {data.slice(0, visible).map((item) => {

@@ -266,7 +266,7 @@ However, despite these challenges which can be found in many countries throughou
             <Route path='/news' element={<NavNews />} />
             <Route path='/presenters' element={<NavPresenters />} />
             <Route path='/Himma-tv' element={<NavTv />} />
-            <Route path='/shows' element={<NavShows />} />
+            <Route path='/programmes' element={<NavShows />} />
             <Route path='/podcast' element={<Podcast />} />
             <Route path='*' element={<NoteFound />} />
           </Routes>
