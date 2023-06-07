@@ -419,6 +419,9 @@
   border-bottom: 1px solid darkgray;
   background-color: var(--bg-color);
 }
+.showsContainer-mobile{
+  display: none;
+}
 
 .showsSlider{
   /* padding: 0px 40px; */
@@ -1181,6 +1184,12 @@
 .showsContainer{
   padding: 10px 20px;
   border-bottom: 1px solid darkgray;
+  display: none;
+}
+.showsContainer-mobile{
+  display: block;
+    padding: 10px 20px;
+  border-bottom: 1px solid darkgray;
 }
 
 .showsSlider{
@@ -1268,7 +1277,7 @@
 
 .copyRight{
   background-color: white;
-  padding: 2px 30px;
+  padding: 2px 28px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid slategray;
