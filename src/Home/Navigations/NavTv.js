@@ -62,7 +62,7 @@ function NavTv() {
           </div>
         </div>
         <div className='presenterPage-container television'>
-          <h1 className='headersFont'>Live TV </h1>
+          <h1 className='headersFont'> Telvision </h1>
           <div className='gridcontainer'>
             <div className='newsGrid'>
               {data.slice(0, visible).map((item) => {
@@ -104,7 +104,7 @@ function NavTv() {
         </div>
         <div className='page-container-mobile'>
           <h1>
-            <h1 className='headersFont'>Live TV </h1>
+            <h1 className='headersFont'> Television </h1>
           </h1>
           <div className='gridcontainer'>
             <div className='newsGrid-shows'>
