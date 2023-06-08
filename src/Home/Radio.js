@@ -20,10 +20,20 @@ function Radio() {
             <h3 className='time'>{time.toLocaleTimeString()}</h3>
           </div>
           <div style={{ marginRight: '30px' }}>
-            <h4>On Air: Hatsi</h4>
+            <h4>
+              <span style={{ color: 'red' }}>On Air:</span>
+              <span style={{ fontWeight: 'lighter', marginLeft: '10px' }}>
+                Hatsi
+              </span>
+            </h4>
           </div>
           <div style={{ marginRight: '30px' }}>
-            <h4>Up Next: Mid-Day News</h4>
+            <h4>
+              <span style={{ color: 'red' }}>Up Next:</span>
+              <span style={{ fontWeight: 'lighter', marginLeft: '10px' }}>
+                Mid-Day News
+              </span>
+            </h4>
           </div>
         </span>
       </div>
@@ -35,7 +45,7 @@ function Radio() {
               <span style={{ color: 'red' }}>On Air:</span> <br /> Hatsi
             </h4>
             <h4>
-              <span style={{color:'red'}}>Up Next: </span>
+              <span style={{ color: 'red' }}>Up Next: </span>
               <br /> Mid-Day News
             </h4>
           </div>
