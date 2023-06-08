@@ -21,7 +21,16 @@ function Radio() {
           </div>
           <div style={{ marginRight: '30px' }}>
             <h4>
-              <span style={{ color: 'red' }}>On Air:</span>
+              <span
+                style={{
+                  color: 'red',
+                  padding: '10px 15px',
+                  backgroundColor: 'white',
+                  borderRadius: '5px',
+                }}
+              >
+                On Air:
+              </span>
               <span style={{ fontWeight: 'lighter', marginLeft: '10px' }}>
                 Hatsi
               </span>
@@ -29,7 +38,16 @@ function Radio() {
           </div>
           <div style={{ marginRight: '30px' }}>
             <h4>
-              <span style={{ color: 'red' }}>Up Next:</span>
+              <span
+                style={{
+                  color: 'red',
+                  padding: '10px 15px',
+                  backgroundColor: 'white',
+                  borderRadius: '5px',
+                }}
+              >
+                Up Next:
+              </span>
               <span style={{ fontWeight: 'lighter', marginLeft: '10px' }}>
                 Mid-Day News
               </span>
