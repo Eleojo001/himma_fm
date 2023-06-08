@@ -51,7 +51,7 @@ function NavPresenters() {
     <div>
       <Nav />
       <div className='presenterPage-container'>
-        <h1 className='Presenter-header headersFont'>PRESENTERS</h1>
+        <h1 className='Presenter-header headersFont'>Presenters</h1>
         <div className='presenterProfile'>
           {data.slice(0, visible).map((items) => {
             return (
@@ -75,7 +75,7 @@ function NavPresenters() {
         </div>
       </div>
       <div className='page-container-mobile'>
-        <h1 className='Presenter-header headersFont'>PRESENTERS</h1>
+        <h1 className='Presenter-header headersFont'>Presenters</h1>
         <div className='gridcontainer' style={spacer}>
           <div className='newsGrid-shows'>
             {data.slice(0, visible).map((item) => {
@@ -100,7 +100,7 @@ function NavPresenters() {
             <span style={{ marginRight: '10px' }}>
               <img src={viewmore} alt='' className='btnicon' />
             </span>
-            <span>View More</span>
+            <span style={{ color: 'white' }}>View More</span>
           </button>
         </div>
       </div>

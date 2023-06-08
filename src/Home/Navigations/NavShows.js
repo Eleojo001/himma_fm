@@ -42,7 +42,7 @@ function NavShows() {
     <div style={spacer}>
       <Nav />
       <div className='presenterPage-container'>
-        <h1 className='Presenter-header headersFont'>Shows</h1>
+        <h1 className='Presenter-header headersFont'>Programmes</h1>
         <div className='presenterProfile'>
           {data.slice(0, visible).map((items) => {
             return (
@@ -66,7 +66,7 @@ function NavShows() {
         </div>
       </div>
       <div className='page-container-mobile'>
-        <h1 className='headersFont'>PROGRAMMES</h1>
+        <h1 className='headersFont'>Programmes</h1>
         <div className='gridcontainer'>
           <div className='newsGrid-shows'>
             {data.slice(0, visible).map((item) => {
@@ -89,7 +89,7 @@ function NavShows() {
             <span style={{ marginRight: '10px' }}>
               <img src={viewmore} alt='' className='btnicon' />
             </span>
-            <span>View More</span>
+            <span style={{ color: 'white' }}>View More</span>
           </button>
         </div>
       </div>

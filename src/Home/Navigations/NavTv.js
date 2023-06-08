@@ -95,12 +95,10 @@ function NavTv() {
           </div>
           <div className='moreBtn'>
             <button className='viewmore btn' onClick={showMoreItems}>
-              <span
-                style={{ width: '30px', height: '30px', marginRight: '10px' }}
-              >
+              <div style={{ width: '30px', height: '30px', color: 'black' }}>
                 <img src={viewmore} alt='' style={imageStyleBtn} />
-              </span>
-              <span>View More</span>
+              </div>
+              <span style={{ color: 'white' }}>View More</span>
             </button>
           </div>
         </div>
@@ -145,7 +143,7 @@ function NavTv() {
               >
                 <img src={viewmore} alt='' style={imageStyleBtn} />
               </span>
-              <span>View More</span>
+              <span style={{ color: 'white' }}>View More</span>
             </button>
           </div>
         </div>

@@ -19,7 +19,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--yellow-bg-color);
+  flex-direction: column;
+  /* background-color: var(--yellow-bg-color); */
+}
+.backbtn{
+  margin: 20px;
+  margin-left: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: inherit;
 }
 .moreBtn{
 display: flex;
@@ -355,8 +367,8 @@ align-items: center;
 
 /* news section  */
 .viewmore{
-  background-color: var(--yellow-bg-color);
-  color: white;
+  /* color: white; */
+  background-color: inherit;
 }
 .gencontainer{
   padding: 20px 145px;

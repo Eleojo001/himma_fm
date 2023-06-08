@@ -39,6 +39,12 @@ function NavNews() {
    borderRadius: '10px',
    objectFit: 'cover',
  };
+ const imageStyleBtn = {
+   width: '100%',
+   height: '100%',
+   borderRadius: '10px',
+   objectFit: 'contain',
+ };
        const mybg = {
          backgroundColor: 'white',
          color: 'black',
@@ -74,9 +80,9 @@ function NavNews() {
         </div>
         <div className='moreBtn'>
           <button className='viewmore btn' onClick={showMoreItems}>
-            <span style={{ width: '50px', height: '50px' }}>
-              <img src={viewmore} alt='' style={imageStyle} />
-            </span>
+            <div style={{ width: '30px', height: '30px' }}>
+              <img src={viewmore} alt='' style={imageStyleBtn} />
+            </div>
             <span>View More</span>
           </button>
         </div>
@@ -107,11 +113,7 @@ function NavNews() {
         <div className='NewmoreBtn'>
           <button className='viewmore' onClick={showMoreItems}>
             <span style={{ marginRight: '10px' }}>
-              <img
-                src={viewmore}
-                alt=''
-                className='btnicon'
-              />
+              <img src={viewmore} alt='' className='btnicon' />
             </span>
             <span>View More</span>
           </button>
