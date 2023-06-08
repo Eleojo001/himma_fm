@@ -104,6 +104,14 @@ align-items: center;
 .livetv{
   width: 70px;
   height: 70px;
+  position: relative;
+}
+.circular{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 12px;
+  left: 9px;
 }
 .watchBanner{
   background-color: var(--bg-color);

@@ -4,7 +4,8 @@ import { Link, useParams } from 'react-router-dom';
 import '../page/Page.css';
 import { DataContext } from '../../App';
 import Nav from '../Nav';
-import livetv from '../images/tv_live.gif'
+import livetv from '../images/Live_tv_n.png'
+import circler from '../images/Red_circle.gif';
 import viewmore from '../images/viewMore_icon.png';
 
 function NavTv() {
@@ -54,15 +55,12 @@ function NavTv() {
             >
               <span className='livetv'>
                 <img src={livetv} alt='' style={imageStyle} />
-              </span>
-              <span style={{ color: 'white', fontSize: '18px' }}>
-                Watch Live{' '}
+                <img src={circler} alt="" className='circular' />
               </span>
             </Link>
           </div>
         </div>
         <div className='presenterPage-container television'>
-          <h1 className='headersFont'> Telvision </h1>
           <div className='gridcontainer'>
             <div className='newsGrid'>
               {data.slice(0, visible).map((item) => {
@@ -103,9 +101,6 @@ function NavTv() {
           </div>
         </div>
         <div className='page-container-mobile'>
-          <h1>
-            <h1 className='headersFont'> Television </h1>
-          </h1>
           <div className='gridcontainer'>
             <div className='newsGrid-shows'>
               {data.slice(0, visible).map((item) => {
