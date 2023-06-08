@@ -59,12 +59,33 @@ function Radio() {
         <div className='mobileHiderHolder'>
           <h3 className='time'>{time.toLocaleTimeString()}</h3>
           <div className='radioEVT'>
-            <h4>
-              <span style={{ color: 'red' }}>On Air:</span> <br /> Hatsi
+            <h4 style={{ display: 'flex', flexDirection: 'column' }}>
+              <span
+                style={{
+                  color: 'red',
+                  padding: '2px 3px',
+                  backgroundColor: 'white',
+                  borderRadius: '5px',
+                  marginBottom: '5px',
+                }}
+              >
+                On Air:
+              </span>
+              <span>Hatsi</span>
             </h4>
-            <h4>
-              <span style={{ color: 'red' }}>Up Next: </span>
-              <br /> Mid-Day News
+            <h4 style={{ display: 'flex', flexDirection: 'column' }}>
+              <span
+                style={{
+                  color: 'red',
+                  padding: '2px 3px',
+                  backgroundColor: 'white',
+                  borderRadius: '5px',
+                  marginBottom: '5px',
+                }}
+              >
+                Up Next:
+              </span>
+              <span>Mid-Day News</span>
             </h4>
           </div>
         </div>
