@@ -23,8 +23,16 @@ function NavShows() {
     };
     const imageStyle = {
       width: '100%',
-      height: '100%',
+      height: '200px',
       borderRadius: '10px',
+      objectFit:'cover'
+    };
+    const imageStylemobile = {
+      width: '100%',
+      height: '300px',
+      borderRadius: '10px',
+      objectFit:'cover',
+      marginBottom:'10px'
     };
         const spacer = {
           paddingBottom: '40px',
@@ -57,12 +65,12 @@ function NavShows() {
         </div>
       </div>
       <div className='page-container-mobile'>
-        <h1 className='headersFont'>PROGRAMMES</h1>
+        <h1 className='headersFont'>PROGRAMMESs</h1>
         <div className='gridcontainer'>
           <div className='newsGrid-shows'>
             {data.slice(0, visible).map((item) => {
               return (
-                <div className='card-mobile'>
+                <div className='card_mobile_shows'>
                   <div className='newsCardImage_mobile'>
                     <img src={item.image} alt='' style={imageStyle} />
                   </div>

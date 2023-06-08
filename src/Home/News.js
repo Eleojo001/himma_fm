@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { DataContext } from '../App';
+import viewmore from './images/viewMore_icon.png'
 
 
 
@@ -39,6 +40,12 @@ function News() {
   height:'100%',
   borderRadius:'10px',
   objectFit:'cover'
+ }
+ const imageStyleBtn = {
+  width:'100%',
+  height:'100%',
+  borderRadius:'10px',
+  objectFit:'contain'
  }
        const card = {
          width: 'auto',
@@ -117,11 +124,14 @@ function News() {
             ))}
           </div>
         </div>
-          <div className='moreBtn'>
-            <button className='viewmore' onClick={showMoreItems}>
-              View More
-            </button>
-          </div>
+        <div className='moreBtn'>
+          <button className='viewmore btn' onClick={showMoreItems}>
+            <span style={{ width: '30px', height: '30px', marginRight:'10px'}}>
+              <img src={viewmore} alt='' style={imageStyleBtn} />
+            </span>
+            <span>View More</span>
+          </button>
+        </div>
       </div>
     </div>
   );

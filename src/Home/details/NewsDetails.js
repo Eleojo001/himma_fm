@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { DataContext } from '../../App';
 import { BsDot } from 'react-icons/bs';
 import Nav from '../Nav';
+import goback from '../images/go_back_icon.png'
 
 function NewsDetails() {
 
@@ -66,7 +67,12 @@ function NewsDetails() {
         </h1>
         <p className='banner-content'>{info.content}</p>
         <Link to={-1}>
-          <button className='btn'>Go back</button>
+          <button className='btn'>
+            <span style={{width:'50px', height:'50px'}}>
+              <img src={goback} alt='' style={imageStyle} />
+            </span>
+            <span>Go back</span>
+          </button>
         </Link>
       </div>
       ;

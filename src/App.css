@@ -10,6 +10,32 @@
   /* --yellow-bg-color: #EAE509; */
   --yellow-bg-color: #dbc51c;
 }
+.btn, .viewmore{
+  margin: 20px;
+  margin-left: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--yellow-bg-color);
+}
+.moreBtn{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.NewmoreBtn{
+  text-align: center;
+  width: 55%;
+  margin: auto;
+}
+.btnicon{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
 .radio{
   width: 100%;
   height: 400px;
@@ -63,6 +89,21 @@
   width: 50px;
   height: 50px;
 }
+.livetv{
+  width: 70px;
+  height: 70px;
+}
+.watchBanner{
+  background-color: var(--bg-color);
+  color: black;
+  padding: 8px 143px;
+  font-weight: bold;
+  border-bottom: 1px solid darkgray;
+}
+.watch{
+  background-color: var(--bg-color);
+}
+
 .App {
   margin: 0;
   padding: 0;
@@ -449,7 +490,7 @@
 }
 
 .sliderCardImg{
-  height: 150px;
+  height: 200px;
   width: 250px;
 
   border-radius: 50%;
@@ -887,13 +928,19 @@
   display: flex;
 }
 .mobileHiderHolder h3{
-  margin-right: 10px;
+  margin-right: 70px;
 }
 .radioEVT{
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .radioEVT h4{
   margin-right: 10px;
+}
+.watchBanner{
+  padding: 0px 20px;
+  background-color: none;
 }
 
   /* .nav{
@@ -938,7 +985,6 @@
   align-items: center;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: black;
   /* font-size: 15px; */
 }
 .homeBannerSection1 Link span{
@@ -1062,17 +1108,24 @@
   justify-content: space-between;
   gap: 20px;
   width: 300px;
+  margin-bottom: 10px;
+}
+.card_mobile_shows{
+
 }
 .profileInfo{
   padding: 0;
   margin: 0;
 }
 .newsCardImage_mobile{
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   /* align-items: center; */
   padding-bottom: 10px;
+}
+.newsCardImage_mobileShows{
+  display: block;
 }
 
 .presenterProfiles{
@@ -1085,6 +1138,9 @@
   align-items: center;
   justify-content: space-between;
   /* gap: 20px; */
+}
+.profileInfomobile{
+  width: 30%;
 }
 
 

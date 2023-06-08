@@ -4,6 +4,8 @@ import { Link, useParams } from 'react-router-dom';
 import '../page/Page.css';
 import { DataContext } from '../../App';
 import Nav from '../Nav';
+import livetv from '../images/tv_live.gif'
+import viewmore from '../images/viewMore_icon.png';
 
 function NavTv() {
       const category = useContext(DataContext);
@@ -27,7 +29,14 @@ function NavTv() {
         width: '100%',
         height: '100%',
         borderRadius: '10px',
+        objectFit:'contain'
       };
+       const imageStyleBtn = {
+         width: '100%',
+         height: '100%',
+         borderRadius: '10px',
+         objectFit: 'contain',
+       };
       const card = {
         width: 'auto',
         height: '300px',
@@ -37,6 +46,21 @@ function NavTv() {
     <div>
       <div>
         <Nav />
+        <div className='watchBanner watch'>
+          <div className='homeBannerSection1 watch'>
+            <Link
+              className='myLink listner'
+              to={'https://www.youtube.com/channel/UC4aJDqk_76_QVGAaM_MbvYw'}
+            >
+              <span className='livetv'>
+                <img src={livetv} alt='' style={imageStyle} />
+              </span>
+              <span style={{ color: 'white', fontSize: '18px' }}>
+                Watch Live{' '}
+              </span>
+            </Link>
+          </div>
+        </div>
         <div className='presenterPage-container television'>
           <h1 className='headersFont'>Live TV </h1>
           <div className='gridcontainer'>
@@ -70,8 +94,13 @@ function NavTv() {
             </div>
           </div>
           <div className='moreBtn'>
-            <button className='viewmore' onClick={showMoreItems}>
-              View More
+            <button className='viewmore btn' onClick={showMoreItems}>
+              <span
+                style={{ width: '30px', height: '30px', marginRight: '10px' }}
+              >
+                <img src={viewmore} alt='' style={imageStyleBtn} />
+              </span>
+              <span>View More</span>
             </button>
           </div>
         </div>
@@ -110,8 +139,13 @@ function NavTv() {
             </div>
           </div>
           <div className='moreBtn'>
-            <button className='viewmore' onClick={showMoreItems}>
-              View More
+            <button className='viewmore btn' onClick={showMoreItems}>
+              <span
+                style={{ width: '30px', height: '30px', marginRight: '10px' }}
+              >
+                <img src={viewmore} alt='' style={imageStyleBtn} />
+              </span>
+              <span>View More</span>
             </button>
           </div>
         </div>

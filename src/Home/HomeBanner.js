@@ -30,12 +30,17 @@ function HomeBanner() {
       <div className='homeBanner'>
         {/* <div className='bannerPic'></div> */}
         <div className='homeBannerEvents'>
-          <div className='homeBannerSection1'>
-            <Link className="myLink listner" to={'/radio'}>
-              <span className="listenIcon">
-                <img src={listenIcon} alt="" style={imageStyle} />
+          <div
+            className='homeBannerSection1'
+            style={{ backgroundColor: 'black' }}
+          >
+            <Link className='myLink listner' to={'/radio'}>
+              <span className='listenIcon'>
+                <img src={listenIcon} alt='' style={imageStyle} />
               </span>
-            <span style={{color:'red', fontSize:'18px'}} >Listen Live </span>
+              <span style={{ color: 'red', fontSize: '18px' }}>
+                Listen Live{' '}
+              </span>
             </Link>
           </div>
           {/* <div className='homeBannerSection2'>
