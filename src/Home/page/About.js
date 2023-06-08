@@ -4,7 +4,9 @@ import Nav from '../Nav'
 export default function About() {
   const bg ={
     background:'white',
-    color:'black'
+    color:'black',
+    paddingLeft:'130px',
+    paddingRight:'130px'
   }
   const [data, setData] = useState('');
   const handleClick = () =>{
@@ -22,7 +24,7 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
     <div>
       <Nav />
       <div className='about-container' style={bg}>
-        <h1 className='aboutHeader'>ABOUT US</h1>
+        <h1 className=''>ABOUT US</h1>
         <p className='about-content'>
           <p style={{ fontSize: '18px', lineHeight: '1.5' }}>
             HIMMA Radio and Television by{' '}
@@ -56,7 +58,8 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
             style={{
               border: 'none',
               textDecoration: 'none',
-              color:'black'
+              color:'black',
+              fontSize: '18px',
             }}
           >
             Read More
