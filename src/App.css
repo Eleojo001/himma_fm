@@ -1123,7 +1123,7 @@ align-items: center;
 }
 .newsCardImage_mobile{
   width: 300px;
-  height: 300px;
+  /* height: 300px; */
   margin: auto;
   display: flex;
   /* align-items: center; */
