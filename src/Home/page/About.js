@@ -26,7 +26,7 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
       <div className='about-container' style={bg}>
         <h1 className='headersFont'>About Us</h1>
         <p className='about-content'>
-          <p style={{ fontSize: '18px', lineHeight: '1.5' }}>
+          <p style={{ fontSize: '16px', lineHeight: '1.5' }}>
             HIMMA Radio and Television by{' '}
             <a
               href='#'
@@ -34,7 +34,6 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
               style={{
                 border: 'none',
                 color: 'blue',
-                fontSize: '22px',
                 fontWeight:'bold'
               }}
             >
@@ -61,7 +60,7 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
               border: 'none',
               textDecoration: 'none',
               color: 'black',
-              fontSize: '18px',
+              fontSize: '14px',
             }}
           >
             Read More
