@@ -1122,7 +1122,8 @@ align-items: center;
   flex-direction: column;
 }
 .newsCardImage_mobile{
-  width: 100%;
+  width: 300px;
+  height: 300px;
   margin: auto;
   display: flex;
   /* align-items: center; */
@@ -1221,7 +1222,7 @@ align-items: center;
   grid-template-columns: repeat(1, 1fr);
   gap: 5px;
   width: 100%;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .tvCardTitle{
   margin: 5px 0px;
@@ -1236,8 +1237,6 @@ align-items: center;
 .tv-card-mobile{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 /* Shows Section  */
 

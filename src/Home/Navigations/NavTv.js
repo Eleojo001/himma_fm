@@ -38,7 +38,7 @@ function NavTv() {
          objectFit: 'contain',
        };
       const card = {
-        width: 'auto',
+        width: '300px',
         height: '300px',
         borderRadius: '10px',
       };
