@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/logo-4.png'
+import logo from '../images/logoN.png'
 import Nav from '../Nav'
 
 function Podcast() {

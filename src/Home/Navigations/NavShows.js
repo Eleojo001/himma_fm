@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import '../page/Page.css';
 import { DataContext } from '../../App';
 import Nav from '../Nav';
+import viewmore from '../images/viewMore_icon.png';
 
 function NavShows() {
   const category = useContext(DataContext);
@@ -29,7 +30,7 @@ function NavShows() {
     };
     const imageStylemobile = {
       width: '100%',
-      height: '300px',
+      height:'200px',
       borderRadius: '10px',
       objectFit:'cover',
       marginBottom:'10px'
@@ -65,29 +66,32 @@ function NavShows() {
         </div>
       </div>
       <div className='page-container-mobile'>
-        <h1 className='headersFont'>PROGRAMMESs</h1>
+        <h1 className='headersFont'>PROGRAMMES</h1>
         <div className='gridcontainer'>
           <div className='newsGrid-shows'>
             {data.slice(0, visible).map((item) => {
               return (
                 <div className='card_mobile_shows'>
                   <div className='newsCardImage_mobile'>
-                    <img src={item.image} alt='' style={imageStyle} />
+                    <img src={item.image} alt='' style={imageStylemobile} />
                   </div>
-                  <div className='profileInfo'>
-                    <h3>{item.title}</h3>
-                    <span>{item.time}</span>, <span>{item.day}</span>
+                  <div className='profileInfoMobile'>
+                    <span style={{ fontWeight: 'bold' }}>{item.title}</span>
+                    <span>{item.time}</span> <span>{item.day}</span>
                   </div>
                 </div>
               );
             })}
           </div>
         </div>
-        {/* <div className='moreBtn'>
+        <div className='NewmoreBtn'>
           <button className='viewmore' onClick={showMoreItems}>
-            View More
+            <span style={{ marginRight: '10px' }}>
+              <img src={viewmore} alt='' className='btnicon' />
+            </span>
+            <span>View More</span>
           </button>
-        </div> */}
+        </div>
       </div>
     </div>
   );

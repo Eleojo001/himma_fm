@@ -1111,11 +1111,15 @@ align-items: center;
   margin-bottom: 10px;
 }
 .card_mobile_shows{
-
+  margin-bottom: 20px;
 }
 .profileInfo{
   padding: 0;
   margin: 0;
+}
+.profileInfoMobile{
+  display: flex;
+  flex-direction: column;
 }
 .newsCardImage_mobile{
   width: 100%;

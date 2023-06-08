@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router-dom';
 import '../page/Page.css';
 import { DataContext } from '../../App';
 import Nav from '../Nav';
+import viewmore from '../images/viewMore_icon.png';
 
 function NavPresenters() {
     const category = useContext(DataContext);
@@ -27,6 +28,12 @@ function NavPresenters() {
       height: '100%',
       borderRadius: '10px',
     };
+     const imageStyleMobile = {
+       width: '100%',
+       height: '200px',
+       borderRadius: '10px',
+       objectFit: 'cover',
+     };
     const round={
       width:'200px',
       height:'200px',
@@ -36,6 +43,10 @@ function NavPresenters() {
     const spacer ={
       marginBottom:'40px'
     }
+    const mybg = {
+       backgroundColor: 'white',
+       color: 'black',
+       };
   return (
     <div>
       <Nav />
@@ -84,9 +95,12 @@ function NavPresenters() {
             })}
           </div>
         </div>
-        <div className='moreBtn'>
+        <div className='NewmoreBtn'>
           <button className='viewmore' onClick={showMoreItems}>
-            View More
+            <span style={{ marginRight: '10px' }}>
+              <img src={viewmore} alt='' className='btnicon' />
+            </span>
+            <span>View More</span>
           </button>
         </div>
       </div>
