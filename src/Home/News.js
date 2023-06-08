@@ -76,15 +76,6 @@ function News() {
                   {/* <h1>All book id: {sec.id}</h1> */}
                   <div className='newsCard'>
                     <div className='newsCardImage'>
-                      {/* <iframe
-                    width='100%'
-                    height='100%'
-                    src='https://www.youtube.com/embed/k0AFkXxoqjg'
-                    title='YouTube video player'
-                    frameborder='0'
-                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                    allowfullscreen
-                  ></iframe> */}
                       <img src={sec.image} alt='' style={imageStyle} />
                     </div>
                     <div className='newCardDetails'>
