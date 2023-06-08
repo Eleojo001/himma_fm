@@ -24,7 +24,7 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
     <div>
       <Nav />
       <div className='about-container' style={bg}>
-        <h1 className=''>ABOUT US</h1>
+        <h1 className='headersFont'>About Us</h1>
         <p className='about-content'>
           <p style={{ fontSize: '18px', lineHeight: '1.5' }}>
             HIMMA Radio and Television by{' '}
@@ -33,7 +33,9 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
               onClick={handleClick}
               style={{
                 border: 'none',
-                color:'black'
+                color: 'blue',
+                fontSize: '22px',
+                fontWeight:'bold'
               }}
             >
               Sarman Integrated Farms Limited
@@ -58,7 +60,7 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
             style={{
               border: 'none',
               textDecoration: 'none',
-              color:'black',
+              color: 'black',
               fontSize: '18px',
             }}
           >
