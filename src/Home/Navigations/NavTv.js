@@ -43,21 +43,27 @@ function NavTv() {
         height: '300px',
         borderRadius: '10px',
       };
+      const handleClick = () =>{
+        window.open(
+          'https://www.youtube.com/channel/UC4aJDqk_76_QVGAaM_MbvYw',
+          '_blank'
+        );
+      }
   return (
     <div>
       <div>
         <Nav />
         <div className='watchBanner watch'>
           <div className='homeBannerSection1 watch'>
-            <Link
+            <a href='#'
               className='myLink listner'
-              to={'https://www.youtube.com/channel/UC4aJDqk_76_QVGAaM_MbvYw'}
+              onClick={handleClick}
             >
               <span className='livetv'>
                 <img src={livetv} alt='' style={imageStyle} />
                 <img src={circler} alt="" className='circular' />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
         <div className='presenterPage-container television'>
