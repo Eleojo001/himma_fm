@@ -101,17 +101,25 @@ align-items: center;
   width: 50px;
   height: 50px;
 }
+.watcher{
+  position: relative;
+  font-family: 'Roboto', serif;
+}
+.liveHolder{
+  position: absolute;
+  left: 89px;
+}
 .livetv{
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   position: relative;
 }
 .circular{
   width: 22px;
   height: 22px;
   position: absolute;
-  top: 12px;
-  left: 9px;
+  top: -29px;
+  left: 4px;
 }
 .watchBanner{
   background-color: var(--bg-color);
@@ -384,7 +392,7 @@ align-items: center;
   color: white;
   background-color: var(--bg-color);
 }
-.gridcontainer,.showsSlider{
+.gridcontainer,.showsSlider,.photogallary{
   /* width: 80%; */
   margin: auto;
 }
@@ -711,7 +719,21 @@ align-items: center;
 .headersFont{
   font-size: 23px;
 }
-
+/* ABOUT */
+.photogallary{
+  margin: 40px 0px;
+}
+.photoImage{
+  width: 300px;
+  height: 250px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+.photoGrid{
+  display: flex;
+  overflow-x: scroll;
+  gap: 30px;
+}
 
 /* Responsiveness */
 @media(max-width:800px){

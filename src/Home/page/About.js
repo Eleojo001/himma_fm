@@ -1,5 +1,14 @@
 import React, {useState,  useEffect} from 'react'
 import Nav from '../Nav'
+import img1 from '../images/Broiler_chicken.jpeg';
+import img2 from '../images/Chicken-layers.jpeg';
+import img3 from '../images/eggs.png';
+import img4 from '../images/fruits1.png';
+import img5 from '../images/Sarman-farms-1.png';
+import img6 from '../images/Sarman-Farms-Favicon-2.png';
+import img7 from '../images/slider121.png';
+import img8 from '../images/snail-eggs.jpeg';
+import img9 from '../images/veg.png';
 
 export default function About() {
   const bg ={
@@ -11,6 +20,11 @@ export default function About() {
   const [data, setData] = useState('');
   const handleClick = () =>{
     window.open('https://www.sarmanfarms.com/services/', '_blank');
+  }
+  const imgStyle = {
+    width:'100%',
+    height:'100%',
+    objectFit:'cover',
   }
   useEffect(()=>{
     setData(`HIMMA Radio and Television by Sarman Integrated Farms Limited is dedicated to further extension and propagation of agricultural practices within its locality.
@@ -34,7 +48,7 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
               style={{
                 border: 'none',
                 color: 'blue',
-                fontWeight:'bold'
+                fontWeight: 'bold',
               }}
             >
               Sarman Integrated Farms Limited
@@ -46,26 +60,58 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
             pulse of the agricultural community.
           </p>
         </p>
-        <button
-          style={{
-            border: 'none',
-            background: 'inherit',
-            color: 'black',
-          }}
-        >
-          <a
-            href='#'
-            onClick={handleClick}
+        <div>
+          <button
             style={{
               border: 'none',
-              textDecoration: 'none',
+              background: 'inherit',
               color: 'black',
-              fontSize: '14px',
             }}
           >
-            Read More
-          </a>
-        </button>
+            <a
+              href='#'
+              onClick={handleClick}
+              style={{
+                border: 'none',
+                textDecoration: 'none',
+                color: 'black',
+                fontSize: '14px',
+              }}
+            >
+              Read More
+            </a>
+          </button>
+        </div>
+
+        <div className='photogallary'>
+          <div className='photoGrid'>
+            <div className='photo'>
+              <div className='photoImage'>
+                <img src={img1} style={imgStyle} alt='' />
+              </div>
+            </div>
+            <div className='photo'>
+              <div className='photoImage'>
+                <img src={img2} style={imgStyle} alt='' />
+              </div>
+            </div>
+            <div className='photo'>
+              <div className='photoImage'>
+                <img src={img3} style={imgStyle} alt='' />
+              </div>
+            </div>
+            <div className='photo'>
+              <div className='photoImage'>
+                <img src={img4} style={imgStyle} alt='' />
+              </div>
+            </div>
+            <div className='photo'>
+              <div className='photoImage'>
+                <img src={img5} style={imgStyle} alt='' />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

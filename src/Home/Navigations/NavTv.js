@@ -38,6 +38,12 @@ function NavTv() {
          borderRadius: '10px',
          objectFit: 'contain',
        };
+       const icon = {
+         width: '50px',
+         height: '50px',
+         borderRadius: '10px',
+         objectFit: 'contain',
+       };
       const card = {
         width: '100%',
         height: '300px',
@@ -55,13 +61,19 @@ function NavTv() {
         <Nav />
         <div className='watchBanner watch'>
           <div className='homeBannerSection1 watch'>
-            <a href='#'
-              className='myLink listner'
+            <a
+              href='#'
+              className='myLink listner watcher'
               onClick={handleClick}
             >
-              <span className='livetv'>
-                <img src={livetv} alt='' style={imageStyle} />
-                <img src={circler} alt="" className='circular' />
+              <span>
+                <h1 style={{color:'black',fontWeight:'bold'}}>Watch</h1>
+              </span>
+              <span className='liveHolder'>
+                <span className='livetv'>
+                  <img src={livetv} alt='' style={icon} />
+                  <img src={circler} alt='' className='circular' />
+                </span>
               </span>
             </a>
           </div>
