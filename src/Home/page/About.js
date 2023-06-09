@@ -1,6 +1,7 @@
 import React, {useState,  useEffect} from 'react'
 import Nav from '../Nav'
-import img1 from '../images/Broiler_chicken.jpeg';
+import Carousel  from 'react-bootstrap/Carousel';
+import img1 from '../images/veg2.png';
 import img2 from '../images/Chicken-layers.jpeg';
 import img3 from '../images/eggs.png';
 import img4 from '../images/fruits1.png';
@@ -56,6 +57,11 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
             researcher, or simply passionate about agriculture, our human-touch
             radio service will keep you informed, inspired, and connected to the
             pulse of the agricultural community.
+            <br /> <h1 className='headersFont'>Our Vision</h1> To be the
+            most Credible, Consistent and Valued Agricultural Broadcast Station
+            in Nigeria. <br /> <h1 className='headersFont'>Our Mission</h1>{' '}
+             To provide a trusted and reliable source of information,
+            education and entertainment to the communities we serve.
           </p>
         </p>
         <div>
@@ -85,7 +91,7 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
           <div className='photoGrid'>
             <div className='photo'>
               <div className='photoImage'>
-                <img src={img1} style={imgStyle} alt='' />
+                <img src={img5} style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
@@ -95,7 +101,7 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src={img3} style={imgStyle} alt='' />
+                <img src={img1} style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
@@ -105,11 +111,13 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src={img5} style={imgStyle} alt='' />
+                <img src={img7} style={imgStyle} alt='' />
               </div>
             </div>
           </div>
         </div>
+
+        <div className='aboutCrosel'></div>
       </div>
     </div>
   );
