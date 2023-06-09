@@ -14,8 +14,6 @@ export default function About() {
   const bg ={
     background:'white',
     color:'black',
-    paddingLeft:'130px',
-    paddingRight:'130px'
   }
   const [data, setData] = useState('');
   const handleClick = () =>{

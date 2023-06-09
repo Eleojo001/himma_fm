@@ -720,6 +720,16 @@ align-items: center;
   font-size: 23px;
 }
 /* ABOUT */
+.about-container{
+  text-align: justify;
+  padding: 10px 130px;
+    /* background:white;
+    color: black;
+  text-align: justify;
+    padding-Left: 135px;
+    padding-Right: 135px; */
+    /* padding: 0px 130px; */
+}
 .photogallary{
   margin: 40px 0px;
 }
@@ -1324,6 +1334,9 @@ align-items: center;
   align-items: start;
   display: flex;
   margin: 20px 0px;
+}
+.about-container{
+    padding: 10px 30px;
 }
 .socialMed{
   display: flex;
