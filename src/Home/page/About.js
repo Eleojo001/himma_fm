@@ -116,8 +116,6 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
             </div>
           </div>
         </div>
-
-        <div className='aboutCrosel'></div>
       </div>
     </div>
   );

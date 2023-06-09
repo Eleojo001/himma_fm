@@ -107,7 +107,8 @@ align-items: center;
 }
 .liveHolder{
   position: absolute;
-  left: 89px;
+  left: 95px;
+  top: 20px;
 }
 .livetv{
   width: 50px;
