@@ -7,7 +7,7 @@ import {
   FaYoutube,
 } from 'react-icons/fa';
 import { TfiTwitter } from 'react-icons/tfi';
-import logo from './images/logoN.png';
+import logo from './images/himmarebrandlogo.jpeg';
 import { DataContext } from '../App';
 
 function Nav() {

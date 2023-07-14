@@ -37,18 +37,28 @@ function Footer() {
             </Link>
           </li>
           <li>
+            <Link to={'/'} className='myLink'>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to={'/'} className='myLink'>
+              Radio
+            </Link>
+          </li>
+          <li>
+            <Link to={'/Himma-tv'} className='myLink'>
+              TV
+            </Link>
+          </li>
+          <li>
             <Link to={'/news'} className='myLink'>
               News
             </Link>
           </li>
           <li>
-            <Link to={'/Himma-tv'} className='myLink'>
-              Himma TV
-            </Link>
-          </li>
-          <li>
             <Link to={'/shows'} className='myLink'>
-              Shows/Programmes
+              Programmes
             </Link>
           </li>
           {/* <li>

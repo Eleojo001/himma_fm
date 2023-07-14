@@ -32,7 +32,7 @@ function TvDetails() {
             if (item.id == id) {
               return (
                 <div key={item.id}>
-                  <h1 className='detailsHeader'>{item.title} hi</h1>
+                  <h1 className='detailsHeader'>{item.title}</h1>
 
                   <p className=' banner-content author'>
                     {item.author} <BsDot size={'1rem'} />{' '}
