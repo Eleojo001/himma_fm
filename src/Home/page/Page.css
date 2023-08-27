@@ -47,10 +47,14 @@
 }
 
 .presenterProfile{
-  padding: 0px 50px;
+  /* padding: 0px 50px;
   display: flex;
   gap: 50px;
-  overflow-x: scroll;
+  overflow-x: scroll; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  animation: slideInRight 3s forwards;
 }
 .presenterCard li{
   list-style: none;
@@ -65,6 +69,8 @@
   text-align: center;
 }
 .Profile{
+  display: flex;
+  flex-direction: column;
   column-gap: 80px;
   width: 80%;
   align-items: center;
@@ -95,5 +101,15 @@
 /* about section  */
 
 
-
+/* key frames */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 

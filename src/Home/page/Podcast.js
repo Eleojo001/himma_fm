@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../images/logoN.png'
+import logo from '../images/podcastbg.png';
 import Nav from '../Nav'
 
 function Podcast() {
@@ -8,6 +8,7 @@ function Podcast() {
     alignItems:'center',
     justifyContent:'center',
     height:'50vh',
+    padding:'30px 0px',
     backgroundColor:'whitesmoke',
   }
   return (
