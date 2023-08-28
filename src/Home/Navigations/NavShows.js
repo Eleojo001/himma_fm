@@ -44,7 +44,7 @@ function NavShows() {
       <div className='presenterPage-container'>
         <h1 className='Presenter-header headersFont'>Programmes</h1>
         <div className='presenterProfile'>
-          {data.slice(0, visible).map((items) => {
+          {data.map((items) => {
             return (
               <div className='Profile'>
                 <div className='p-image'>
@@ -58,7 +58,7 @@ function NavShows() {
                 </div>
                 <div className='profileInfo'>
                   <h3>{items.title}</h3>
-                  <span>{items.time}</span>, <span>{items.day}</span>
+                  <span>{items.time}</span> <span>{items.day}</span>
                 </div>
               </div>
             );

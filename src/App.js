@@ -17,19 +17,23 @@ import NavNews from './Home/Navigations/NavNews';
 import NavPresenters from './Home/Navigations/NavPresenters';
 import NavTv from './Home/Navigations/NavTv';
 import NavShows from './Home/Navigations/NavShows';
-import pImage1 from './Home/images/presenter1.jpeg';
-import pImage2 from './Home/images/presenter2.jpeg';
+import pImage1 from './Home/images/presenter_kabir.jpeg';
+import pImage2 from './Home/images/presenter_salisu.jpeg';
 import pImage3 from './Home/images/presenter3.jpeg';
 import pImage4 from './Home/images/presenter4.jpeg';
 import tv1 from './Home/images/tv1.jpeg';
 import tv2 from './Home/images/tv2.jpeg';
 import tv3 from './Home/images/tv3.jpeg';
 import tv4 from './Home/images/tv4.jpeg';
-import show1 from './Home/images/commodites.jpeg';
+import show1 from './Home/images/cinikin_amfanin_noma.jpeg'
 import show2 from './Home/images/Sirin-Noma.jpeg';
-import show3 from './Home/images/Gona.jpeg';
-import show4 from './Home/images/Gona-Zuwa.jpeg';
+import show3 from './Home/images/awaki.jpeg';
+import show4 from './Home/images/dabbobin_ruwa.jpeg'
 import show5 from './Home/images/Hatsi.jpeg';
+import show6 from './Home/images/kiwo_don_riba.jpeg'
+import show7 from './Home/images/noma_don_riba.jpeg'
+import show8 from './Home/images/masara.jpeg'
+import show9 from './Home/images/naurorinnoma.jpeg'
 import NewsDetails from './Home/details/NewsDetails';
 import PresenterDetails from './Home/details/PresenterDetails';
 import ShowsDetails from './Home/details/ShowsDetails';
@@ -130,58 +134,63 @@ However, despite these challenges which can be found in many countries throughou
   const [Shows, setShows] = useState([
     {
       id: '1',
-      title: 'Commodities Today',
-      time: '2:00pm - 4:00pm',
-      day: 'Monday - Saturday',
+      title: 'Cinikin Amafanin Noma',
       image: show1,
     },
     {
       id: '2',
-      title: 'Sirin Noma',
-      time: '8:00am - 1:00pm',
-      day: 'Every Saturday',
+      title: 'Noma Don Riba',
       image: show2,
     },
     {
       id: '3',
-      title: 'Gona zuwa Cokali mai yatsa',
-      time: '5:00pm - 7:00pm',
-      day: 'Monday - Friday',
+      title: 'Awaki',
       image: show3,
+    },
+    {
+      id: '4',
+      title: 'Dabbobin Ruwa',
+      image: show4,
     },
 
     {
       id: '5',
-      title: 'Hatsi',
-      time: '7:00pm - 8:00pm',
-      day: 'Sundays',
+      title:'Hatsi',
       image: show5,
+    },
+    {
+      id: '6',
+      title: 'Kiwo Dan Riba',
+      image: show6,
+    },
+    {
+      id: '7',
+      title: 'Noma Don Riba',
+      image: show7,
+    },
+    {
+      id: '8',
+      title: 'Masara',
+      image: show8,
+    },
+    {
+      id: '9',
+      title: `Na'urorin Noma`,
+      image: show6,
     },
   ]);
   const [Presenter, setPresenter] = useState([
     {
       id: '1',
-      name: 'Mustapha Sada',
+      name: 'Kabir G Haruna',
       bio: '',
       image: pImage1,
     },
     {
       id: '2',
-      name: 'Ameh Sunday',
+      name: 'Salisu Idris Modobi',
       bio: '',
-      image: '',
-    },
-    {
-      id: '3',
-      name: 'Vivian Obiora',
-      bio: '',
-      image: '',
-    },
-    {
-      id: '4',
-      name: 'Tunde Fatah',
-      bio: '',
-      image: pImage4,
+      image: pImage2,
     },
   ]);
   const [Television, setTelevision] = useState([
