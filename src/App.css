@@ -898,6 +898,7 @@ align-items: center;
 }
 .nav_men{
   list-style: none;
+  padding-bottom: 30px;
 }
 .nav_link{
   text-decoration: none;
