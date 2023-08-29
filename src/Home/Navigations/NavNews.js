@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from 'react';
-import Card from '../components/Card';
 import { Link, useParams } from 'react-router-dom';
 import '../page/Page.css';
 import { DataContext } from '../../App';

@@ -3,11 +3,8 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Footer from './Home/Footer';
-import Nav from './Home/Nav';
 import About from './Home/page/About';
-import Details from './Home/page/Details';
 import Page from './Home/page/Page';
-import PresentersPage from './Home/page/PresentersPage';
 import Contact from './Home/page/Contact';
 import newsImage1 from './Home/images/Food-and-Agriculture.jpeg'
 import newsImage2 from './Home/images/hydro-3.jpeg'
@@ -19,12 +16,7 @@ import NavTv from './Home/Navigations/NavTv';
 import NavShows from './Home/Navigations/NavShows';
 import pImage1 from './Home/images/presenter_kabir.jpeg';
 import pImage2 from './Home/images/presenter_salisu.jpeg';
-import pImage3 from './Home/images/presenter3.jpeg';
-import pImage4 from './Home/images/presenter4.jpeg';
 import tv1 from './Home/images/tv1.jpeg';
-import tv2 from './Home/images/tv2.jpeg';
-import tv3 from './Home/images/tv3.jpeg';
-import tv4 from './Home/images/tv4.jpeg';
 import show1 from './Home/images/cinikin_amfanin_noma.jpeg'
 import show2 from './Home/images/Sirin-Noma.jpeg';
 import show3 from './Home/images/awaki.jpeg';
@@ -247,9 +239,6 @@ However, despite these challenges which can be found in many countries throughou
   ])
 
 
-  const myFlex = 'myFlex'
-  const myList = 'myList'
-  const myCircle = 'myCircle'
   
   return (
     <div className='App'>

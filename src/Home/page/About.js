@@ -1,15 +1,10 @@
 import React, {useState,  useEffect} from 'react'
 import Nav from '../Nav'
-import Carousel  from 'react-bootstrap/Carousel';
 import img1 from '../images/veg2.png';
 import img2 from '../images/Chicken-layers.jpeg';
-import img3 from '../images/eggs.png';
 import img4 from '../images/fruits1.png';
 import img5 from '../images/Sarman-farms-1.png';
-import img6 from '../images/Sarman-Farms-Favicon-2.png';
 import img7 from '../images/slider121.png';
-import img8 from '../images/snail-eggs.jpeg';
-import img9 from '../images/veg.png';
 
 export default function About() {
   const bg ={

@@ -14,11 +14,6 @@ function News() {
   const [section, setSection] = useState([])
  useEffect( () => {
   setSection(category.News)
-  // for (let index = 0; index < books.length; index++) {
-  //   const book = books[index];
-  // }
-  // setBooker(books[0])
-  // console.log(booker)
   // fetch(fakeurl)
   //   .then((res) => res.json())
   //   .then((data) => {

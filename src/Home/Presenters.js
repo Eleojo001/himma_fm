@@ -47,7 +47,7 @@ function Presenters() {
       const imageStylemobile = {
         width: '200px',
         height: '200px',
-        borderRadius: '10px',
+        borderRadius: '50%',
         objectFit: 'cover',
       };
 
@@ -65,7 +65,7 @@ function Presenters() {
               return (
                 <div className='presenterCard' key={item.id}>
                   <div className='sliderCardImg'>
-                    <img src={item.image} style={imageStyle} alt='' />
+                    <img src={item.image} style={imageStylemobile} alt='' />
                   </div>
                   <li className=''>
                     <h3>{item.name}</h3>

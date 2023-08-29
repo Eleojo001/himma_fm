@@ -8,7 +8,6 @@ function Page() {
   const {id} = useParams();
   const [post, setPost] = useState([]);
   const category = useContext(DataContext);
-  const [section, setSection] = useState([])
   const url = `http://localhost:5003/posts/${id}/name`;
 
   const checkValueInObject = (value, obj) => {

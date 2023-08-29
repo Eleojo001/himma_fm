@@ -1,21 +1,14 @@
-import React, {useContext, useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import HomeBanner from './Home/HomeBanner'
 import Nav from './Home/Nav'
 import News from './Home/News'
 import Presenters from './Home/Presenters'
 import Shows from './Home/Shows'
-import Television from './Home/Television'
-// import ContextPage from './Home/components/ContextPage'
-// import { DataContext } from './Home/components/ContextPage'
 
 export const DataContext = React.createContext();
 
 
 function Home() {
-  // const book = useContext(ContextPage)
-  // useEffect((
-    // console.log(book)
-  // ),[])
     const [book, setBook] = useState([
       [
         {
@@ -61,7 +54,6 @@ function Home() {
       <HomeBanner/>
       <News id='#News' />
       <Presenters id='#Presenter' />
-      {/* <Television id='#Television' /> */}
       <Shows id='#Shows' />
 
 

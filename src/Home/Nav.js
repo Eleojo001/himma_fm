@@ -47,23 +47,6 @@ useEffect( () => {
 
     toggleIcon === 'nav_toggler' ? setToggleIcon('nav_toggler toggle') : setToggleIcon('nav_toggler')
   }
-  // const modalToggler =() =>{
-  //   modalActive === 'modal' ? setModalActive('modal modal-active') : setModalActive('modal')
-  //   modalToggle === 'modalToggle'
-  //     ? setModalToggle('modalToggle modal_toggler')
-  //     : setModalToggle('modal_toggler');
-  // }
-
-  const loadingStyle = {
-    margin: '0, auto',
-    display: 'flex',
-    alignItems: 'center',
-    textAlign: 'center',
-  };
-  const btnStyle = {
-    border:'none',
-    backgroundColor:'none'
-  }
   const navContainer = {
     width:'100%',
     boxSizing:'BorderBox',
@@ -155,112 +138,6 @@ useEffect( () => {
           <li className='nav_item'>Podcast</li>
         </Link>
       </div>
-      {/* <div className={modalActive}>hello</div> */}
-      {/* {array.map((item) => {
-          return (
-            <li className='nav_item' key={item.id}>
-              <Link to={`/page/${item.title}`} className='nav_link'>
-                {item.title}
-              </Link>
-
-              <a href='#News'></a>
-            </li>
-          );
-        })} */}
-
-      {/* <div className='main-nav'>
-        <div className='logoSec'>
-          <div className='logo'></div>
-          <div className='logoText'>{ <p> Himma Radio </p> }</div>
-        </div>
-        <div className='webNav'>
-          <li>
-            <Link to={`/`} className='webNav'>
-              Home
-            </Link>
-          </li>
-          {navBar.map((navItem)=>{
-            if(navItem)return(
-              <div>
-                <li key={navItem._id}>
-                    <a href={`/page/${navItem.title}`} className='webNav'>
-                      {navItem.title}
-                    </a>
-                </li>
-                </div>
-            )
-          })}
-        {category.map((cat) => {
-          if (cat)
-            return (
-              <div>
-                <li key={cat._id}>
-                    <a href={`/page/${cat.title}`} className='webNav'>
-                      {cat.title}
-                    </a>
-                </li>
-                <li>
-                    <Link to={`/page`} className='webNav'>
-                      Himma-Tv
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={`/page`} className='webNav'>
-                      Shows
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={`/page`} className='webNav'>
-                      Events
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={`/presenters`} className='webNav'>
-                      Presenters
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to={'/about'} className='webNav'>
-                      <li>About</li>
-                    </Link>
-                  </li>
-              </div>
-            );
-            else {
-              <div style={loadingStyle}>
-              <p>Loading information please wait....</p>
-            </div>;
-          }
-        })}
-        </div>
-         <div className='media'>
-          <div className='media-icons'>
-            <li>
-              <FaInstagram className='nav-media-icons' size={'20px'} />
-            </li>
-            <li>
-              <TfiTwitter className='nav-media-icons' size={'20px'} />
-            </li>
-            <li>
-              <FaFacebookF className='nav-media-icons' size={'20px'} />
-            </li>
-            <li>
-              <FaWhatsapp className='nav-media-icons' size={'20px'} />
-            </li>
-            <li>
-              <FaYoutube className='nav-media-icons' size={'20px'} />
-            </li>
-          </div>
-        </div> 
-         <div className='liveOnAir'>
-          <div className='liveonAirImage'></div>
-          <div className='liveonairTittle'>
-            <li>Live on Air</li>
-            <li className='show-time'>Midday Show</li>
-            <li>Tuesday 11:00am to 4:00pm</li>
-          </div>
-        </div> 
-      </div> */}
     </div>
   );
 }

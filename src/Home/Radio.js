@@ -99,13 +99,6 @@ function Radio() {
           frameborder='0'
           scrolling='no'
         ></iframe>
-        {/* <a
-          href='https://zeno.fm/'
-          target='_blank'
-          style={{display: "block", fontSize: '0.9em', lineHeight: '10px',}}
-        >
-          A Zeno.FM Station
-        </a> */}
       </div>
     </div>
   );
