@@ -52,7 +52,7 @@ function Presenters() {
               return (
                 <div className='presenterCard' key={item.id}>
                   <div className='presenterCardImg'>
-                    {/* <img src={item.image} alt='' /> */}
+                    <img src={item.image} alt='' />
                   </div>
                   <li className=''>
                     <h3>{item.name}</h3>
