@@ -176,7 +176,7 @@ However, despite these challenges which can be found in many countries throughou
     {
       id: '9',
       title: `Na'urorin Noma`,
-      image: show6,
+      image: show9,
     },
   ]);
   const [Presenter, setPresenter] = useState([
@@ -188,7 +188,7 @@ However, despite these challenges which can be found in many countries throughou
     },
     {
       id: '2',
-      name: 'Salisu Idris Modobi',
+      name: 'Salisu Idris Madobi',
       bio: '',
       image: pImage2,
     },

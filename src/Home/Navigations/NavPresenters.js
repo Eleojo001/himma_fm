@@ -82,8 +82,8 @@ function NavPresenters() {
               return (
                 <div className='card-mobile'>
                   <div className='newsCardImage_mobile'>
-                    <div style={round}></div>
-                    {/* <img src={item.image} alt='' style={imageStyle} /> */}
+                    {/* <div style={round}></div> */}
+                    <img src={item.image} alt='' style={imageStyleMobile} />
                   </div>
                   <div className='profileInfo'>
                     <h3 style={headerColor} className='textLimit'>
