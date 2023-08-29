@@ -36,7 +36,20 @@ function Presenters() {
 
   useEffect((()=>{
     setPresenter(category.Presenter)
+    console.log(category.Presenter)
   }),[])
+      const imageStyle = {
+        width: '100%',
+        height: '100%',
+        borderRadius: '50%',
+        objectFit: 'cover',
+      };
+      const imageStylemobile = {
+        width: '200px',
+        height: '200px',
+        borderRadius: '10px',
+        objectFit: 'cover',
+      };
 
   return (
     <div>
@@ -51,8 +64,8 @@ function Presenters() {
             {presenter.map((item) => {
               return (
                 <div className='presenterCard' key={item.id}>
-                  <div className='presenterCardImg'>
-                    <img src={item.image} alt='' />
+                  <div className='sliderCardImg'>
+                    <img src={item.image} style={imageStyle} alt='' />
                   </div>
                   <li className=''>
                     <h3>{item.name}</h3>
