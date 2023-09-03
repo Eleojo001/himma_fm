@@ -173,16 +173,16 @@ However, despite these challenges which can be found in many countries throughou
   ]);
   const [Presenter, setPresenter] = useState([
     {
-      id: '1',
-      name: 'Kabir G Haruna',
-      bio: '',
-      image: pImage1,
-    },
-    {
       id: '2',
       name: 'Salisu Idris Madobi',
       bio: '',
       image: pImage2,
+    },
+    {
+      id: '1',
+      name: 'Kabir G Haruna',
+      bio: '',
+      image: pImage1,
     },
   ]);
   const [Television, setTelevision] = useState([
