@@ -6,7 +6,7 @@ import Footer from './Home/Footer';
 import About from './Home/page/About';
 import Page from './Home/page/Page';
 import Contact from './Home/page/Contact';
-import newsImage1 from './Home/images/Food-and-Agriculture.jpeg'
+import newsImage1 from './images/Food-and-Agriculture.jpeg';
 import newsImage2 from './Home/images/hydro-3.jpeg'
 import newsImage3 from './Home/images/meeting-3.jpeg'
 import newsImage4 from './Home/images/farm-4.jpeg'
