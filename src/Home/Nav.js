@@ -7,7 +7,6 @@ import {
   FaYoutube,
 } from 'react-icons/fa';
 import { TfiTwitter } from 'react-icons/tfi';
-import logo from './images/himmarebrandlogo.jpeg';
 import { DataContext } from '../App';
 
 function Nav() {
@@ -63,7 +62,12 @@ useEffect( () => {
 
       <nav className='nav' style={navContainer}>
         <Link to={'/'} className='nav_brand'>
-          <img src={logo} alt='' style={logoStyle} className='logostyle' />
+          <img
+            src='himmarebrandlogo.jpeg'
+            alt=''
+            style={logoStyle}
+            className='logostyle'
+          />
         </Link>
         <ul className='nav_menu'>
           <li className='nav_item'>

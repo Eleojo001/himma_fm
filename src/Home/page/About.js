@@ -80,27 +80,27 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
           <div className='photoGrid'>
             <div className='photo'>
               <div className='photoImage'>
-                <img src='images/Sarman-farms-1.png' style={imgStyle} alt='' />
+                <img src='Sarman-farms-1.png' style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src='images/Chicken-layers.jpeg' style={imgStyle} alt='' />
+                <img src='Chicken-layers.jpeg' style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src='images/veg2.png' style={imgStyle} alt='' />
+                <img src='veg2.png' style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src='images/fruits1.png' style={imgStyle} alt='' />
+                <img src='fruits1.png' style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src='images/slider121.png' style={imgStyle} alt='' />
+                <img src='slider121.png' style={imgStyle} alt='' />
               </div>
             </div>
           </div>

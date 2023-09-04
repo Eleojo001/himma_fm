@@ -284,7 +284,6 @@ align-items: center;
   width: 60px;
   margin-right: 5px;
   background-color: white;
-  background-image: url(./Home/images/himmaLogo.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -335,7 +334,6 @@ align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('./Home/images/homebg.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
 }

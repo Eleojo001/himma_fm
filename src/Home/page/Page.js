@@ -28,13 +28,6 @@ function Page() {
 
 
 
-const array = [
-  { id: 1, name: 'John' },
-  { id: 2, name: 'Jane' },
-  { id: 3, name: 'Bob' },
-  { id: 4, name: 'Bob', title:'News' },
-];
-
 const findItemById = (arr, itemId) => {
   return arr.find((item) => item.title === itemId);
 };

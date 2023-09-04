@@ -67,9 +67,9 @@ function NavTv() {
               </span>
               <span className='liveHolder'>
                 <span className='livetv'>
-                  <img src='images/Live_tv_n.png' alt='' style={icon} />
+                  <img src='Live_tv_n.png' alt='' style={icon} />
                   <img
-                    src='images/Red_circle.gif'
+                    src='Red_circle.gif'
                     alt=''
                     className='circular'
                   />
@@ -159,7 +159,7 @@ function NavTv() {
                 style={{ width: '30px', height: '30px', marginRight: '10px' }}
               >
                 <img
-                  src='images/viewMore_icon.png'
+                  src='viewMore_icon.png'
                   alt=''
                   style={imageStyleBtn}
                 />

@@ -1,14 +1,7 @@
 import React, {useEffect, useState, useContext} from 'react'
 import { DataContext } from '../App';
 import { Link } from 'react-router-dom';
-import listenIcon from './images/Red_circle.gif'
 function HomeBanner() {
-    const containerStyles = {
-      backgroundImage: 'url(./images/homeBanner.jpeg)',
-      backgroundSize: 'cover',
-      width:'100%',
-      height:'100%',
-    };
     const category = useContext(DataContext)
     const [data, setData] = useState([])
 
@@ -34,7 +27,7 @@ function HomeBanner() {
           >
             <Link className='myLink listner' to={'/radio'}>
               <span className='listenIcon'>
-                <img src={listenIcon} alt='' style={imageStyle} />
+                <img src='Red_circle.gif' alt='' style={imageStyle} />
               </span>
               <span style={{ color: 'red', fontSize: '18px' }}>
                 Listen Live{' '}
@@ -42,7 +35,6 @@ function HomeBanner() {
             </Link>
           </div>
         </div>
-      
       </div>
     </div>
   );

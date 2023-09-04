@@ -118,7 +118,7 @@ function News() {
               style={{ width: '30px', height: '30px', marginRight: '10px' }}
             >
               <img
-                src='images/viewMore_icon.png'
+                src='viewMore_icon.png'
                 alt=''
                 style={imageStyleBtn}
               />

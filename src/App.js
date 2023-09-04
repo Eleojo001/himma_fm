@@ -41,7 +41,7 @@ function App() {
       content: `Every human endeavour is rapidly experiencing fascinating evolution making regular activities such as construction, education, healthcare, sports and agricultural activities more efficient and far reaching. That is why new innovations are fast rising and changing the ideals of society.\nThese ideals in the Information and Technology sector have even been described as disruptive technology as they have the tendency to totally alter the normal way tasks are carried out. For example, the overwhelming challenge that came with the COVID-19 pandemic has placed an option in the offing for the use of virtual communications for educational, social, judicial and governance purposes.\nSame changes are occurring in other sectors such as mechanized farming, genetic engineering, and the use of hydroponics and aeroponics in the growth of crops.\nHydroponics is a type of horticulture and a subset of hydroculture, which is a method of growing plants, usually crops, without soil, by using mineral nutrient solutions in an aqueous solvent while aeroponics is the use of aerosols laced with nutrients for plants and crops to grow. \n Plants commonly grown hydroponically on include tomatoes, peppers, cucumbers, strawberries, lettuces, marijuana, and model plants.\nThough many sceptics have reservations about these new methods of growing crops, such as the dangers of consuming seeds grown through such methods amongst others, hydroponics still has a lot of benefits. Due to the decrease in water usage for agriculture.
 `,
       date: 'FEBRUARY 23, 2021',
-      image: '/images/Food-and-Agriculture.jpeg',
+      image: 'Food-and-Agriculture.jpeg',
     },
     {
       id: 2,
@@ -50,7 +50,7 @@ function App() {
       author: 'JEREMIAH AMEDU',
       content: `Every human endeavor is rapidly experiencing fascinating evolution making regular activities such as construction, education, healthcare, sports and agricultural activities more efficient and far reaching. That is why new innovations are fast rising and changing the ideals of society.\n These ideals in the Information and Technology sector have even been described as disruptive technology as they have the tendency to totally alter the normal way tasks are carried out. For example, the overwhelming challenge that came with the COVID-19 pandemic has placed an option in the offing for the use of virtual communications for educational, social, judicial and governance purposes. \nIn the last seven months many weddings were held online, lectures and seminars were held virtually, court sessions and government functions were also held virtually.\nThese are all changes that has affected our social psyche in the way things are done. Same changes are occurring in other sectors such as mechanized farming, genetic engineering, and the use of hydroponics and aeroponics in the growth of crops. Hydroponics is a type of horticulture and a subset of hydroculture, which is a method of growing plants, usually crops, without soil, by using mineral nutrient solutions in an aqueous solvent while aeroponics is the use of aerosols laced with nutrients for plants and crops to grow.`,
       date: 'FEBRUARY 23, 2021',
-      image: '/images/hydro-3.jpeg',
+      image: 'hydro-3.jpeg',
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ function App() {
 
 
 `,
-      image: '/images/meeting-3.jpeg',
+      image: 'meeting-3.jpeg',
       date: 'FEBRUARY 23, 2021',
     },
     {
@@ -76,55 +76,55 @@ But economists have a more complicated theory. Perhaps, farmers face too much ri
 
 However, despite these challenges which can be found in many countries throughout the globe, some personalities have faced the odds and emerged wealthy from farming while some other wealthy business investors are expanding their tentacles into farming. This is most likely due to the fact that farmers play a key role in keeping humans alive as everyone has to eat. A clear case is Africa’s richest man, Aliko Dangote who intends to branch into farming by investing $4.6billion in the Nigerian agriculture sector. Mr. Dangote plans to invest at least $3.8billion in sugar and rice and $800m in milk production in the next three years.`,
       date: 'FEBRUARY 23, 2021',
-      image: '/images/farm-4.jpeg',
+      image: 'farm-4.jpeg',
     },
   ]);
   const [Shows, setShows] = useState([
     {
       id: '1',
       title: 'Cinikin Amafanin Noma',
-      image: '/images/cinikin_amfanin_noma.jpeg',
+      image: 'cinikin_amfanin_noma.jpeg',
     },
     {
       id: '2',
       title: 'Noma Don Riba',
-      image: '/images/Sirin-Noma.jpeg',
+      image: 'Sirin-Noma.jpeg',
     },
     {
       id: '3',
       title: 'Awaki',
-      image: '/images/awaki.jpeg',
+      image: 'awaki.jpeg',
     },
     {
       id: '4',
       title: 'Dabbobin Ruwa',
-      image: '/images/dabbobin_ruwa.jpeg',
+      image: 'dabbobin_ruwa.jpeg',
     },
 
     {
       id: '5',
       title: 'Hatsi',
-      image: '/images/Hatsi.jpeg',
+      image: 'Hatsi.jpeg',
     },
     {
       id: '6',
       title: 'Kiwo Dan Riba',
-      image: '/images/kiwo_don_riba.jpeg',
+      image: 'kiwo_don_riba.jpeg',
     },
     {
       id: '7',
       title: 'Noma Don Riba',
-      image: '/images/noma_don_riba.jpeg',
+      image: 'noma_don_riba.jpeg',
     },
     {
       id: '8',
       title: 'Masara',
-      image: '/images/naurorinnoma.jpeg',
+      image: 'naurorinnoma.jpeg',
     },
     {
       id: '9',
       title: `Na'urorin Noma`,
-      image: '/images/naurorinnoma.jpeg',
+      image: 'naurorinnoma.jpeg',
     },
   ]);
   const [Presenter, setPresenter] = useState([
@@ -132,13 +132,13 @@ However, despite these challenges which can be found in many countries throughou
       id: '1',
       name: 'Kabir G Haruna',
       bio: '',
-      image: '/images/presenter_kabir.jpeg',
+      image: 'presenter_kabir.jpeg',
     },
     {
       id: '2',
       name: 'Salisu Idris Madobi',
       bio: '',
-      image: '/images/presenter_salisu.jpeg',
+      image: 'presenter_salisu.jpeg',
     },
   ]);
   const [Television, setTelevision] = useState([
@@ -147,7 +147,6 @@ However, despite these challenges which can be found in many countries throughou
       title: 'History of Agriculture',
       content:
         'In every multi-socio-cultural entity, there underlies certain unifying factors that bond the inhabitants together. It could range from trade, commerce, similarities in traditions, cultures, belief systems inter marriages amongst a host of others.',
-        // image:tv1,
         url:'https://www.youtube.com/@HimmaTV261'
     },
     // {

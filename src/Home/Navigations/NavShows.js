@@ -83,7 +83,7 @@ function NavShows() {
         <div className='NewmoreBtn'>
           <button className='viewmore' onClick={showMoreItems}>
             <span style={{ marginRight: '10px' }}>
-              <img src='images/viewMore_icon.png' alt='' className='btnicon' />
+              <img src='viewMore_icon.png' alt='' className='btnicon' />
             </span>
             <span style={{ color: 'white' }}>View More</span>
           </button>
