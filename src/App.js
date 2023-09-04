@@ -50,7 +50,7 @@ function App() {
       author: 'JEREMIAH AMEDU',
       content: `Every human endeavor is rapidly experiencing fascinating evolution making regular activities such as construction, education, healthcare, sports and agricultural activities more efficient and far reaching. That is why new innovations are fast rising and changing the ideals of society.\n These ideals in the Information and Technology sector have even been described as disruptive technology as they have the tendency to totally alter the normal way tasks are carried out. For example, the overwhelming challenge that came with the COVID-19 pandemic has placed an option in the offing for the use of virtual communications for educational, social, judicial and governance purposes. \nIn the last seven months many weddings were held online, lectures and seminars were held virtually, court sessions and government functions were also held virtually.\nThese are all changes that has affected our social psyche in the way things are done. Same changes are occurring in other sectors such as mechanized farming, genetic engineering, and the use of hydroponics and aeroponics in the growth of crops. Hydroponics is a type of horticulture and a subset of hydroculture, which is a method of growing plants, usually crops, without soil, by using mineral nutrient solutions in an aqueous solvent while aeroponics is the use of aerosols laced with nutrients for plants and crops to grow.`,
       date: 'FEBRUARY 23, 2021',
-      image: '/hydro-3.jpeg',
+      image: '/hydro-3.jpg',
     },
     {
       id: 3,
@@ -62,7 +62,7 @@ function App() {
 
 
 `,
-      image: 'meeting-3.jpeg',
+      image: 'meeting-3.jpg',
       date: 'FEBRUARY 23, 2021',
     },
     {
@@ -76,55 +76,55 @@ But economists have a more complicated theory. Perhaps, farmers face too much ri
 
 However, despite these challenges which can be found in many countries throughout the globe, some personalities have faced the odds and emerged wealthy from farming while some other wealthy business investors are expanding their tentacles into farming. This is most likely due to the fact that farmers play a key role in keeping humans alive as everyone has to eat. A clear case is Africa’s richest man, Aliko Dangote who intends to branch into farming by investing $4.6billion in the Nigerian agriculture sector. Mr. Dangote plans to invest at least $3.8billion in sugar and rice and $800m in milk production in the next three years.`,
       date: 'FEBRUARY 23, 2021',
-      image: 'farm-4.jpeg',
+      image: 'farm-4.jpg',
     },
   ]);
   const [Shows, setShows] = useState([
     {
       id: '1',
       title: 'Cinikin Amafanin Noma',
-      image: 'cinikin_amfanin_noma.jpeg',
+      image: 'cinikin_amfanin_noma.jpg',
     },
     {
       id: '2',
       title: 'Noma Don Riba',
-      image: 'Sirin-Noma.jpeg',
+      image: 'Sirin-Noma.jpg',
     },
     {
       id: '3',
       title: 'Awaki',
-      image: 'awaki.jpeg',
+      image: 'awaki.jpg',
     },
     {
       id: '4',
       title: 'Dabbobin Ruwa',
-      image: 'dabbobin_ruwa.jpeg',
+      image: 'dabbobin_ruwa.jpg',
     },
 
     {
       id: '5',
       title: 'Hatsi',
-      image: 'Hatsi.jpeg',
+      image: 'Hatsi.jpg',
     },
     {
       id: '6',
       title: 'Kiwo Dan Riba',
-      image: 'kiwo_don_riba.jpeg',
+      image: 'kiwo_don_riba.jpg',
     },
     {
       id: '7',
       title: 'Noma Don Riba',
-      image: 'noma_don_riba.jpeg',
+      image: 'noma_don_riba.jpg',
     },
     {
       id: '8',
       title: 'Masara',
-      image: 'naurorinnoma.jpeg',
+      image: 'naurorinnoma.jpg',
     },
     {
       id: '9',
       title: `Na'urorin Noma`,
-      image: 'naurorinnoma.jpeg',
+      image: 'naurorinnoma.jpg',
     },
   ]);
   const [Presenter, setPresenter] = useState([
@@ -132,13 +132,13 @@ However, despite these challenges which can be found in many countries throughou
       id: '1',
       name: 'Kabir G Haruna',
       bio: '',
-      image: 'presenter_kabir.jpeg',
+      image: 'presenter_kabir.jpg',
     },
     {
       id: '2',
       name: 'Salisu Idris Madobi',
       bio: '',
-      image: 'presenter_salisu.jpeg',
+      image: 'presenter_salisu.jpg',
     },
   ]);
   const [Television, setTelevision] = useState([
