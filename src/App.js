@@ -144,10 +144,10 @@ However, despite these challenges which can be found in many countries throughou
   const [Television, setTelevision] = useState([
     {
       id: '1',
-      title: 'History of Agriculture',
+      title: 'Serman Farms',
       content:
-        'In every multi-socio-cultural entity, there underlies certain unifying factors that bond the inhabitants together. It could range from trade, commerce, similarities in traditions, cultures, belief systems inter marriages amongst a host of others.',
-        url:'https://www.youtube.com/@HimmaTV261'
+        'Discover Fresh and Healthy Farm Products ranging from Grains, Vegetables, Fruits, Poultry Products, Fisheries, Edible Oils, Flours, Livestock and many more!',
+      url: 'https://www.youtube.com/@HimmaTV261',
     },
     // {
     //   id: '2',

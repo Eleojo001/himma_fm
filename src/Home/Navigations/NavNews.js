@@ -59,6 +59,7 @@ function NavNews() {
                     to={`/news/${item.id}`}
                     key={item.id}
                     style={blackColor}
+                    className='newLink'
                   >
                     <div className='newsCardImage'>
                       <img src={item.image} alt='' style={imageStyle} />

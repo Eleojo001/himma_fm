@@ -19,17 +19,9 @@ useEffect(()=>{
           <h1 className='tvHeader'>HIMMA TV</h1>
         </div>
         <div className='televisionFrame'>
-          <div className='tvFrame'>
+          {/* <div className='tvFrame'>
             <div className='frameImage'>
-              <iframe
-                width='100%'
-                height='100%'
-                src='https://www.youtube.com/embed/WOgUgbui-sk'
-                title='YouTube video player'
-                frameborder='0'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                allowfullscreen
-              ></iframe>
+              
             </div>
             <div className='frameTitle'>
               <h4>Agricuture and GDP in Nigeria</h4>
@@ -42,22 +34,14 @@ useEffect(()=>{
                 2594759.86 NGN Million in the first quarter of 2010.
               </p>
             </div>
-          </div>
+          </div> */}
 
           <div className='tvGrid'>
             {tv.map((item) => {
               return (
                 <div className='tvCard' key={item.id}>
                   <div className='tvCardimg'>
-                    <iframe
-                      width='100%'
-                      height='100%'
-                      src='https://www.youtube.com/embed/l0bpy857deM'
-                      title='YouTube video player'
-                      frameborder='0'
-                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                      allowfullscreen
-                    ></iframe>
+                    {item.embed}
                   </div>
                   <a href={item.url}>
                     <div className='tvCardHeader'>

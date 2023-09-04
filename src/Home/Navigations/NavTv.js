@@ -85,12 +85,12 @@ function NavTv() {
                 return (
                   <div>
                     {/* <div className='frameImage'></div> */}
-                    <Link to={`/Himma-Tv/${item.id}`} key={item.id}>
+                    {/* <Link to={`/Himma-Tv/${item.id}`} key={item.id}> */}
                       <div className='newsCardImage'>
                         <iframe
                           width='100%'
                           height='100%'
-                          src='https://www.youtube.com/embed/WOgUgbui-sk'
+                          src='https://www.youtube.com/embed/NwszZEqY5Es?si=c5cnO0qip6Tl-snW'
                           title='YouTube video player'
                           frameborder='0'
                           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -103,7 +103,7 @@ function NavTv() {
                           {item.title}
                         </h3>
                       </div>
-                    </Link>
+                    {/* </Link> */}
                   </div>
                 );
               })}
@@ -129,25 +129,25 @@ function NavTv() {
                 return (
                   <div className='tv-card-mobile'>
                     {/* <div className='frameImage'></div> */}
-                    <Link to={`/Himma-Tv/${item.id}`} key={item.id}>
-                      <div className='newsCardImage_mobile' style={card}>
-                        <iframe
-                          width='100%'
-                          height='100%'
-                          src='https://www.youtube.com/embed/WOgUgbui-sk'
-                          title='YouTube video player'
-                          frameborder='0'
-                          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                          allowfullscreen
-                        ></iframe>
-                        {/* <img src={item.image} alt='' style={imageStyle} /> */}
-                      </div>
-                      <div className='profileInfo'>
-                        <h3 style={headerColor} className='textLimit'>
-                          {item.title}
-                        </h3>
-                      </div>
-                    </Link>
+                    {/* <Link to={`/Himma-Tv/${item.id}`} key={item.id}> */}
+                    <div className='newsCardImage_mobile' style={card}>
+                      <iframe
+                        width='100%'
+                        // height='100%'
+                        src='https://www.youtube.com/embed/NwszZEqY5Es?si=c5cnO0qip6Tl-snW'
+                        title='YouTube video player'
+                        frameborder='0'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                        allowfullscreen
+                      ></iframe>
+                      {/* <img src={item.image} alt='' style={imageStyle} /> */}
+                    </div>
+                    <div className='profileInfo'>
+                      <h3 style={headerColor} className='textLimit'>
+                        {item.title}
+                      </h3>
+                    </div>
+                    {/* </Link> */}
                   </div>
                 );
               })}
