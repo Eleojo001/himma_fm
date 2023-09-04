@@ -66,14 +66,14 @@ function NewsDetails() {
           {info.title}
         </h1>
         <p className='banner-content'>{info.content}</p>
-        <Link to={-1} style={{textDecoration:'none'}}>
+        <Link to={-1} style={{ textDecoration: 'none' }}>
           <button className='backbtn'>
             <span style={{ width: '50px', height: '50px' }}>
-              <img src={goback} alt='' style={imageStyle} />
+              <img src='/images/go_back_icon.png' alt='' style={imageStyle} />
             </span>
             <span>Go back</span>
             <span style={{ width: '50px', height: '50px' }}>
-              <img src={goback} alt='' style={imageStyle} />
+              <img src='/images/go_back_icon.png' alt='' style={imageStyle} />
             </span>
           </button>
         </Link>

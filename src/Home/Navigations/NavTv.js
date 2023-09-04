@@ -4,9 +4,6 @@ import { Link, useParams } from 'react-router-dom';
 import '../page/Page.css';
 import { DataContext } from '../../App';
 import Nav from '../Nav';
-import livetv from '../images/Live_tv_n.png'
-import circler from '../images/Red_circle.gif';
-import viewmore from '../images/viewMore_icon.png';
 
 function NavTv() {
       const category = useContext(DataContext);
@@ -67,12 +64,16 @@ function NavTv() {
               onClick={handleClick}
             >
               <span>
-                <h1 style={{color:'white',fontWeight:'bold', }}>Watch</h1>
+                <h1 style={{ color: 'white', fontWeight: 'bold' }}>Watch</h1>
               </span>
               <span className='liveHolder'>
                 <span className='livetv'>
-                  <img src={livetv} alt='' style={icon} />
-                  <img src={circler} alt='' className='circular' />
+                  <img src='images/Live_tv_n.png' alt='' style={icon} />
+                  <img
+                    src='images/Red_circle.gif'
+                    alt=''
+                    className='circular'
+                  />
                 </span>
               </span>
             </a>
@@ -112,7 +113,11 @@ function NavTv() {
           <div className='moreBtn'>
             <button className='viewmore btn' onClick={showMoreItems}>
               <div style={{ width: '30px', height: '30px', color: 'black' }}>
-                <img src={viewmore} alt='' style={imageStyleBtn} />
+                <img
+                  src='images/viewMore_icon.png'
+                  alt=''
+                  style={imageStyleBtn}
+                />
               </div>
               <span style={{ color: 'white' }}>View More</span>
             </button>
@@ -154,7 +159,11 @@ function NavTv() {
               <span
                 style={{ width: '30px', height: '30px', marginRight: '10px' }}
               >
-                <img src={viewmore} alt='' style={imageStyleBtn} />
+                <img
+                  src='images/viewMore_icon.png'
+                  alt=''
+                  style={imageStyleBtn}
+                />
               </span>
               <span style={{ color: 'white' }}>View More</span>
             </button>

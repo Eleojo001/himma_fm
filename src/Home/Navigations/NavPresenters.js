@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import '../page/Page.css';
 import { DataContext } from '../../App';
 import Nav from '../Nav';
-import viewmore from '../images/viewMore_icon.png';
 
 function NavPresenters() {
     const category = useContext(DataContext);
@@ -96,7 +95,7 @@ function NavPresenters() {
         <div className='NewmoreBtn'>
           <button className='viewmore' onClick={showMoreItems}>
             <span style={{ marginRight: '10px' }}>
-              <img src={viewmore} alt='' className='btnicon' />
+              <img src='images/viewMore_icon.png' alt='' className='btnicon' />
             </span>
             <span style={{ color: 'white' }}>View More</span>
           </button>

@@ -3,7 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import '../page/Page.css';
 import { DataContext } from '../../App';
 import Nav from '../Nav';
-import viewmore from '../images/viewMore_icon.png';
 
 function NavNews() {
   const category = useContext(DataContext)
@@ -80,7 +79,11 @@ function NavNews() {
         <div className='moreBtn'>
           <button className='viewmore btn' onClick={showMoreItems}>
             <div style={{ width: '30px', height: '30px' }}>
-              <img src={viewmore} alt='' style={imageStyleBtn} />
+              <img
+                src='images/viewMore_icon.png'
+                alt=''
+                style={imageStyleBtn}
+              />
             </div>
             <span>View More</span>
           </button>
@@ -112,7 +115,7 @@ function NavNews() {
         <div className='NewmoreBtn'>
           <button className='viewmore' onClick={showMoreItems}>
             <span style={{ marginRight: '10px' }}>
-              <img src={viewmore} alt='' className='btnicon' />
+              <img src='images/viewMore_icon.png' alt='' className='btnicon' />
             </span>
             <span>View More</span>
           </button>

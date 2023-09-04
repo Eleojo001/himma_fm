@@ -1,31 +1,11 @@
 import React, {useState, useContext, useEffect} from 'react'
 import { DataContext } from '../App';
-import Slider from './components/Slider';
-import image1 from './images/homeBanner.jpeg'
-import image2 from './images/homeBanner2.jpeg'
 import { Link } from 'react-router-dom';
 
 
 function Presenters() {
 
-  const slides = [
-    {
-      url: `${image1}`,
-      title: 'Pic1',
-    },
-    {
-      url: `${image2}`,
-      title: 'Pic2',
-    },
-    {
-      url: `${image1}`,
-      title: 'Pic3',
-    },
-    {
-      url: `${image2}`,
-      title: 'Pic4',
-    },
-  ];
+
   const containerStyles = {
     width: '500px',
     height: '280px',

@@ -1,7 +1,6 @@
 import React, {useState, useEffect, useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { DataContext } from '../App';
-import viewmore from './images/viewMore_icon.png'
 
 
 
@@ -47,6 +46,9 @@ function News() {
          height: '300px',
          borderRadius: '10px',
        };
+  const linkStyle = {
+    textDecoration: 'none'
+  }
 
 
   return (
@@ -67,7 +69,7 @@ function News() {
           })} */}
             {section.slice(0, visible).map((sec) => (
               <div>
-                <Link to={`/news/${sec.id}`} key={sec.id}>
+                <Link to={`/news/${sec.id}`} key={sec.id} className='newLink'>
                   {/* <h1>All book id: {sec.id}</h1> */}
                   <div className='newsCard'>
                     <div className='newsCardImage'>
@@ -112,8 +114,14 @@ function News() {
         </div>
         <div className='moreBtn'>
           <button className='viewmore btn' onClick={showMoreItems}>
-            <span style={{ width: '30px', height: '30px', marginRight:'10px'}}>
-              <img src={viewmore} alt='' style={imageStyleBtn} />
+            <span
+              style={{ width: '30px', height: '30px', marginRight: '10px' }}
+            >
+              <img
+                src='images/viewMore_icon.png'
+                alt=''
+                style={imageStyleBtn}
+              />
             </span>
             <span>View More</span>
           </button>

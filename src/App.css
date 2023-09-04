@@ -219,6 +219,9 @@ align-items: center;
   text-decoration: none;
   color: white;
 }
+.newLink{
+  text-decoration: none;
+}
 .myCircle, .homecardImage{
   border-radius: 50%;
 }
@@ -406,11 +409,17 @@ align-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  padding-bottom: 50px;
 }
-.newsCard, .sliderCard{
+.sliderCard{
   /* height: 300px; */
   width: 250px;
   margin: 10px 0 0 0;
+}
+.newsCard{
+  height: 200px;
+  width: 200px;
+  margin: 10px 0 0 20px;
 }
 .newsCardImage, .sliderCardImg{
   height: 200px;

@@ -6,26 +6,20 @@ import Footer from './Home/Footer';
 import About from './Home/page/About';
 import Page from './Home/page/Page';
 import Contact from './Home/page/Contact';
-import newsImage1 from './images/Food-and-Agriculture.jpeg';
-import newsImage2 from './Home/images/hydro-3.jpeg'
-import newsImage3 from './Home/images/meeting-3.jpeg'
-import newsImage4 from './Home/images/farm-4.jpeg'
 import NavNews from './Home/Navigations/NavNews';
 import NavPresenters from './Home/Navigations/NavPresenters';
 import NavTv from './Home/Navigations/NavTv';
 import NavShows from './Home/Navigations/NavShows';
-import pImage1 from './Home/images/presenter_kabir.jpeg';
-import pImage2 from './Home/images/presenter_salisu.jpeg';
-import tv1 from './Home/images/tv1.jpeg';
-import show1 from './Home/images/cinikin_amfanin_noma.jpeg'
-import show2 from './Home/images/Sirin-Noma.jpeg';
-import show3 from './Home/images/awaki.jpeg';
-import show4 from './Home/images/dabbobin_ruwa.jpeg'
-import show5 from './Home/images/Hatsi.jpeg';
-import show6 from './Home/images/kiwo_don_riba.jpeg'
-import show7 from './Home/images/noma_don_riba.jpeg'
-import show8 from './Home/images/masara.jpeg'
-import show9 from './Home/images/naurorinnoma.jpeg'
+// import tv1 from './Home/images/tv1.jpeg';
+// import show1 from './images/cinikin_amfanin_noma.jpeg'
+// import show2 from './images/Sirin-Noma.jpeg';
+// import show3 from './images/awaki.jpeg';
+// import show4 from './images/dabbobin_ruwa.jpeg'
+// import show5 from './images/Hatsi.jpeg';
+// import show6 from './images/kiwo_don_riba.jpeg'
+// import show7 from './images/noma_don_riba.jpeg'
+// import show8 from './images/masara.jpeg'
+// import show9 from '../images/naurorinnoma.jpeg'
 import NewsDetails from './Home/details/NewsDetails';
 import PresenterDetails from './Home/details/PresenterDetails';
 import ShowsDetails from './Home/details/ShowsDetails';
@@ -37,45 +31,7 @@ import Radio from './Home/Radio';
 export const DataContext = React.createContext();
 
 function App() {
-  const [book, setBook] = useState([
-    [
-      {
-        id: 1,
-        title: 'Things fall Apart',
-        author: 'Chinua Achebe',
-        description:
-          'The novel follows the life of Okonkwo, an Igbo ("Ibo" in the novel) man and local wrestling champion in the fictional Nigerian clan of Umuofia. The work is split into three parts, with the first describing his family, personal history, and the customs and society of the Igbo, and the second and third sections introducing the influence of European colonialism and Christian missionaries on Okonkwo, his family, and the wider Igbo community.',
-      },
-      {
-        id: 2,
-        title: 'Harry Potter: and the Chamber of Secrets',
-        author: 'J. K. Rowling',
-        description:
-          "The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the 'Chamber of Secrets' has been opened and that the 'heir of Slytheri' would kill all pupils who do not come from all-magical families. These threats are found after attacks that leave residents of the school petrified. Throughout the year, Harry and his friends Ron and Hermione investigate the attacks.",
-      },
-      {
-        id: 3,
-        title: 'Americanah',
-        author: 'Chimamanda Ngozi Adichie',
-        description:
-          "Americanah tells the story of a young Nigerian woman, Ifemelu, who immigrates to the United States to attend university. The novel traces Ifemelu's life in both countries, threaded by her love story with high school classmate Obinze.",
-      },
-      {
-        id: 4,
-        title: 'Gifted Hands',
-        author: 'Ben Carson',
-        description:
-          'Gifted Hands by and about Ben Carson, M.D., is the inspiring story of an inner-city kid with poor grades and little motivation, who, at age thirty-three, became director of pediatric neurosurgery at Johns Hopkins University Hospital. Gifted Hands will transplace you into the operating room to witness surgeries that made headlines around the world, and into the private mind of a compassionate, God-fearing physician who lives to help others. In 1987, Dr. Carson gained worldwide recognition for his part in the first successful separation of Siamese twins joined at the back of the head -- an extremely complex and delicate operation that was five months of planning and twenty-two hours of actual surgery, involving a surgical plan that Carson helped initiate. Gifted Hands reveals a man with humility, decency, compassion, courage, and sensitivity who serves as a role model for young people (and everyone else) in need of encouragement to attempt the seemingly impossible and to excel in whatever they attempt. Dr. Carson also describes the key role that his highly intelligent though relatively uneducated mother played in his metamorphosis from an unmotivated ghetto youngster into one of the most respected neurosurgeons in the world.',
-      },
-      {
-        id: 5,
-        title: 'Me Before You',
-        author: 'Jojo Moyes',
-        description:
-          "Twenty-six-year-old Louisa Clark lives with her working-class family. Unambitious and with few qualifications, she feels constantly outshone by her younger sister, Treena, an outgoing single mother. Louisa, who helps support her family, loses her job at a local café when the café closes. She goes to the Job Center and, after several failed attempts, is offered a unique employment opportunity: help care for Will Traynor, a successful, wealthy, and once-active young man who has quadriplegia as a result of a pedestrian-motorcycle accident two years earlier. Will's mother, Camilla, hires Louisa despite her lack of experience, believing Louisa can brighten his spirit. Louisa meets Nathan, who cares for Will's medical needs, and Will's father, Steven, a friendly upper-class businessman whose marriage to Camilla is strained.",
-      },
-    ],
-  ]);
+
   const [News, setNews] = useState([
     {
       id: 1,
@@ -85,7 +41,7 @@ function App() {
       content: `Every human endeavour is rapidly experiencing fascinating evolution making regular activities such as construction, education, healthcare, sports and agricultural activities more efficient and far reaching. That is why new innovations are fast rising and changing the ideals of society.\nThese ideals in the Information and Technology sector have even been described as disruptive technology as they have the tendency to totally alter the normal way tasks are carried out. For example, the overwhelming challenge that came with the COVID-19 pandemic has placed an option in the offing for the use of virtual communications for educational, social, judicial and governance purposes.\nSame changes are occurring in other sectors such as mechanized farming, genetic engineering, and the use of hydroponics and aeroponics in the growth of crops.\nHydroponics is a type of horticulture and a subset of hydroculture, which is a method of growing plants, usually crops, without soil, by using mineral nutrient solutions in an aqueous solvent while aeroponics is the use of aerosols laced with nutrients for plants and crops to grow. \n Plants commonly grown hydroponically on include tomatoes, peppers, cucumbers, strawberries, lettuces, marijuana, and model plants.\nThough many sceptics have reservations about these new methods of growing crops, such as the dangers of consuming seeds grown through such methods amongst others, hydroponics still has a lot of benefits. Due to the decrease in water usage for agriculture.
 `,
       date: 'FEBRUARY 23, 2021',
-      image: newsImage1,
+      image: '/images/Food-and-Agriculture.jpeg',
     },
     {
       id: 2,
@@ -94,7 +50,7 @@ function App() {
       author: 'JEREMIAH AMEDU',
       content: `Every human endeavor is rapidly experiencing fascinating evolution making regular activities such as construction, education, healthcare, sports and agricultural activities more efficient and far reaching. That is why new innovations are fast rising and changing the ideals of society.\n These ideals in the Information and Technology sector have even been described as disruptive technology as they have the tendency to totally alter the normal way tasks are carried out. For example, the overwhelming challenge that came with the COVID-19 pandemic has placed an option in the offing for the use of virtual communications for educational, social, judicial and governance purposes. \nIn the last seven months many weddings were held online, lectures and seminars were held virtually, court sessions and government functions were also held virtually.\nThese are all changes that has affected our social psyche in the way things are done. Same changes are occurring in other sectors such as mechanized farming, genetic engineering, and the use of hydroponics and aeroponics in the growth of crops. Hydroponics is a type of horticulture and a subset of hydroculture, which is a method of growing plants, usually crops, without soil, by using mineral nutrient solutions in an aqueous solvent while aeroponics is the use of aerosols laced with nutrients for plants and crops to grow.`,
       date: 'FEBRUARY 23, 2021',
-      image: newsImage2,
+      image: '/images/hydro-3.jpeg',
     },
     {
       id: 3,
@@ -106,7 +62,7 @@ function App() {
 
 
 `,
-      image: newsImage3,
+      image: '/images/meeting-3.jpeg',
       date: 'FEBRUARY 23, 2021',
     },
     {
@@ -120,69 +76,69 @@ But economists have a more complicated theory. Perhaps, farmers face too much ri
 
 However, despite these challenges which can be found in many countries throughout the globe, some personalities have faced the odds and emerged wealthy from farming while some other wealthy business investors are expanding their tentacles into farming. This is most likely due to the fact that farmers play a key role in keeping humans alive as everyone has to eat. A clear case is Africa’s richest man, Aliko Dangote who intends to branch into farming by investing $4.6billion in the Nigerian agriculture sector. Mr. Dangote plans to invest at least $3.8billion in sugar and rice and $800m in milk production in the next three years.`,
       date: 'FEBRUARY 23, 2021',
-      image: newsImage4,
+      image: '/images/farm-4.jpeg',
     },
   ]);
   const [Shows, setShows] = useState([
     {
       id: '1',
       title: 'Cinikin Amafanin Noma',
-      image: show1,
+      image: '/images/cinikin_amfanin_noma.jpeg',
     },
     {
       id: '2',
       title: 'Noma Don Riba',
-      image: show2,
+      image: '/images/Sirin-Noma.jpeg',
     },
     {
       id: '3',
       title: 'Awaki',
-      image: show3,
+      image: '/images/awaki.jpeg',
     },
     {
       id: '4',
       title: 'Dabbobin Ruwa',
-      image: show4,
+      image: '/images/dabbobin_ruwa.jpeg',
     },
 
     {
       id: '5',
-      title:'Hatsi',
-      image: show5,
+      title: 'Hatsi',
+      image: '/images/Hatsi.jpeg',
     },
     {
       id: '6',
       title: 'Kiwo Dan Riba',
-      image: show6,
+      image: '/images/kiwo_don_riba.jpeg',
     },
     {
       id: '7',
       title: 'Noma Don Riba',
-      image: show7,
+      image: '/images/noma_don_riba.jpeg',
     },
     {
       id: '8',
       title: 'Masara',
-      image: show8,
+      image: '/images/naurorinnoma.jpeg',
     },
     {
       id: '9',
       title: `Na'urorin Noma`,
-      image: show9,
+      image: '/images/naurorinnoma.jpeg',
     },
   ]);
   const [Presenter, setPresenter] = useState([
     {
-      id: '2',
-      name: 'Salisu Idris Madobi',
-      bio: '',
-      image: pImage2,
-    },
-    {
       id: '1',
       name: 'Kabir G Haruna',
       bio: '',
-      image: pImage1,
+      image: '/images/presenter_kabir.jpeg',
+    },
+    {
+      id: '2',
+      name: 'Salisu Idris Madobi',
+      bio: '',
+      image: '/images/presenter_salisu.jpeg',
     },
   ]);
   const [Television, setTelevision] = useState([
@@ -191,7 +147,7 @@ However, despite these challenges which can be found in many countries throughou
       title: 'History of Agriculture',
       content:
         'In every multi-socio-cultural entity, there underlies certain unifying factors that bond the inhabitants together. It could range from trade, commerce, similarities in traditions, cultures, belief systems inter marriages amongst a host of others.',
-        image:tv1,
+        // image:tv1,
         url:'https://www.youtube.com/@HimmaTV261'
     },
     // {
@@ -219,24 +175,24 @@ However, despite these challenges which can be found in many countries throughou
     //     url:'https://www.youtube.com/@HimmaTV261'
     // },
   ]);
-  const [Navigation, setNavigation] = useState([
-    {
-      id:1,
-      title:'News'
-    },
-    {
-      id:2,
-      title:'Himma TV'
-    },
-    {
-      id:3,
-      title:'Shows'
-    },
-    {
-      id:4,
-      title:'Presenter'
-    },
-  ])
+  // const [Navigation, setNavigation] = useState([
+  //   {
+  //     id:1,
+  //     title:'News'
+  //   },
+  //   {
+  //     id:2,
+  //     title:'Himma TV'
+  //   },
+  //   {
+  //     id:3,
+  //     title:'Shows'
+  //   },
+  //   {
+  //     id:4,
+  //     title:'Presenter'
+  //   },
+  // ])
 
 
   
@@ -244,7 +200,7 @@ However, despite these challenges which can be found in many countries throughou
     <div className='App'>
       <BrowserRouter>
         <DataContext.Provider
-          value={{ book, News, Shows, Presenter, Television, Navigation }}
+          value={{ News, Shows, Presenter, Television }}
         >
           <Routes>
             <Route path='/' element={<Home />} />

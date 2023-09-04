@@ -1,11 +1,5 @@
 import React, {useState,  useEffect} from 'react'
 import Nav from '../Nav'
-import img1 from '../images/veg2.png';
-import img2 from '../images/Chicken-layers.jpeg';
-import img4 from '../images/fruits1.png';
-import img5 from '../images/Sarman-farms-1.png';
-import img7 from '../images/slider121.png';
-
 export default function About() {
   const bg ={
     background:'white',
@@ -52,11 +46,11 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
             researcher, or simply passionate about agriculture, our human-touch
             radio service will keep you informed, inspired, and connected to the
             pulse of the agricultural community.
-            <br /> <h1 className='headersFont'>Our Vision</h1> To be the
-            most Credible, Consistent and Valued Agricultural Broadcast Station
-            in Nigeria. <br /> <h1 className='headersFont'>Our Mission</h1>{' '}
-             To provide a trusted and reliable source of information,
-            education and entertainment to the communities we serve.
+            <br /> <h1 className='headersFont'>Our Vision</h1> To be the most
+            Credible, Consistent and Valued Agricultural Broadcast Station in
+            Nigeria. <br /> <h1 className='headersFont'>Our Mission</h1> To
+            provide a trusted and reliable source of information, education and
+            entertainment to the communities we serve.
           </p>
         </p>
         <div>
@@ -86,27 +80,27 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
           <div className='photoGrid'>
             <div className='photo'>
               <div className='photoImage'>
-                <img src={img5} style={imgStyle} alt='' />
+                <img src='images/Sarman-farms-1.png' style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src={img2} style={imgStyle} alt='' />
+                <img src='images/Chicken-layers.jpeg' style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src={img1} style={imgStyle} alt='' />
+                <img src='images/veg2.png' style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src={img4} style={imgStyle} alt='' />
+                <img src='images/fruits1.png' style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src={img7} style={imgStyle} alt='' />
+                <img src='images/slider121.png' style={imgStyle} alt='' />
               </div>
             </div>
           </div>

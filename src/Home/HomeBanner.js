@@ -1,7 +1,5 @@
 import React, {useEffect, useState, useContext} from 'react'
 import { DataContext } from '../App';
-import img1 from './images/mid-show.jpeg'
-import img2 from './images/ag2.jpeg'
 import { Link } from 'react-router-dom';
 import listenIcon from './images/Red_circle.gif'
 function HomeBanner() {
