@@ -61,14 +61,14 @@ function NavNews() {
                     style={blackColor}
                     className='newLink'
                   > */}
-                    <div className='newsCardImage'>
-                      <img src={item.image} alt='' style={imageStyle} />
-                    </div>
-                    <div className='newsCardHeader'>
-                      <h3 style={headerColor} className='textLimit'>
-                        {item.title}
-                      </h3>
-                    </div>
+                  <div className='newsCardImage'>
+                    <img src={item.image} alt='' style={imageStyle} />
+                  </div>
+                  <div className='newsCardHeader'>
+                    <h3 style={headerColor} className='textLimit'>
+                      {item.title}
+                    </h3>
+                  </div>
                   {/* </Link> */}
                 </div>
               );
@@ -78,13 +78,9 @@ function NavNews() {
         <div className='moreBtn'>
           <button className='viewmore btn' onClick={showMoreItems}>
             <div style={{ width: '30px', height: '30px' }}>
-              <img
-                src='viewMore_icon.png'
-                alt=''
-                style={imageStyleBtn}
-              />
+              <img src='viewMore_icon.png' alt='' style={imageStyleBtn} />
             </div>
-            <span>View More</span>
+            <span className='btnName'>View More</span>
           </button>
         </div>
       </div>
@@ -97,14 +93,14 @@ function NavNews() {
               return (
                 <div className='card-mobile'>
                   {/* <Link to={`/news/${item.id}`} key={item.id}> */}
-                    <div className='newsCardImage_mobile'>
-                      <img src={item.image} alt='' style={imageStyleMobile} />
-                    </div>
-                    <div className='profileInfo'>
-                      <h3 style={headerColor} className='textLimit'>
-                        {item.title}
-                      </h3>
-                    </div>
+                  <div className='newsCardImage_mobile'>
+                    <img src={item.image} alt='' style={imageStyleMobile} />
+                  </div>
+                  <div className='profileInfo'>
+                    <h3 style={headerColor} className='textLimit'>
+                      {item.title}
+                    </h3>
+                  </div>
                   {/* </Link> */}
                 </div>
               );
@@ -116,7 +112,7 @@ function NavNews() {
             <span style={{ marginRight: '10px' }}>
               <img src='viewMore_icon.png' alt='' className='btnicon' />
             </span>
-            <span>View More</span>
+            <span className='btnName'>View More</span>
           </button>
         </div>
       </div>

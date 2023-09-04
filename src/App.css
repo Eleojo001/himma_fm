@@ -388,6 +388,9 @@ align-items: center;
   /* color: white; */
   background-color: inherit;
 }
+.btnName{
+  color: black;
+}
 .gencontainer{
   padding: 20px 145px;
   border-bottom: 1px solid darkgray;
@@ -718,12 +721,7 @@ align-items: center;
   background-color: rgba(0, 0, 0, 0.59);
   display: block;
 }
-.modalToggle{
 
-}
-.modal_toggler{
-
-}
 .headersFont{
   font-size: 23px;
 }
