@@ -144,9 +144,10 @@ However, despite these challenges which can be found in many countries throughou
   const [Television, setTelevision] = useState([
     {
       id: '1',
-      title: 'Serman Farms',
+      title:
+        'ENJOY VALUE FOR MONEY AND HASSLE FREE GROCERIES & FRESH FARM PRODUCTS ON SARMAN FARMS MOBILE APP',
       content:
-        'Discover Fresh and Healthy Farm Products ranging from Grains, Vegetables, Fruits, Poultry Products, Fisheries, Edible Oils, Flours, Livestock and many more!',
+        '',
       url: 'https://www.youtube.com/@HimmaTV261',
     },
     // {

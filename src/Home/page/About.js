@@ -85,7 +85,7 @@ Whether you are a farmer, researcher, or simply passionate about agriculture, ou
             </div>
             <div className='photo'>
               <div className='photoImage'>
-                <img src='Chicken-layers.jpeg' style={imgStyle} alt='' />
+                <img src='Chicken-layers.jpg' style={imgStyle} alt='' />
               </div>
             </div>
             <div className='photo'>

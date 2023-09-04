@@ -86,23 +86,24 @@ function NavTv() {
                   <div>
                     {/* <div className='frameImage'></div> */}
                     {/* <Link to={`/Himma-Tv/${item.id}`} key={item.id}> */}
-                      <div className='newsCardImage'>
-                        <iframe
-                          width='100%'
-                          height='100%'
-                          src='https://www.youtube.com/embed/NwszZEqY5Es?si=c5cnO0qip6Tl-snW'
-                          title='YouTube video player'
-                          frameborder='0'
-                          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                          allowfullscreen
-                        ></iframe>
-                        {/* <img src={item.image} alt='' style={imageStyle} /> */}
-                      </div>
-                      <div className='newsCardHeader'>
-                        <h3 style={headerColor} className='textLimit'>
-                          {item.title}
-                        </h3>
-                      </div>
+                    <div className='newsCardImage'>
+                      <iframe
+                        width='100%'
+                        height='100%'
+                        src='https://www.youtube.com/embed/94Ie-7K3QS8?si=XZDINIjkYArigGTI'
+                        title='YouTube video player'
+                        frameborder='0'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                        allowfullscreen
+                      ></iframe>
+                      {/* <img src={item.image} alt='' style={imageStyle} /> */}
+                    </div>
+                    <div className='newsCardHeader'>
+                      {/* change class name to textLimit */}
+                      <h3 style={headerColor} className='textLimi'>
+                        {item.title}
+                      </h3>
+                    </div>
                     {/* </Link> */}
                   </div>
                 );
@@ -133,8 +134,8 @@ function NavTv() {
                     <div className='newsCardImage_mobile' style={card}>
                       <iframe
                         width='100%'
-                        // height='100%'
-                        src='https://www.youtube.com/embed/NwszZEqY5Es?si=c5cnO0qip6Tl-snW'
+                        height='100%'
+                        src='https://www.youtube.com/embed/94Ie-7K3QS8?si=XZDINIjkYArigGTI'
                         title='YouTube video player'
                         frameborder='0'
                         allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -143,7 +144,7 @@ function NavTv() {
                       {/* <img src={item.image} alt='' style={imageStyle} /> */}
                     </div>
                     <div className='profileInfo'>
-                      <h3 style={headerColor} className='textLimit'>
+                      <h3 style={headerColor} className='textLimi'>
                         {item.title}
                       </h3>
                     </div>
