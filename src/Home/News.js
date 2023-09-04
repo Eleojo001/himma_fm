@@ -70,20 +70,20 @@ function News() {
             {section.slice(0, visible).map((sec) => (
               <div>
                 {/* <Link to={`/news/${sec.id}`} key={sec.id} className='newLink'> */}
-                  {/* <h1>All book id: {sec.id}</h1> */}
-                  <div className='newsCard'>
-                    <div className='newsCardImage'>
-                      <img src={sec.image} alt='' style={imageStyle} />
-                    </div>
-                    <div className='newCardDetails'>
-                      {/* <p>{sec.content} </p> */}
-                    </div>
-                    <div className='newsCardHeader'>
-                      <h3 style={headerColor} className='textLimit'>
-                        {sec.title}
-                      </h3>
-                    </div>
+                {/* <h1>All book id: {sec.id}</h1> */}
+                <div className='newsCard'>
+                  <div className='newsCardImage'>
+                    <img src={sec.image} alt='' style={imageStyle} />
                   </div>
+                  <div className='newCardDetails'>
+                    {/* <p>{sec.content} </p> */}
+                  </div>
+                  <div className='newsCardHeader'>
+                    <h3 style={headerColor} className='textLimit'>
+                      {sec.title}
+                    </h3>
+                  </div>
+                </div>
                 {/* </Link> */}
               </div>
 
@@ -117,13 +117,9 @@ function News() {
             <span
               style={{ width: '30px', height: '30px', marginRight: '10px' }}
             >
-              <img
-                src='viewMore_icon.png'
-                alt=''
-                style={imageStyleBtn}
-              />
+              <img src='viewMore_icon.png' alt='' style={imageStyleBtn} />
             </span>
-            <span>View More</span>
+            <span className='btnName'>View More</span>
           </button>
         </div>
       </div>
