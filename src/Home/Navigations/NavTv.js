@@ -113,7 +113,7 @@ function NavTv() {
             <button className='viewmore btn' onClick={showMoreItems}>
               <div style={{ width: '30px', height: '30px', color: 'black' }}>
                 <img
-                  src='images/viewMore_icon.png'
+                  src='viewMore_icon.png'
                   alt=''
                   style={imageStyleBtn}
                 />
