@@ -55,12 +55,12 @@ function NavNews() {
             {data.slice(0, visible).map((item) => {
               return (
                 <div>
-                  <Link
+                  {/* <Link
                     to={`/news/${item.id}`}
                     key={item.id}
                     style={blackColor}
                     className='newLink'
-                  >
+                  > */}
                     <div className='newsCardImage'>
                       <img src={item.image} alt='' style={imageStyle} />
                     </div>
@@ -69,7 +69,7 @@ function NavNews() {
                         {item.title}
                       </h3>
                     </div>
-                  </Link>
+                  {/* </Link> */}
                 </div>
               );
             })}
@@ -96,7 +96,7 @@ function NavNews() {
             {data.slice(0, visible).map((item) => {
               return (
                 <div className='card-mobile'>
-                  <Link to={`/news/${item.id}`} key={item.id}>
+                  {/* <Link to={`/news/${item.id}`} key={item.id}> */}
                     <div className='newsCardImage_mobile'>
                       <img src={item.image} alt='' style={imageStyleMobile} />
                     </div>
@@ -105,7 +105,7 @@ function NavNews() {
                         {item.title}
                       </h3>
                     </div>
-                  </Link>
+                  {/* </Link> */}
                 </div>
               );
             })}
