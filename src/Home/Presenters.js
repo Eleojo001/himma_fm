@@ -16,7 +16,6 @@ function Presenters() {
 
   useEffect((()=>{
     setPresenter(category.Presenter)
-    console.log(category.Presenter)
   }),[])
       const imageStyle = {
         width: '100%',

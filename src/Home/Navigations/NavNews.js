@@ -10,12 +10,10 @@ function NavNews() {
  const [visible, setVisible] = useState(4);
   useEffect(()=>{
     let feed = category.News
-    console.log(feed);
     setData(feed)
     
   },[])
   const showMoreItems = () => {
-  console.log('hi');
     setVisible((previousValue) => previousValue + 4);
   };
    const headerColor = {

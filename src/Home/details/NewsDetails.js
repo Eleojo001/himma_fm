@@ -15,7 +15,6 @@ function NewsDetails() {
   const [section, setSection] = useState([]);
 
   let data = category.News;
-  console.log(data)
      const imageStyle = {
        width: '100%',
        height: '100%',

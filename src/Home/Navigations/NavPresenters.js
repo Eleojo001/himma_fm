@@ -9,11 +9,9 @@ function NavPresenters() {
     const [visible, setVisible] = useState(4);
     useEffect(() => {
       let feed = category.Presenter;
-      console.log(feed);
       setData(feed);
     }, []);
     const showMoreItems = () => {
-      console.log('hi');
       setVisible((previousValue) => previousValue + 4);
     };
     const headerColor = {

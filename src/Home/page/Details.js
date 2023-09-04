@@ -28,7 +28,7 @@ function Details() {
   useEffect(() => {
     // console.log(id);
     // setBook(books[0])
-    console.log(data)
+    // console.log(data)
     // {book.map((item)=>{
     //   if(item.id == id){
     //     console.log(item)

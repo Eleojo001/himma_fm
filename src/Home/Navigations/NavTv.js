@@ -11,7 +11,6 @@ function NavTv() {
       const [visible, setVisible] = useState(4);
       useEffect(() => {
         let feed = category.Television;
-        console.log(feed);
         setData(feed);
       }, []);
       const showMoreItems = () => {

@@ -9,7 +9,6 @@ function NavShows() {
   const [visible, setVisible] = useState(4);
     useEffect(() => {
       let feed = category.Shows;
-      console.log(feed);
       setData(feed);
     }, []);
     const showMoreItems = () => {
