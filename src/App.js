@@ -88,7 +88,7 @@ However, despite these challenges which can be found in many countries throughou
     {
       id: '2',
       title: 'Noma Don Riba',
-      image: 'Sirin-Noma.jpg',
+      image: 'noma_don_riba.jpg',
     },
     {
       id: '3',
@@ -113,19 +113,15 @@ However, despite these challenges which can be found in many countries throughou
     },
     {
       id: '7',
-      title: 'Noma Don Riba',
-      image: 'noma_don_riba.jpg',
+      title: 'Masara',
+      image: 'masara.jpg',
     },
     {
       id: '8',
-      title: 'Masara',
-      image: 'naurorinnoma.jpg',
-    },
-    {
-      id: '9',
       title: `Na'urorin Noma`,
       image: 'naurorinnoma.jpg',
     },
+    
   ]);
   const [Presenter, setPresenter] = useState([
     {
