@@ -69,8 +69,7 @@ function News() {
           })} */}
             {section.slice(0, visible).map((sec) => (
               <div>
-                {/* <Link to={`/news/${sec.id}`} key={sec.id} className='newLink'> */}
-                {/* <h1>All book id: {sec.id}</h1> */}
+                <Link to={`/news/${sec.id}`} key={sec.id} className='newLink'>
                 <div className='newsCard'>
                   <div className='newsCardImage'>
                     <img src={sec.image} alt='' style={imageStyle} />
@@ -84,7 +83,7 @@ function News() {
                     </h3>
                   </div>
                 </div>
-                {/* </Link> */}
+                </Link>
               </div>
 
               // <Link to={`/full/${data._id}/`} className='webNav'>
