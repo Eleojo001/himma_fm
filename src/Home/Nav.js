@@ -63,7 +63,7 @@ useEffect( () => {
       <nav className='nav' style={navContainer}>
         <Link to={'/'} className='nav_brand'>
           <img
-            src='himmarebrandlogo.jpg'
+            src='/himmarebrandlogo.jpg'
             alt=''
             style={logoStyle}
             className='logostyle'

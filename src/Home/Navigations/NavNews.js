@@ -9,9 +9,14 @@ function NavNews() {
   const [data,setData] = useState([])
  const [visible, setVisible] = useState(4);
   useEffect(()=>{
-    let feed = category.News
-    setData(feed)
-    
+  //   fetch('https://jsonplaceholder.typicode.com/albums')
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       setData(data)
+  //     });
+    let feed = category.News;
+    setData(feed);
   },[])
   const showMoreItems = () => {
     setVisible((previousValue) => previousValue + 4);
@@ -55,12 +60,12 @@ function NavNews() {
             {data.slice(0, visible).map((item) => {
               return (
                 <div>
-                  {/* <Link
+                  <Link
                     to={`/news/${item.id}`}
                     key={item.id}
                     style={blackColor}
                     className='newLink'
-                  > */}
+                  >
                   <div className='newsCardImage'>
                     <img src={item.image} alt='' style={imageStyle} />
                   </div>
@@ -69,7 +74,7 @@ function NavNews() {
                       {item.title}
                     </h3>
                   </div>
-                  {/* </Link> */}
+                  </Link>
                 </div>
               );
             })}
@@ -92,7 +97,7 @@ function NavNews() {
             {data.slice(0, visible).map((item) => {
               return (
                 <div className='card-mobile'>
-                  {/* <Link to={`/news/${item.id}`} key={item.id}> */}
+                  <Link to={`/news/${item.id}`} key={item.id}>
                   <div className='newsCardImage_mobile'>
                     <img src={item.image} alt='' style={imageStyleMobile} />
                   </div>
@@ -101,7 +106,7 @@ function NavNews() {
                       {item.title}
                     </h3>
                   </div>
-                  {/* </Link> */}
+                  </Link>
                 </div>
               );
             })}

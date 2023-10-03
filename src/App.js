@@ -27,6 +27,7 @@ import TvDetails from './Home/details/TvDetails';
 import Podcast from './Home/page/Podcast';
 import NoteFound from './Home/NoteFound';
 import Radio from './Home/Radio';
+import AdHome from './Admin/AdHome';
 
 export const DataContext = React.createContext();
 
@@ -38,10 +39,20 @@ function App() {
       category: 'News',
       title: 'Fostering Unity through Agro-Products Sustainability',
       author: 'JEREMIAH AMEDU',
-      content: `Every human endeavour is rapidly experiencing fascinating evolution making regular activities such as construction, education, healthcare, sports and agricultural activities more efficient and far reaching. That is why new innovations are fast rising and changing the ideals of society.\nThese ideals in the Information and Technology sector have even been described as disruptive technology as they have the tendency to totally alter the normal way tasks are carried out. For example, the overwhelming challenge that came with the COVID-19 pandemic has placed an option in the offing for the use of virtual communications for educational, social, judicial and governance purposes.\nSame changes are occurring in other sectors such as mechanized farming, genetic engineering, and the use of hydroponics and aeroponics in the growth of crops.\nHydroponics is a type of horticulture and a subset of hydroculture, which is a method of growing plants, usually crops, without soil, by using mineral nutrient solutions in an aqueous solvent while aeroponics is the use of aerosols laced with nutrients for plants and crops to grow. \n Plants commonly grown hydroponically on include tomatoes, peppers, cucumbers, strawberries, lettuces, marijuana, and model plants.\nThough many sceptics have reservations about these new methods of growing crops, such as the dangers of consuming seeds grown through such methods amongst others, hydroponics still has a lot of benefits. Due to the decrease in water usage for agriculture.
+      content: `The Alliance for a Green Revolution in Africa (AGRA) pledge to train more Farmers in new innovations , farming skills in line with global standard in Gombe , Nassarawa and Oyo states.\n
+
+Country director of AGRA, Dr Kehinde Makinde , asserted this to the newsmen , during the inspection of Demonstration Farms at Likoro Village in Kudan local government at Kaduna state, facilitated by National Agricultural Extension and research Liaison Services (NAERLS) in collaboration with AGRA.\n
+
+According to Dr Kehinde apart from engaging over 900,000 Farmers nationwide the project will soon embark to permeate other states as part of its effort to enhance food production in Nigeria.\n
+
+The country director added that already Farmers in Kaduna and Niger states are accosted and supported with new farming skills of Beans , Cowpeas, Maize and Rice as well as Vegetables for better adoptations to the environs.\n
+
+Dr Kehinde ,lamented the worrying part of the set back the farmers are facing due to the climate changes , hence he said their is need for major concern in food production adapted to climate changes which farmers need to be well versed about the methods.\n
+
+Furthermore he said since the coming of the project to the country in 2017, the target is to rebrand and change the farming techniques in the country so that Nigeria would rub the shoulder with global giants in Food Production.\n
 `,
       date: 'FEBRUARY 23, 2021',
-      image: 'Food-and-Agriculture.jpg',
+      image: '/Food-and-Agriculture.jpg',
     },
     {
       id: 2,
@@ -219,7 +230,8 @@ However, despite these challenges which can be found in many countries throughou
             <Route path='/programmes' element={<NavShows />} />
             <Route path='/podcast' element={<Podcast />} />
             <Route path='*' element={<NoteFound />} />
-          </Routes>
+            <Route path='/admin' element={<AdHome/>} />
+            </Routes>
         </DataContext.Provider>
         <Footer />
       </BrowserRouter>
