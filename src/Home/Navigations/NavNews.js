@@ -83,7 +83,7 @@ function NavNews() {
         <div className='moreBtn'>
           <button className='viewmore btn' onClick={showMoreItems}>
             <div style={{ width: '30px', height: '30px' }}>
-              <img src='viewMore_icon.png' alt='' style={imageStyleBtn} />
+              <img src='/viewMore_icon.png' alt='' style={imageStyleBtn} />
             </div>
             <span className='btnName'>View More</span>
           </button>
@@ -115,7 +115,7 @@ function NavNews() {
         <div className='NewmoreBtn'>
           <button className='viewmore' onClick={showMoreItems}>
             <span style={{ marginRight: '10px' }}>
-              <img src='viewMore_icon.png' alt='' className='btnicon' />
+              <img src='/viewMore_icon.png' alt='' className='btnicon' />
             </span>
             <span className='btnName'>View More</span>
           </button>

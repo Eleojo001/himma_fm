@@ -52,7 +52,7 @@ Dr Kehinde ,lamented the worrying part of the set back the farmers are facing du
 Furthermore he said since the coming of the project to the country in 2017, the target is to rebrand and change the farming techniques in the country so that Nigeria would rub the shoulder with global giants in Food Production.\n
 `,
       date: 'FEBRUARY 23, 2021',
-      image: '/Food-and-Agriculture.jpg',
+      image: '/agra.png',
     },
     {
       id: 2,
