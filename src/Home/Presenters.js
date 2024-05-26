@@ -46,9 +46,14 @@ function Presenters() {
                   <div className='sliderCardImg'>
                     <img src={item.image} style={imageStylemobile} alt='' />
                   </div>
+                  <div className='profile_text'>
                   <li className=''>
                     <h3>{item.name}</h3>
                   </li>
+                  <li className=''>
+                    <h3> {item.programmes}</h3>
+                  </li>
+                  </div>
                 </div>
               );
             })}

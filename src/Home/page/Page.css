@@ -63,6 +63,9 @@
 .profileImage{
   text-align: center;
 }
+.profile_text{
+  height: 200px;
+}
 .Profile{
   display: flex;
   flex-direction: column;

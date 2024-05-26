@@ -43,8 +43,9 @@ function NewsDetails() {
                   {item.author} <BsDot size={'1rem'} /> <span>{item.date}</span>
                 </p>
                 <div className='dtailsBanner'>
-                  <div className='imageHolder'></div>
+                  <div className='imageHolder'>
                   <img src={item.image} alt='' style={imageStyle} />
+                  </div>
                 </div>
                 {item.content.split('\n').map((paragraph, index) => (
                   <p

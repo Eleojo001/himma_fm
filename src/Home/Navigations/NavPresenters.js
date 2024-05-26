@@ -6,13 +6,13 @@ import Nav from '../Nav';
 function NavPresenters() {
     const category = useContext(DataContext);
     const [data, setData] = useState([]);
-    const [visible, setVisible] = useState(4);
+    const [visible, setVisible] = useState(6);
     useEffect(() => {
       let feed = category.Presenter;
       setData(feed);
     }, []);
     const showMoreItems = () => {
-      setVisible((previousValue) => previousValue + 4);
+      setVisible((previousValue) => previousValue + 3);
     };
     const headerColor = {
       color: 'white',
@@ -25,10 +25,16 @@ function NavPresenters() {
     };
      const imageStyleMobile = {
        width: '100%',
-       height: '200px',
+       height: '350px',
        borderRadius: '10px',
        objectFit: 'cover',
      };
+      const imageStyleBtn = {
+   width: '100%',
+   height: '100%',
+   borderRadius: '10px',
+   objectFit: 'contain',
+ };
     const round={
       width:'200px',
       height:'200px',
@@ -67,6 +73,14 @@ function NavPresenters() {
               </div>
             );
           })}
+        </div>
+        <div className='moreBtn'>
+          <button className='viewmore btn' onClick={showMoreItems}>
+            <div style={{ width: '30px', height: '30px' }}>
+              <img src='/viewMore_icon.png' alt='' style={imageStyleBtn} />
+            </div>
+            <span className='v-more-btn'>View More</span>
+          </button>
         </div>
       </div>
       <div className='page-container-mobile'>

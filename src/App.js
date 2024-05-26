@@ -73,7 +73,7 @@ Furthermore he said since the coming of the project to the country in 2017, the 
 
 
 `,
-      image: 'meeting-3.jpg',
+      image: '/meeting-3.jpg',
       date: 'FEBRUARY 23, 2021',
     },
     {
@@ -87,7 +87,7 @@ But economists have a more complicated theory. Perhaps, farmers face too much ri
 
 However, despite these challenges which can be found in many countries throughout the globe, some personalities have faced the odds and emerged wealthy from farming while some other wealthy business investors are expanding their tentacles into farming. This is most likely due to the fact that farmers play a key role in keeping humans alive as everyone has to eat. A clear case is Africa’s richest man, Aliko Dangote who intends to branch into farming by investing $4.6billion in the Nigerian agriculture sector. Mr. Dangote plans to invest at least $3.8billion in sugar and rice and $800m in milk production in the next three years.`,
       date: 'FEBRUARY 23, 2021',
-      image: 'farm-4.jpg',
+      image: '/farm-4.jpg',
     },
   ]);
   const [Shows, setShows] = useState([
@@ -146,6 +146,62 @@ However, despite these challenges which can be found in many countries throughou
       name: 'Salisu Idris Madobi',
       bio: '',
       image: 'presenter_salisu.jpg',
+    },
+    {
+      id: '3',
+      name: 'Khadijah Bello Waziri',
+      bio: '',
+      programmes: 'Filin Nasara Daga Na Gaba',
+      image: 'ms_khadijah_bello.jpg',
+    },
+    {
+      id: '4',
+      name: 'Saudat Idris Abdullahi',
+      bio: '',
+      programmes: 'Tannderu, inganta lafiya da abinci',
+      image: 'ms_saudat.jpg',
+    },
+    {
+      id: '5',
+      name: 'Sumayya Abdullahi',
+      bio: '',
+      programmes: 'Manominmu A yau (field in focus spotlight)',
+      image: 'ms_sumayya.jpg',
+    },
+    {
+      id: '6',
+      name: 'Nunenba Agabus Eridan',
+      bio: '',
+      programmes: 'Agritech Horizon (Noman zamani), Nourish hour (Lafiyarka a gona), Kitchen stories',
+      image: 'ms_nunenba.jpg',
+    },
+    {
+      id: '7',
+      name: 'Zainab Adam Yusuf',
+      bio: '',
+      programmes: 'Tushen arziki, Sabbin Labaran noma',
+      image: 'ms_zainab.jpg',
+    },
+    {
+      id: '8',
+      name: 'Ummulkhairi Abubakar Ungogo',
+      bio: '',
+      programmes: 'Women in Agriculture ( Da Bazarku)',
+      image: 'ms_ummulkhairi.jpg',
+    },
+    {
+      id: '9',
+      name: 'Saad Mustapha Suleiman',
+      bio: '',
+      programmes: 'Best Of The Week (WAIWAYE A WANNAN SATIN), Farmers Market Showcase (KASUWAR MANOMA)',
+      image: 'mr_saad_m.jpg',
+    },
+    {
+      id: '10',
+      name: 'Fatima S. Doma',
+      bio: '',
+      programmes: 'Dandalin Manoma',
+      image: 'ms_fatima_s.jpg',
     },
   ]);
   const [Television, setTelevision] = useState([

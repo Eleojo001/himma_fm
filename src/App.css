@@ -433,6 +433,7 @@ align-items: center;
   color: var(--text-color);
 }
 
+
 /* Television Section  */
 
 .tvFrameContainer{
@@ -551,6 +552,9 @@ align-items: center;
   padding: 0;
   width: 100%;
 }
+.presenterProfileHolder{
+  overflow-x: scroll;
+}
 .presentersSlider{
   /* padding: 40px; */
   /* background-color: white; */
@@ -589,13 +593,18 @@ align-items: center;
   color: white;
 }
 
+.v-more-btn{
+  color: white;
+}
+
 /* presenter  */
 .dtailsBanner{
   width: 35%;
-  height: 250px;
+  /* height: 250px; */
   /* margin: auto; */
   margin-bottom: 40px;
 }
+
 
 .contact-container{
   display: flex;
@@ -752,7 +761,7 @@ align-items: center;
 }
 
 /* Responsiveness */
-@media(max-width:800px){
+@media(max-width:900px){
   .main-nav {
     display: flex;
     padding: 20px 10px;
@@ -774,7 +783,23 @@ align-items: center;
   justify-content: center;
   align-items: center;
 }
-
+.newsGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-bottom: 50px;
+}
+.showsContainer{
+  padding: 20px 143px;
+  border-bottom: 1px solid darkgray;
+  background-color: var(--bg-color);
+}
+.sliderCards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-bottom: 50px;
+}
 .homeBanner{
   padding: 0;
   margin: 0;
@@ -827,8 +852,9 @@ align-items: center;
 }
 
 
+
 }
-@media screen and (max-width:768px) {
+@media(max-width:768px) {
   .nav_toggler{
     display: block;
   }
@@ -887,6 +913,9 @@ align-items: center;
   }
   .toggle .line3{
     transform: rotate(45deg) translate(-4px, -5px);
+  }
+  .newsGrid{
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media(max-width:470px){
@@ -1127,6 +1156,7 @@ align-items: center;
   margin-top: 20px;
 }
 
+
 /* tv  */
 .presenterContainer{
   background-color: var(--yellow-bg-color);
@@ -1336,11 +1366,15 @@ align-items: center;
 }
 
 .dtailsBanner{
-  width: 50%;
-  height: 150px;
+  width: 100%;
+  height: auto;
   align-items: start;
   display: flex;
   margin: 20px 0px;
+}
+.imageHolder{
+  height: 200px;
+  width: 100%;
 }
 .about-container{
     padding: 10px 30px;
