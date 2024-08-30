@@ -2,12 +2,7 @@ import React, {useEffect, useState, useContext} from 'react'
 import { DataContext } from '../App';
 import { Link } from 'react-router-dom';
 function HomeBanner() {
-    const category = useContext(DataContext)
-    const [data, setData] = useState([])
-
-    useEffect(()=>{
-      setData(category.Shows)
-    },[])
+    
         const imageStyle = {
           width: '40px',
           height: '40px',

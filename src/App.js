@@ -10,16 +10,6 @@ import NavNews from './Home/Navigations/NavNews';
 import NavPresenters from './Home/Navigations/NavPresenters';
 import NavTv from './Home/Navigations/NavTv';
 import NavShows from './Home/Navigations/NavShows';
-// import tv1 from './Home/images/tv1.jpeg';
-// import show1 from './images/cinikin_amfanin_noma.jpeg'
-// import show2 from './images/Sirin-Noma.jpeg';
-// import show3 from './images/awaki.jpeg';
-// import show4 from './images/dabbobin_ruwa.jpeg'
-// import show5 from './images/Hatsi.jpeg';
-// import show6 from './images/kiwo_don_riba.jpeg'
-// import show7 from './images/noma_don_riba.jpeg'
-// import show8 from './images/masara.jpeg'
-// import show9 from '../images/naurorinnoma.jpeg'
 import NewsDetails from './Home/details/NewsDetails';
 import PresenterDetails from './Home/details/PresenterDetails';
 import ShowsDetails from './Home/details/ShowsDetails';
