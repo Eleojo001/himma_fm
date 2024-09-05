@@ -1,74 +1,46 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  FaInstagram,
-  FaFacebookF,
-  FaWhatsapp,
-  FaYoutube,
-} from 'react-icons/fa';
-import { TfiTwitter } from 'react-icons/tfi';
 import { DataContext } from '../App';
 
 function Nav() {
-  const navCat = useContext(DataContext);
-
-  const [category, setCategory] = useState([]);
-  const navArray = [
-    {id:1,title:'News'},{id:2, title:'Telvision',},{id:3, title:'shows'}]
-  const [navBar, setNavBar] = useState(navArray)
-  const url = 'http://localhost:5003/category';
-  // useEffect(() => {
-    // console.log(navCat.Navigation)
-    // fetch(url)
-    //   .then((resp) => resp.json())
-    //   .then((resp) => {
-    //     // console.log(resp);
-    //     setCategory(resp);
-    //   });
-  // }, []);
-// useEffect()
-const array  = navCat.Navigation
-useEffect( () => {
-  const findItemById = (arr, itemId) => {
-    return arr.find((item) => item.title === itemId);
-  };
-},[])
-
+  // States for managing the navigation toggling
   const [active, setActive] = useState('nav_men');
   const [toggleIcon, setToggleIcon] = useState('nav_toggler');
-  const [modalActive, setModalActive] = useState("modal");
-  const [modalToggle, setModalToggle] = useState('modalToggle')
 
-  const navToggler =() =>{
+  // Toggles the navigation bar open and close
+  const navToggler = () => {
     active === 'nav_men' ? setActive('nav_men nav_active') : setActive('nav_men');
 
-    // Toggler icon 
+    // Toggles the hamburger icon animation
+    toggleIcon === 'nav_toggler' ? setToggleIcon('nav_toggler toggle') : setToggleIcon('nav_toggler');
+  };
 
-    toggleIcon === 'nav_toggler' ? setToggleIcon('nav_toggler toggle') : setToggleIcon('nav_toggler')
-  }
+  // Inline styles for navigation container and logo
   const navContainer = {
-    width:'100%',
-    boxSizing:'BorderBox',
-  }
-  const logoStyle ={
-    width:'150px',
-    height:'100px',
-    padding:'15px 6px'
-  }
+    width: '100%',
+    boxSizing: 'border-box',
+  };
+
+  const logoStyle = {
+    width: '150px',
+    height: '100px',
+    padding: '15px 6px',
+  };
 
   return (
     <div>
-      {/* main navigation */}
-
+      {/* Main navigation */}
       <nav className='nav' style={navContainer}>
         <Link to={'/'} className='nav_brand'>
           <img
             src='/himmarebrandlogo.jpg'
-            alt=''
+            alt='Brand Logo'
             style={logoStyle}
             className='logostyle'
           />
         </Link>
+
+        {/* Static navigation links */}
         <ul className='nav_menu'>
           <li className='nav_item'>
             <Link className='nav_link' to={'/about'}>
@@ -106,12 +78,16 @@ useEffect( () => {
             </Link>
           </li>
         </ul>
+
+        {/* Toggler icon for mobile view */}
         <div className={toggleIcon} onClick={navToggler}>
           <div className='line1'></div>
           <div className='line2'></div>
           <div className='line3'></div>
         </div>
       </nav>
+
+      {/* Mobile navigation menu */}
       <div className={active}>
         <Link className='nav_link' to={'/'}>
           <li className='nav_item'>Home</li>

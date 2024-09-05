@@ -1,70 +1,78 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { DataContext } from '../../App';
-import { BsDot } from 'react-icons/bs';
-import Nav from '../Nav';
+import React, { useState, useEffect } from 'react'; // Import necessary React hooks
+import { Link, useParams } from 'react-router-dom'; // Import components from React Router
+import { BsDot } from 'react-icons/bs'; // Import a dot icon from react-icons
 
 function NewsDetails() {
+  const { id } = useParams(); // Extract the 'id' parameter from the URL
+  const [info, setInfo] = useState({}); // State to hold the news details
 
-  const { id } = useParams();
-  const [info, setInfo] = useState({});
-  const [book, setBook] = useState([]);
-  const url = `http://localhost:5003/posts/${id}/`;
-  const category = useContext(DataContext);
-  const [section, setSection] = useState([]);
+  const url = `https://himmatv.onrender.com/posts/${id}/`; // URL for fetching specific news details
 
-  let data = category.News;
-     const imageStyle = {
-       width: '100%',
-       height: '100%',
-       borderRadius: '10px',
-       objectFit:'cover'
-     };
-     const authorStyle = {
-       textAlign: 'left',
-     };
-    const mybg={
-      backgroundColor:'white',
-      color:'black'
-     }
-      
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setInfo(data); // Update the state with the fetched data
+      })
+      .catch((error) => console.error('Error fetching news details:', error));
+  }, [url]); // Dependency array includes 'url'
+
+  // Function to format date and time
+  const formatDateTime = (dateTimeString) => {
+    const optionsDate = { day: '2-digit', month: 'long', year: 'numeric' };
+    const optionsTime = { hour: '2-digit', minute: '2-digit', hour12: true };
+
+    const date = new Date(dateTimeString);
+    const formattedDate = date.toLocaleDateString('en-GB', optionsDate); // Formats date
+    const formattedTime = date.toLocaleTimeString('en-GB', optionsTime); // Formats time
+
+    return `${formattedDate} at ${formattedTime}`;
+  };
+
+  const imageStyle = {
+    width: '100%',
+    height: '100%',
+    borderRadius: '10px',
+    objectFit: 'cover',
+  };
+
+  const mybg = {
+    backgroundColor: 'white',
+    color: 'black',
+  };
 
   return (
     <div style={mybg}>
-      <Nav />
+      
       <div className='detailsHeader'>
-        {data.map((item) => {
-          if (item.id == id) {
-            return (
-              <div key={item.id}>
-                <h1 className='headersFont'>{item.title}</h1>
+        <div>
+          <h1 className='headersFont'>{info.title}</h1>
+          
+          <p className='banner-content author'>
+            {info.author} <BsDot size={'1rem'} /> <span>{formatDateTime(info.updatedAt)}</span>
+          </p>
+          
+          <div className='dtailsBanner'>
+            <div className='imageHolder'>
+              <img src={info.avatar} alt='' style={imageStyle} />
+            </div>
+          </div>
+          
+          {info.content && typeof info.content === 'string' ? (
+            info.content.split('\n').map((paragraph, index) => (
+              <p
+                key={index}
+                className='banner-content'
+                style={{ fontSize: '18px', lineHeight: '1.5' }}
+              >
+                {paragraph}
+              </p>
+            ))
+          ) : (
+            <p>No content available</p>
+          )}
+        </div>
 
-                <p className=' banner-content author'>
-                  {item.author} <BsDot size={'1rem'} /> <span>{item.date}</span>
-                </p>
-                <div className='dtailsBanner'>
-                  <div className='imageHolder'>
-                  <img src={item.image} alt='' style={imageStyle} />
-                  </div>
-                </div>
-                {item.content.split('\n').map((paragraph, index) => (
-                  <p
-                    key={index}
-                    className='banner-content'
-                    style={{ fontSize: '18px', lineHeight: '1.5' }}
-                  >
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            );
-          }
-        })}
-        <h1 className='detailsHeader'>
-          {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id. */}
-          {info.title}
-        </h1>
-        <p className='banner-content'>{info.content}</p>
         <Link to={-1} style={{ textDecoration: 'none' }}>
           <button className='backbtn'>
             <span style={{ width: '50px', height: '50px' }}>
@@ -77,7 +85,6 @@ function NewsDetails() {
           </button>
         </Link>
       </div>
-      ;
     </div>
   );
 }

@@ -14,7 +14,7 @@ function Footer() {
     <div>
       {/* footer section  */}
 
-      <div className='footerContainer'>
+      <div className='footerContainer' style={{backgroundColor:'black', color:'white'}}>
         <div className='footLogo'>
           <h1 className='headersFont' >Himma Policy</h1>
           <div className='privacyMedia'>
@@ -37,7 +37,7 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link to={'/'} className='myLink'>
+            <Link to={'/about'} className='myLink'>
               About Us
             </Link>
           </li>
@@ -61,11 +61,6 @@ function Footer() {
               Programmes
             </Link>
           </li>
-          {/* <li>
-            <Link to={'/'} className='myLink'>
-              Events
-            </Link>
-          </li> */}
           <li>
             <Link to={'/presenters'} className='myLink'>
               Presenters
@@ -83,8 +78,6 @@ function Footer() {
             IKRA Multimedia Limited Km 25 <br /> Agalawa-Kafin Agur <br /> Along
             Madobi Road - Kano State
           </li>
-          {/* <li>+234 81 515 3780</li> */}
-          {/* <li>+234 81 515 3780</li> */}
         </div>
         <div className='connectWithUs'>
           <h1 className='headersFont' >Connect with us</h1>

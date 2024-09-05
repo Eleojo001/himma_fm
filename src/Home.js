@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
 import HomeBanner from './Home/HomeBanner'
-import Nav from './Home/Nav'
 import News from './Home/News'
 import Presenters from './Home/Presenters'
 import Shows from './Home/Shows'
@@ -9,11 +8,16 @@ import Shows from './Home/Shows'
 function Home() {
   return (
     <div>
-      <Nav/>
-      <HomeBanner/>
+      <HomeBanner />
+      <div className="homeNewsHolder" style={{backgroundColor:'#2B7A0B'}}>
       <News id='#News' />
+      </div>
+      <div className="homePresenterHolder" style={{backgroundColor:'#dbc51c'}}>
       <Presenters id='#Presenter' />
+      </div>
+      <div className="homeShowsHolder" style={{backgroundColor:'#2B7A0B'}}>
       <Shows id='#Shows' />
+      </div>
 
 
 

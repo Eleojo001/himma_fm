@@ -1,5 +1,4 @@
 import React from 'react'
-import Nav from '../Nav';
 
 function Podcast() {
   const podcast = {
@@ -12,7 +11,6 @@ function Podcast() {
   }
   return (
     <div>
-      <Nav />
       <div className='podcast' style={podcast}>
         <img
           src='podcastbg.png'

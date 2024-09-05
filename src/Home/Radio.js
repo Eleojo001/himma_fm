@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import Nav from './Nav';
+import React, {useState, useEffect} from 'react';
 
 function Radio() {
   const [time, setTime] = useState(new Date())
@@ -12,8 +11,7 @@ function Radio() {
     };
   },[]);
   return (
-    <div>
-      <Nav />
+    <div className='radio'>
       <div className='hidder'>
         <span className='radioShedule'>
           <div className='timer'>

@@ -1,37 +1,46 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { DataContext } from '../../App';
 import { BsDot } from 'react-icons/bs';
 import Nav from '../Nav';
 
 
 function TvDetails() {
+  const [tv, setTv] = useState([]);
+  const url = 'https://himmatv.onrender.com/posts/';
+  
+  const { id } = useParams(); // Extract the 'id' parameter from the URL
 
-  const { id } = useParams();
-  const [info, setInfo] = useState({});
-  const [book, setBook] = useState([]);
-  const url = `http://localhost:5003/posts/${id}/`;
-  const category = useContext(DataContext);
-  const [section, setSection] = useState([]);
 
-  let data = category.Television;
+  
+  // Fetches the television data from the API when the component mounts
+  useEffect(() => {
+    // Fetch television data from the API
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        // Filter the news items by category
+        const filteredData = data.filter(
+          (item) => item.category_id && item.category_id.title === 'Television'
+        );
+        setTv(filteredData); // Sets the news state with the filtered data
+      })
+      .catch((error) => console.error('Error fetching news data:', error));
+  }, []); // Empty dependency array means this effect runs only once after the initial render
+
   const imageStyle = {
     width: '100%',
     height: '100%',
     borderRadius: '10px',
-  };
-  const authorStyle = {
-    textAlign: 'left',
   };
   return (
     <div>
       <div>
         <Nav/>
         <div className='detailsHeader'>
-          {data.map((item) => {
-            if (item.id == id) {
+          {tv.map((item) => {
+            if (item._id == id) {
               return (
-                <div key={item.id}>
+                <div key={item._id}>
                   <h1 className='detailsHeader'>{item.title}</h1>
 
                   <p className=' banner-content author'>
@@ -46,11 +55,6 @@ function TvDetails() {
               );
             }
           })}
-          <h1 className='detailsHeader'>
-            {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id. */}
-            {info.title}
-          </h1>
-          <p className='banner-content'>{info.content}</p>
           <Link to={-1}>
             <button className='btn'>Go back</button>
           </Link>

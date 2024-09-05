@@ -1,18 +1,8 @@
 import React from 'react';
-import Nav from '../Nav';
-import {
-  FaInstagram,
-  FaFacebookF,
-  FaWhatsapp,
-  FaYoutube,
-} from 'react-icons/fa';
-import {FcGoogle} from 'react-icons/fc'
-import {Link} from 'react-router-dom'
 
 function Contact (){
   return (
     <div>
-      <Nav />
       <div className='contact-container'>
         <div className='contact'>
           <h1 style={{ color: 'black' }}>Contact Us</h1>
