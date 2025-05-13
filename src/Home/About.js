@@ -1,5 +1,5 @@
-import React, {useState,  useEffect} from 'react'
-import Nav from './Nav'
+import React from 'react'
+// import Nav from './Nav'
 export default function About() {
   const bg ={
     background:'white',

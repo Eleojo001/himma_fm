@@ -9,9 +9,9 @@ function Home() {
   return (
     <div>
       <HomeBanner />
-      <div className="homeNewsHolder" style={{backgroundColor:'#2B7A0B'}}>
+      {/* <div className="homeNewsHolder" style={{backgroundColor:'#2B7A0B'}}>
       <News id='#News' />
-      </div>
+      </div> */}
       <div className="homePresenterHolder" style={{backgroundColor:'#dbc51c'}}>
       <Presenters id='#Presenter' />
       </div>

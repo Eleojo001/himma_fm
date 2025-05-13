@@ -48,7 +48,7 @@ function App() {
             {/* details section  */}
             <Route path='/news/:id' element={<NewsDetails />} />
             <Route path='/presenters/:id' element={<PresenterDetails />} />
-            <Route path='/full/:id' element={<ShowsDetails />} />
+            <Route path='/program/:id' element={<ShowsDetails />} />
             <Route path='/Himma-Tv/:id' element={<TvDetails />} />
 
             {/* full category page section  */}
@@ -60,6 +60,7 @@ function App() {
             <Route path='/Himma-tv' element={<Television/>} />
             <Route path='/programmes' element={<Shows/>} />
             <Route path='/podcast' element={<Podcast />} />
+            {/* <Route path='/shedule' element={<Shedule />} /> */}
             <Route path='*' element={<NoteFound />} />
             </Routes>
         </DataContext.Provider>
